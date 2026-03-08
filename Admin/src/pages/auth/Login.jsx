@@ -16,11 +16,9 @@ export default function Login() {
     <AuthWrapper>
       <Grid container spacing={3}>
         <Grid size={12}>
-          <Stack direction="row" sx={{ alignItems: 'baseline', justifyContent: 'space-between', mb: { xs: -0.5, sm: 0.5 } }}>
-            <Typography variant="h3">Login</Typography>
-            <Typography component={Link} to={'/register'} variant="body1" sx={{ textDecoration: 'none' }} color="primary">
-              Don&apos;t have an account?
-            </Typography>
+          <Stack direction="row" sx={{ alignItems: 'baseline', justifyContent: 'center', mb: { xs: -0.5, sm: 0.5 } }}>
+            <Typography variant="h3">Praveen's Clinic Login</Typography>
+
           </Stack>
         </Grid>
         <Grid size={12}>

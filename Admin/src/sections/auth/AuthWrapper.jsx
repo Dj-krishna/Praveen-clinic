@@ -4,25 +4,23 @@ import PropTypes from 'prop-types';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
-
+import Typography from '@mui/material/Typography';
 // project imports
-import AuthFooter from 'components/cards/AuthFooter';
-import Logo from 'components/logo';
 import AuthCard from './AuthCard';
-
-// assets
-import AuthBackground from './AuthBackground';
 
 // ==============================|| AUTHENTICATION - WRAPPER ||============================== //
 
 export default function AuthWrapper({ children }) {
   return (
-    <Box sx={{ minHeight: '100vh' }}>
-      <AuthBackground />
-      <Stack sx={{ minHeight: '100vh', justifyContent: 'flex-end' }}>
-        <Box sx={{ px: 3, mt: 3 }} size={12}>
-          <Logo to="/" />
-        </Box>
+    <Box
+      sx={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        background: 'linear-gradient(135deg, #ffffff 0%, #1565c0 100%)',
+      }}
+    >
+      <Stack sx={{ minHeight: '100vh', justifyContent: 'center' }}>
         <Box size={12}>
           <Grid
             container
@@ -35,8 +33,10 @@ export default function AuthWrapper({ children }) {
             </Grid>
           </Grid>
         </Box>
-        <Box sx={{ p: 3 }} size={12}>
-          <AuthFooter />
+        <Box sx={{ p: 3, pt: 0, textAlign: 'center' }} size={12}>
+          <Typography variant="subtitle2" color="white" sx={{ opacity: 0.8 }}>
+            © {new Date().getFullYear()} Praveen's Clinic. All rights reserved.
+          </Typography>
         </Box>
       </Stack>
     </Box>
