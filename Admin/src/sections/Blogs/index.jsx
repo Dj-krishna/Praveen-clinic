@@ -17,14 +17,6 @@ const blogs = [
         date: "November 10, 2023",
         image: "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?auto=format&fit=crop&q=80&w=800",
         category: "Wellness"
-    },
-    {
-        id: 3,
-        title: "Mental Health Awareness",
-        description: "Breaking the stigma: why mental health is just as important as physical health in today's fast-paced world.",
-        date: "November 05, 2023",
-        image: "https://images.unsplash.com/photo-1527137342181-19aab11a8ee1?auto=format&fit=crop&q=80&w=800",
-        category: "Mental Health"
     }
 ];
 
@@ -32,7 +24,7 @@ const Blogs = () => {
     return (
         <Box component="section" sx={{ py: 3, bgcolor: 'grey.50' }} id="blogs">
             <Container maxWidth="lg">
-                <Box>
+                <Box sx={{ mb: 4 }}>
                     <Typography variant="h3" component="h2" sx={{ fontWeight: 800, color: 'text.primary', mb: 2 }}>
                         Latest Medical News & Blogs
                     </Typography>
@@ -45,13 +37,19 @@ const Blogs = () => {
                     {blogs.map((blog) => (
                         <Grid key={blog.id} size={{ xs: 12, sm: 6, md: 6 }}>
                             <Card
+                                elevation={0}
                                 sx={{
                                     height: '100%',
                                     display: 'flex',
                                     flexDirection: 'column',
-                                    transition: 'transform 0.3s ease-in-out',
+                                    borderRadius: 3, // Roughly 12px depending on theme
+                                    border: '1px solid',
+                                    borderColor: 'grey.200',
+                                    overflow: 'hidden',
+                                    transition: 'all 0.3s ease-in-out',
                                     '&:hover': {
-                                        transform: 'translateY(-8px)'
+                                        transform: 'translateY(-4px)',
+                                        boxShadow: '0 8px 16px rgba(0,0,0,0.08)'
                                     }
                                 }}
                             >
@@ -81,17 +79,29 @@ const Blogs = () => {
                                         {blog.description}
                                     </Typography>
                                 </CardContent>
-                                <CardActions sx={{ px: 2, pb: 2, flexDirection: 'column', alignItems: 'flex-start' }}>
-                                    <Typography variant="caption" color="text.disabled" sx={{ mb: 1, px: 1 }}>
+                                <CardActions sx={{ px: 2, pb: 2, pt: 0, flexDirection: 'column', alignItems: 'flex-start' }}>
+                                    <Typography variant="caption" color="text.disabled" sx={{ mb: 2, px: 1 }}>
                                         {blog.date}
                                     </Typography>
-                                    <Button
-                                        size="small"
-                                        color="primary"
-                                        sx={{ fontWeight: 'bold', textTransform: 'none' }}
-                                    >
-                                        Read Full Article &rarr;
-                                    </Button>
+                                    <Box sx={{ width: '100%', px: 1 }}>
+                                        <Button
+                                            disableElevation
+                                            variant="outlined"
+                                            color="primary"
+                                            fullWidth
+                                            sx={{ 
+                                                fontWeight: 'bold', 
+                                                textTransform: 'none',
+                                                borderRadius: 2,
+                                                '&:hover': {
+                                                    backgroundColor: 'primary.main',
+                                                    color: 'white'
+                                                }
+                                            }}
+                                        >
+                                            Read Full Article
+                                        </Button>
+                                    </Box>
                                 </CardActions>
                             </Card>
                         </Grid>
