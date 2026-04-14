@@ -9,68 +9,42 @@ class Appointment {
         $this->conn = $db;
     }
 
+    // ✅ Get appointments with FULL patient details
     public function getAppointments($filters = []){
 
-        $allowed = [
-            'patientID' => PDO::PARAM_INT,
-            'doctorID' => PDO::PARAM_INT,
-            'appointmentStatus' => PDO::PARAM_STR,
-            'appointmentDate' => PDO::PARAM_STR,
-        ];
-
-        $where = [];
-        $params = [];
-
-        if (!is_array($filters)) {
-            $filters = [];
-        }
-
-        foreach ($allowed as $key => $pdoType) {
-            if (!array_key_exists($key, $filters)) {
-                continue;
-            }
-
-            $value = $filters[$key];
-            if ($value === null || $value === '') {
-                continue;
-            }
-
-            $paramName = ':' . $key;
-            $where[] = "{$key} = {$paramName}";
-            $params[] = [$paramName, $value, $pdoType];
-        }
-
-        $sql = "SELECT * FROM {$this->table}";
-        if (!empty($where)) {
-            $sql .= " WHERE " . implode(" AND ", $where);
-        }
-        // Return results in ascending order by primary key
-        $sql .= " ORDER BY appointmentID ASC";
-
-        $stmt = $this->conn->prepare($sql);
-        foreach ($params as [$name, $value, $type]) {
-            $stmt->bindValue($name, $value, $type);
-        }
-        $stmt->execute();
-
-        return $stmt->fetchAll();
-    }
-
-    public function getAll(){
-
-        // Return all appointments ordered by primary key ascending
-        $sql = "SELECT * FROM {$this->table} ORDER BY appointmentID ASC";
+        $sql = "SELECT 
+                    a.*, 
+                    p.fullName, 
+                    p.mobile, 
+                    p.email, 
+                    p.gender, 
+                    p.age, 
+                    p.dateOfBirth, 
+                    p.countryCode
+                FROM appointments a
+                LEFT JOIN patients p ON a.patientID = p.patientID
+                ORDER BY a.appointmentID ASC";
 
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
 
         return $stmt->fetchAll();
     }
-
 
     public function getById($id){
 
-        $sql = "SELECT * FROM {$this->table} WHERE appointmentID = :id";
+        $sql = "SELECT 
+                    a.*, 
+                    p.fullName, 
+                    p.mobile, 
+                    p.email, 
+                    p.gender, 
+                    p.age, 
+                    p.dateOfBirth, 
+                    p.countryCode
+                FROM appointments a
+                LEFT JOIN patients p ON a.patientID = p.patientID
+                WHERE a.appointmentID = :id";
 
         $stmt = $this->conn->prepare($sql);
         $stmt->bindValue(":id",$id,PDO::PARAM_INT);
@@ -79,10 +53,11 @@ class Appointment {
         return $stmt->fetch();
     }
 
-
+    // ✅ CREATE: Insert patient → then appointment
     public function create($data){
 
-        $required = ['patientID','doctorID','appointmentDate','appointmentStatus'];
+        // Required fields from UI
+        $required = ['fullName','mobile','doctorID','appointmentDate'];
 
         foreach($required as $field){
             if(empty($data[$field])){
@@ -90,67 +65,58 @@ class Appointment {
             }
         }
 
-        $sql = "INSERT INTO {$this->table}
+        try {
+            // 🔥 Start transaction
+            $this->conn->beginTransaction();
+
+            // 1️⃣ Insert into patients table
+            $patientSql = "INSERT INTO patients 
+                (fullName, mobile, email, gender, age, dateOfBirth, countryCode)
+                VALUES 
+                (:fullName, :mobile, :email, :gender, :age, :dateOfBirth, :countryCode)";
+
+            $stmt = $this->conn->prepare($patientSql);
+
+            $stmt->execute([
+                ":fullName" => $data['fullName'],
+                ":mobile" => $data['mobile'],
+                ":email" => $data['email'] ?? null,
+                ":gender" => $data['gender'] ?? null,
+                ":age" => $data['age'] ?? null,
+                ":dateOfBirth" => $data['dateOfBirth'] ?? null,
+                ":countryCode" => $data['countryCode'] ?? '+91'
+            ]);
+
+            $patientID = $this->conn->lastInsertId();
+
+            // 2️⃣ Insert into appointments table
+            $appointmentSql = "INSERT INTO appointments
                 (patientID, doctorID, appointmentDate, appointmentStatus)
                 VALUES
                 (:patientID, :doctorID, :appointmentDate, :appointmentStatus)";
 
-        $stmt = $this->conn->prepare($sql);
+            $stmt = $this->conn->prepare($appointmentSql);
 
-        $stmt->execute([
-            ":patientID"=>$data['patientID'],
-            ":doctorID"=>$data['doctorID'],
-            ":appointmentDate"=>$data['appointmentDate'],
-            ":appointmentStatus"=>$data['appointmentStatus']
-        ]);
+            $stmt->execute([
+                ":patientID" => $patientID,
+                ":doctorID" => $data['doctorID'],
+                ":appointmentDate" => $data['appointmentDate'],
+                ":appointmentStatus" => $data['appointmentStatus'] ?? 'Scheduled'
+            ]);
 
-        $id = $this->conn->lastInsertId();
+            $appointmentID = $this->conn->lastInsertId();
 
-        return $this->getById($id);
-    }
+            // ✅ Commit transaction
+            $this->conn->commit();
 
+            return $this->getById($appointmentID);
 
-    public function update($id,$data){
-
-        $fields = [];
-        $params = [];
-
-        if(isset($data['patientID'])){
-            $fields[] = "patientID = :patientID";
-            $params[':patientID'] = $data['patientID'];
-        }
-
-        if(isset($data['doctorID'])){
-            $fields[] = "doctorID = :doctorID";
-            $params[':doctorID'] = $data['doctorID'];
-        }
-
-        if(isset($data['appointmentDate'])){
-            $fields[] = "appointmentDate = :appointmentDate";
-            $params[':appointmentDate'] = $data['appointmentDate'];
-        }
-
-        if(isset($data['appointmentStatus'])){
-            $fields[] = "appointmentStatus = :appointmentStatus";
-            $params[':appointmentStatus'] = $data['appointmentStatus'];
-        }
-
-        if(empty($fields)){
+        } catch (Exception $e) {
+            // ❌ Rollback on error
+            $this->conn->rollBack();
             return false;
         }
-
-        $params[':id'] = $id;
-
-        $sql = "UPDATE {$this->table}
-                SET ".implode(", ",$fields)."
-                WHERE appointmentID = :id";
-
-        $stmt = $this->conn->prepare($sql);
-        $stmt->execute($params);
-
-        return $this->getById($id);
     }
-
 
     public function delete($id){
 
@@ -162,5 +128,4 @@ class Appointment {
             ":id"=>$id
         ]);
     }
-
 }
