@@ -1,8 +1,8 @@
 <?php
-
 header("Content-Type: application/json");
 
 $uri = $_SERVER['REQUEST_URI'];
+
 
 if (strpos($uri, '/api/appointments') !== false) {
 
@@ -11,6 +11,10 @@ if (strpos($uri, '/api/appointments') !== false) {
 } elseif (strpos($uri, '/api/blogs') !== false) {
 
     require "routes/blogRoutes.php";
+
+} elseif (strpos($uri, '/api/users') !== false) {
+
+    require "routes/userRoutes.php";
 
 } else {
 

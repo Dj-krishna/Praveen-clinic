@@ -10,8 +10,6 @@ class BlogController {
     public function __construct($db){
         $this->blog = new Blog($db);
     }
-
-
     public function getBlogs(){
 
         $filters = $_GET ?? [];
