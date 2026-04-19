@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__."/../config/database.php";
-require_once __DIR__."/../controllers/AppointmentController.php";
+require_once __DIR__."/../controllers/appointmentController.php";
 
 header("Content-Type: application/json");
 

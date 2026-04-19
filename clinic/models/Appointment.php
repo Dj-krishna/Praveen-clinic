@@ -117,6 +117,36 @@ class Appointment {
             return false;
         }
     }
+    
+    public function update($id, $data){
+
+    $allowedFields = ['doctorID','appointmentDate','appointmentStatus'];
+
+    $setParts = [];
+    $params = [":id" => $id];
+
+    foreach ($data as $key => $value) {
+        if (in_array($key, $allowedFields)) {
+            $setParts[] = "$key = :$key";
+            $params[":$key"] = $value;
+        }
+    }
+
+    // If nothing valid to update
+    if (empty($setParts)) {
+        return false;
+    }
+
+    $sql = "UPDATE {$this->table} 
+            SET " . implode(", ", $setParts) . " 
+            WHERE appointmentID = :id";
+
+    $stmt = $this->conn->prepare($sql);
+    $stmt->execute($params);
+
+    // Return updated record
+    return $this->getById($id);
+}
 
     public function delete($id){
 
