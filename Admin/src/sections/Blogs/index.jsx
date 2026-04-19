@@ -1,113 +1,192 @@
-import React from 'react';
-import { Box, Container, Typography, Grid, Card, CardMedia, CardContent, CardActions, Button } from '@mui/material';
+import React, { useState, useEffect } from 'react';
+import { Box, Container, Typography, Grid, Button } from '@mui/material';
+import axios from 'axios';
+import { useSnackbar } from 'notistack';
+import { blogsURL, createBlog, deleteBlog, baseURL } from '../../api/services';
 
-const blogs = [
-    {
-        id: 1,
-        title: "Advancements in Modern Surgery",
-        description: "Explore how our latest robotic-assisted technologies are improving patient outcomes and recovery times.",
-        date: "November 15, 2023",
-        image: "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=800",
-        category: "Technology"
-    },
-    {
-        id: 2,
-        title: "Understanding Heart Health",
-        description: "Our leading cardiologists share essential tips for maintaining a healthy heart through diet and exercise.",
-        date: "November 10, 2023",
-        image: "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?auto=format&fit=crop&q=80&w=800",
-        category: "Wellness"
-    }
-];
+import PlusOutlined from '@ant-design/icons/PlusOutlined';
+
+import BlogFormModal from './BlogFormModal';
+import DeleteConfirmDialog from './DeleteConfirmDialog';
+import BlogCard from './BlogCard';
 
 const Blogs = () => {
+    const [blogs, setBlogs] = useState([]);
+    const { enqueueSnackbar } = useSnackbar();
+
+    // Modal states
+    const [formModalOpen, setFormModalOpen] = useState(false);
+    const [editData, setEditData] = useState(null);
+
+    // Delete dialog states
+    const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
+    const [blogToDelete, setBlogToDelete] = useState(null);
+    const [deleting, setDeleting] = useState(false);
+
+    const fetchBlogs = async () => {
+        const response = await axios(blogsURL);
+        const data = await response.data.data;
+        setBlogs(data);
+    };
+
+    useEffect(() => {
+        fetchBlogs();
+    }, []);
+
+    // Build full image URL from relative path
+    const getImageUrl = (path) => {
+        if (!path) return null;
+        if (path.startsWith('http')) return path;
+        return `${baseURL}/${path}`;
+    };
+
+    // Format date string to readable format
+    const formatDate = (dateStr) => {
+        if (!dateStr) return '';
+        const date = new Date(dateStr);
+        return date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    };
+
+    // Parse tags JSON string safely
+    const parseTags = (tagsStr) => {
+        try {
+            return JSON.parse(tagsStr || '[]');
+        } catch {
+            return [];
+        }
+    };
+
+    // ---- CREATE / EDIT ----
+    const handleOpenCreate = () => {
+        setEditData(null);
+        setFormModalOpen(true);
+    };
+
+    const handleOpenEdit = (blog) => {
+        setEditData(blog);
+        setFormModalOpen(true);
+    };
+
+    const handleCloseFormModal = () => {
+        setFormModalOpen(false);
+        setEditData(null);
+    };
+
+    const handleFormSubmit = async (payload, blogID) => {
+        if (blogID) {
+            // Edit (PUT)
+            await axios.put(`${blogsURL}?id=${blogID}`, payload, {
+                headers: { 'Content-Type': 'application/json' }
+            });
+        } else {
+            // Create (POST)
+            await axios.post(createBlog, payload, {
+                headers: { 'Content-Type': 'application/json' }
+            });
+        }
+        await fetchBlogs();
+    };
+
+    // ---- DELETE ----
+    const handleOpenDelete = (blog) => {
+        setBlogToDelete(blog);
+        setDeleteDialogOpen(true);
+    };
+
+    const handleCloseDelete = () => {
+        if (deleting) return;
+        setDeleteDialogOpen(false);
+        setBlogToDelete(null);
+    };
+
+    const handleConfirmDelete = async () => {
+        if (!blogToDelete) return;
+        setDeleting(true);
+        try {
+            await axios.delete(`${deleteBlog}?id=${blogToDelete.blogID}`);
+            enqueueSnackbar('Blog deleted successfully!', { variant: 'success' });
+            await fetchBlogs();
+        } catch (error) {
+            const msg = error?.response?.data?.message || error?.message || 'Failed to delete blog.';
+            enqueueSnackbar(msg, { variant: 'error' });
+        } finally {
+            setDeleting(false);
+            setDeleteDialogOpen(false);
+            setBlogToDelete(null);
+        }
+    };
+
     return (
         <Box component="section" sx={{ py: 3, bgcolor: 'grey.50' }} id="blogs">
             <Container maxWidth="lg">
-                <Box sx={{ mb: 4 }}>
-                    <Typography variant="h3" component="h2" sx={{ fontWeight: 800, color: 'text.primary', mb: 2 }}>
-                        Latest Medical News & Blogs
-                    </Typography>
-                    <Typography variant="h6" color="text.secondary">
-                        Insights and updates from our healthcare professionals.
-                    </Typography>
+                {/* Header + Create Button */}
+                <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, alignItems: { xs: 'stretch', sm: 'center' }, justifyContent: 'space-between', mb: 4, gap: 2 }}>
+                    <Box>
+                        <Typography variant="h3" component="h2" sx={{ fontWeight: 800, color: 'text.primary', mb: 0.5 }}>
+                            Latest Medical News & Blogs
+                        </Typography>
+                        <Typography variant="h6" color="text.secondary">
+                            Insights and updates from our healthcare professionals.
+                        </Typography>
+                    </Box>
+                    <Button
+                        variant="contained"
+                        startIcon={<PlusOutlined />}
+                        onClick={handleOpenCreate}
+                        sx={{
+                            borderRadius: '10px', textTransform: 'none', fontWeight: 700, fontSize: '0.85rem',
+                            px: 2.5, py: 1, flexShrink: 0, alignSelf: { xs: 'stretch', sm: 'center' },
+                            background: 'linear-gradient(135deg, #8B4513 0%, #A0522D 100%)',
+                            boxShadow: '0 4px 14px rgba(139, 69, 19, 0.3)',
+                            transition: 'all 0.25s ease',
+                            '&:hover': {
+                                boxShadow: '0 6px 20px rgba(139, 69, 19, 0.45)',
+                                transform: 'translateY(-1px)',
+                                background: 'linear-gradient(135deg, #7a3c10 0%, #8B4513 100%)'
+                            },
+                            '&:active': { transform: 'translateY(0px)' }
+                        }}
+                    >
+                        Create Blog
+                    </Button>
                 </Box>
 
+                {/* Blog Cards Grid */}
                 <Grid container spacing={4}>
                     {blogs.map((blog) => (
-                        <Grid key={blog.id} size={{ xs: 12, sm: 6, md: 6 }}>
-                            <Card
-                                elevation={0}
-                                sx={{
-                                    height: '100%',
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    borderRadius: 3, // Roughly 12px depending on theme
-                                    border: '1px solid',
-                                    borderColor: 'grey.200',
-                                    overflow: 'hidden',
-                                    transition: 'all 0.3s ease-in-out',
-                                    '&:hover': {
-                                        transform: 'translateY(-4px)',
-                                        boxShadow: '0 8px 16px rgba(0,0,0,0.08)'
-                                    }
-                                }}
-                            >
-                                <CardMedia
-                                    component="img"
-                                    height="150"
-                                    image={blog.image}
-                                    alt={blog.title}
-                                />
-                                <CardContent sx={{ flexGrow: 1 }}>
-                                    <Typography variant="subtitle2" color="primary" sx={{ fontWeight: 600, mb: 1 }}>
-                                        {blog.category}
-                                    </Typography>
-                                    <Typography variant="h6" component="h3" sx={{ fontWeight: 'bold', mb: 1 }}>
-                                        {blog.title}
-                                    </Typography>
-                                    <Typography
-                                        variant="body2"
-                                        color="text.secondary"
-                                        sx={{
-                                            display: '-webkit-box',
-                                            WebkitLineClamp: 3,
-                                            WebkitBoxOrient: 'vertical',
-                                            overflow: 'hidden'
-                                        }}
-                                    >
-                                        {blog.description}
-                                    </Typography>
-                                </CardContent>
-                                <CardActions sx={{ px: 2, pb: 2, pt: 0, flexDirection: 'column', alignItems: 'flex-start' }}>
-                                    <Typography variant="caption" color="text.disabled" sx={{ mb: 2, px: 1 }}>
-                                        {blog.date}
-                                    </Typography>
-                                    <Box sx={{ width: '100%', px: 1 }}>
-                                        <Button
-                                            disableElevation
-                                            variant="outlined"
-                                            color="primary"
-                                            fullWidth
-                                            sx={{ 
-                                                fontWeight: 'bold', 
-                                                textTransform: 'none',
-                                                borderRadius: 2,
-                                                '&:hover': {
-                                                    backgroundColor: 'primary.main',
-                                                    color: 'white'
-                                                }
-                                            }}
-                                        >
-                                            Read Full Article
-                                        </Button>
-                                    </Box>
-                                </CardActions>
-                            </Card>
-                        </Grid>
+                        <BlogCard
+                            key={blog.blogID}
+                            blog={blog}
+                            getImageUrl={getImageUrl}
+                            formatDate={formatDate}
+                            parseTags={parseTags}
+                            handleOpenEdit={handleOpenEdit}
+                            handleOpenDelete={handleOpenDelete}
+                        />
                     ))}
                 </Grid>
             </Container>
+
+            {/* Create / Edit Modal */}
+            <BlogFormModal
+                open={formModalOpen}
+                onClose={handleCloseFormModal}
+                onSubmit={handleFormSubmit}
+                editData={editData}
+            />
+
+            {/* Delete Confirmation Dialog */}
+            <DeleteConfirmDialog
+                open={deleteDialogOpen}
+                onClose={handleCloseDelete}
+                onConfirm={handleConfirmDelete}
+                blogTitle={blogToDelete?.title || ''}
+                deleting={deleting}
+            />
         </Box>
     );
 };

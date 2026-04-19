@@ -7,6 +7,9 @@ import Button from '@mui/material/Button';
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
+import Chip from '@mui/material/Chip';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
 // project imports
 import MainCard from 'components/MainCard';
@@ -25,6 +28,10 @@ export default function DashboardDefault() {
   const [modalOpen, setModalOpen] = useState(false);
   const [appointments, setAppointments] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));   // < 600px
+  const isTablet = useMediaQuery(theme.breakpoints.down('md'));   // < 900px
 
   const handleOpenModal = () => setModalOpen(true);
   const handleCloseModal = () => setModalOpen(false);
@@ -79,53 +86,117 @@ export default function DashboardDefault() {
   const cancelledCount = appointments.filter(
     (a) => (a.appointmentStatus || '').toLowerCase() === 'cancelled'
   ).length;
+  const completedCount = appointments.filter(
+    (a) => (a.appointmentStatus || '').toLowerCase() === 'completed'
+  ).length;
+  const scheduledCount = appointments.filter(
+    (a) => (a.appointmentStatus || '').toLowerCase() === 'scheduled'
+  ).length;
+  const bookedCount = appointments.filter(
+    (a) => (a.appointmentStatus).toLowerCase() === ''
+  ).length;
+
+  // Status badge data for cleaner rendering
+  const statusBadges = [
+    { label: 'Total', count: totalCount, color: '' },
+    { label: 'Cancelled', count: cancelledCount, color: 'error' },
+    { label: 'Completed', count: completedCount, color: 'success' },
+    { label: 'Scheduled', count: scheduledCount, color: 'warning' },
+    { label: 'Booked', count: bookedCount, color: 'info' }
+  ];
 
   return (
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
       <Grid size={{ xs: 12, md: 12, lg: 12 }}>
-        <Grid container sx={{ alignItems: 'center', justifyContent: 'space-between' }}>
-          <Grid>
-            <Typography variant="h4">Recent Appointments</Typography>
-          </Grid>
-          <Grid sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-            <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'success.main' }}>Total Appointments: <span style={{ fontWeight: 'bold', color: 'black' }}>{totalCount}</span></Typography><span>|</span>
-            <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'error.main' }}>Cancelled Appointments: <span style={{ fontWeight: 'bold', color: 'black' }}>{cancelledCount}</span></Typography>
-            <span>|</span>
-            <Button
-              variant="contained"
-              startIcon={<PlusOutlined />}
-              onClick={handleOpenModal}
-              sx={{
-                borderRadius: '10px',
-                textTransform: 'none',
-                fontWeight: 700,
-                fontSize: '0.85rem',
-                px: 2.5,
-                py: 1,
-                background: 'linear-gradient(135deg, #8B4513 0%, #A0522D 100%)',
-                boxShadow: '0 4px 14px rgba(139, 69, 19, 0.3)',
-                transition: 'all 0.25s ease',
-                '&:hover': {
-                  boxShadow: '0 6px 20px rgba(139, 69, 19, 0.45)',
-                  transform: 'translateY(-1px)',
-                  background: 'linear-gradient(135deg, #7a3c10 0%, #8B4513 100%)'
-                },
-                '&:active': {
-                  transform: 'translateY(0px)'
-                }
-              }}
-            >
-              Add Appointment
-            </Button>
-          </Grid>
-        </Grid>
 
-        {/* Search Bar */}
-        <Box sx={{ mt: 2 }}>
+        {/* ===== Header: Title + Button ===== */}
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: isMobile ? 'column' : 'row',
+            alignItems: isMobile ? 'stretch' : 'center',
+            justifyContent: 'space-between',
+            gap: isMobile ? 1.5 : 1
+          }}
+        >
+          <Typography variant="h4">Appointments</Typography>
+
+          <Button
+            variant="contained"
+            startIcon={<PlusOutlined />}
+            onClick={handleOpenModal}
+            fullWidth={isMobile}
+            sx={{
+              borderRadius: '10px',
+              textTransform: 'none',
+              fontWeight: 700,
+              fontSize: '0.85rem',
+              px: 2.5,
+              py: 1,
+              background: 'linear-gradient(135deg, #8B4513 0%, #A0522D 100%)',
+              boxShadow: '0 4px 14px rgba(139, 69, 19, 0.3)',
+              transition: 'all 0.25s ease',
+              '&:hover': {
+                boxShadow: '0 6px 20px rgba(139, 69, 19, 0.45)',
+                transform: 'translateY(-1px)',
+                background: 'linear-gradient(135deg, #7a3c10 0%, #8B4513 100%)'
+              },
+              '&:active': {
+                transform: 'translateY(0px)'
+              }
+            }}
+          >
+            Add Appointment
+          </Button>
+        </Box>
+
+        {/* ===== Status Badges + Search Bar (single row) ===== */}
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: isMobile ? 'column' : 'row',
+            alignItems: isMobile ? 'stretch' : 'center',
+            gap: 1.5,
+            mt: 2
+          }}
+        >
+          {/* Badges */}
+          <Box
+            sx={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: 0.75,
+              flexShrink: 0
+            }}
+          >
+            {statusBadges.map((badge) => (
+              <Chip
+                key={badge.label}
+                label={`${badge.label}: ${badge.count}`}
+                color={badge.color}
+                variant="outlined"
+                size={isMobile ? 'small' : 'medium'}
+                sx={{
+                  fontWeight: 600,
+                  fontSize: isMobile ? '0.7rem' : '0.8rem',
+                  borderWidth: 1.5,
+                  '& .MuiChip-label': {
+                    px: isMobile ? 1 : 1.5
+                  }
+                }}
+              />
+            ))}
+          </Box>
+
+          {/* Search */}
           <TextField
             id="appointment-search"
             fullWidth
-            placeholder="Search by patient name, doctor, ID, phone, date, or status..."
+            placeholder={
+              isMobile
+                ? 'Search appointments...'
+                : 'Search by patient name, doctor, ID, phone, date, or status...'
+            }
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             InputProps={{
@@ -136,6 +207,7 @@ export default function DashboardDefault() {
               )
             }}
             sx={{
+              flexGrow: 1,
               '& .MuiOutlinedInput-root': {
                 borderRadius: '12px',
                 backgroundColor: '#fdfaf6',
@@ -156,8 +228,8 @@ export default function DashboardDefault() {
                 }
               },
               '& .MuiInputBase-input': {
-                py: 1.4,
-                fontSize: '0.9rem',
+                py: isMobile ? 1 : 1.4,
+                fontSize: isMobile ? '0.8rem' : '0.9rem',
                 '&::placeholder': {
                   color: '#a89585',
                   opacity: 1
@@ -165,7 +237,7 @@ export default function DashboardDefault() {
               }
             }}
           />
-          {searchQuery && (
+          {/* {searchQuery && (
             <Typography
               variant="body2"
               sx={{
@@ -178,10 +250,11 @@ export default function DashboardDefault() {
             >
               Showing {filteredAppointments.length} of {totalCount} appointments
             </Typography>
-          )}
+          )} */}
         </Box>
 
-        <MainCard sx={{ mt: 2 }} content={false}>
+        {/* ===== Appointments Table ===== */}
+        <MainCard sx={{ mt: 2, overflow: 'hidden' }} content={false}>
           <OrdersTable appointmentsData={filteredAppointments} />
         </MainCard>
       </Grid>
@@ -195,3 +268,4 @@ export default function DashboardDefault() {
     </Grid>
   );
 }
+

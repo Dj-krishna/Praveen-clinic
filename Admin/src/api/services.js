@@ -3,3 +3,7 @@ export const appointmentURL = `${baseURL}/api/appointments`;
 export const createAppointment = `${baseURL}/api/appointments`;
 export const updateAppointment = `${baseURL}/api/appointments`;
 export const deleteAppointment = `${baseURL}/api/appointments`;
+export const blogsURL = `${baseURL}/api/blogs`;
+export const createBlog = `${baseURL}/api/blogs`;
+export const updateBlog = `${baseURL}/api/blogs`;
+export const deleteBlog = `${baseURL}/api/blogs`;

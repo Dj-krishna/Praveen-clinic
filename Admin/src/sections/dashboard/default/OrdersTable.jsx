@@ -13,6 +13,8 @@ import Box from '@mui/material/Box';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 import axios from 'axios';
 import { useSnackbar } from 'notistack';
 import { updateAppointment } from '../../../api/services';
@@ -235,6 +237,9 @@ export default function AppointmentsTable({ appointmentsData }) {
   const [rows, setRows] = useState(initialRows);
   const { enqueueSnackbar } = useSnackbar();
 
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   // Sync rows with prop data whenever appointmentsData changes
   useEffect(() => {
     if (appointmentsData && appointmentsData.length > 0) {
@@ -271,6 +276,11 @@ export default function AppointmentsTable({ appointmentsData }) {
     }
   };
 
+  // Compact cell styling for mobile
+  const cellSx = isMobile
+    ? { px: 1, py: 0.75, fontSize: '0.75rem' }
+    : {};
+
   return (
     <Box>
       <TableContainer
@@ -280,10 +290,12 @@ export default function AppointmentsTable({ appointmentsData }) {
           position: 'relative',
           display: 'block',
           maxWidth: '100%',
-          '& td, & th': { whiteSpace: 'nowrap' }
+          '& td, & th': { whiteSpace: 'nowrap' },
+          // Smooth horizontal scroll on touch devices
+          WebkitOverflowScrolling: 'touch'
         }}
       >
-        <Table aria-labelledby="tableTitle">
+        <Table aria-labelledby="tableTitle" size={isMobile ? 'small' : 'medium'}>
           <AppointmentTableHead order={order} orderBy={orderBy} />
           <TableBody>
             {stableSort(rows, getComparator(order, orderBy)).map((row, index) => {
@@ -297,14 +309,14 @@ export default function AppointmentsTable({ appointmentsData }) {
                   tabIndex={-1}
                   key={row.id}
                 >
-                  <TableCell component="th" id={labelId} scope="row">
+                  <TableCell component="th" id={labelId} scope="row" sx={cellSx}>
                     <Link color="secondary">{"#" + row.id || "NA"}</Link>
                   </TableCell>
-                  <TableCell>{row.patientName || "NA"}</TableCell>
-                  <TableCell>{"Dr. Praveen Reddy"}</TableCell>
-                  <TableCell>{row.appointmentDate || "NA"}</TableCell>
+                  <TableCell sx={cellSx}>{row.patientName || "NA"}</TableCell>
+                  <TableCell sx={cellSx}>{"Dr. Praveen Reddy"}</TableCell>
+                  <TableCell sx={cellSx}>{row.appointmentDate || "NA"}</TableCell>
                   {/* <TableCell>{row.time || "NA"}</TableCell> */}
-                  <TableCell>
+                  <TableCell sx={cellSx}>
                     <AppointmentStatus status={row.status} onChange={(e) => handleStatusChange(row.id, e)} />
                   </TableCell>
                 </TableRow>
