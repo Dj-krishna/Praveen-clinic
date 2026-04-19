@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
   const PORT = 3000;
 
   return {
-    base: '/',
+    base: '/admin/',
     server: {
       open: true,
       port: PORT,
