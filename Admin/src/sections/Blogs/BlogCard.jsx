@@ -3,6 +3,8 @@ import { Card, CardContent, CardActions, Typography, Box, Chip, IconButton, Tool
 import BlogImage from './BlogImage';
 import EditOutlined from '@ant-design/icons/EditOutlined';
 import DeleteOutlined from '@ant-design/icons/DeleteOutlined';
+import ReactQuill from 'react-quill-new';
+import 'react-quill-new/dist/quill.bubble.css';
 
 const BlogCard = ({ blog, getImageUrl, formatDate, parseTags, handleOpenEdit, handleOpenDelete }) => {
     return (
@@ -12,7 +14,7 @@ const BlogCard = ({ blog, getImageUrl, formatDate, parseTags, handleOpenEdit, ha
                 sx={{
                     height: '100%',
                     display: 'flex',
-                    flexDirection: 'column',
+                    flexDirection: 'column', 
                     borderRadius: 3,
                     border: '1px solid',
                     borderColor: 'grey.200',
@@ -85,19 +87,29 @@ const BlogCard = ({ blog, getImageUrl, formatDate, parseTags, handleOpenEdit, ha
                     <Typography variant="h6" component="h3" sx={{ fontWeight: 'bold', mb: 1 }}>
                         {blog.title}
                     </Typography>
-                    <Typography
-                        variant="body2"
-                        color="text.secondary"
+                    <Box
                         sx={{
                             display: '-webkit-box',
                             WebkitLineClamp: 3,
                             WebkitBoxOrient: 'vertical',
                             overflow: 'hidden',
-                            mb: 1.5
+                            mb: 1.5,
+                            '& .ql-editor': {
+                                padding: 0,
+                                fontSize: '0.875rem',
+                                lineHeight: 1.6,
+                                color: 'text.secondary'
+                            },
+                            '& .ql-editor img': { display: 'none' }
                         }}
                     >
-                        {blog.blogContent}
-                    </Typography>
+                        <ReactQuill
+                            value={blog.blogContent || ''}
+                            readOnly
+                            theme="bubble"
+                            modules={{ toolbar: false }}
+                        />
+                    </Box>
 
                     {/* Tags */}
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>

@@ -2,21 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { Box, Container, Typography, Grid, Button } from '@mui/material';
 import axios from 'axios';
 import { useSnackbar } from 'notistack';
-import { blogsURL, createBlog, deleteBlog, baseURL } from '../../api/services';
+import { useNavigate } from 'react-router-dom';
+import { blogsURL, baseURL } from '../../api/services';
 
 import PlusOutlined from '@ant-design/icons/PlusOutlined';
 
-import BlogFormModal from './BlogFormModal';
 import DeleteConfirmDialog from './DeleteConfirmDialog';
 import BlogCard from './BlogCard';
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
     const { enqueueSnackbar } = useSnackbar();
-
-    // Modal states
-    const [formModalOpen, setFormModalOpen] = useState(false);
-    const [editData, setEditData] = useState(null);
+    const navigate = useNavigate();
 
     // Delete dialog states
     const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
@@ -60,35 +57,13 @@ const Blogs = () => {
         }
     };
 
-    // ---- CREATE / EDIT ----
+    // ---- CREATE / EDIT (via navigation) ----
     const handleOpenCreate = () => {
-        setEditData(null);
-        setFormModalOpen(true);
+        navigate('/create-blog');
     };
 
     const handleOpenEdit = (blog) => {
-        setEditData(blog);
-        setFormModalOpen(true);
-    };
-
-    const handleCloseFormModal = () => {
-        setFormModalOpen(false);
-        setEditData(null);
-    };
-
-    const handleFormSubmit = async (payload, blogID) => {
-        if (blogID) {
-            // Edit (PUT)
-            await axios.put(`${blogsURL}?id=${blogID}`, payload, {
-                headers: { 'Content-Type': 'application/json' }
-            });
-        } else {
-            // Create (POST)
-            await axios.post(createBlog, payload, {
-                headers: { 'Content-Type': 'application/json' }
-            });
-        }
-        await fetchBlogs();
+        navigate(`/edit-blog/${blog.blogID}`, { state: { blog } });
     };
 
     // ---- DELETE ----
@@ -107,7 +82,7 @@ const Blogs = () => {
         if (!blogToDelete) return;
         setDeleting(true);
         try {
-            await axios.delete(`${deleteBlog}?id=${blogToDelete.blogID}`);
+            await axios.delete(`${blogsURL}?id=${blogToDelete.blogID}`);
             enqueueSnackbar('Blog deleted successfully!', { variant: 'success' });
             await fetchBlogs();
         } catch (error) {
@@ -170,14 +145,6 @@ const Blogs = () => {
                     ))}
                 </Grid>
             </Container>
-
-            {/* Create / Edit Modal */}
-            <BlogFormModal
-                open={formModalOpen}
-                onClose={handleCloseFormModal}
-                onSubmit={handleFormSubmit}
-                editData={editData}
-            />
 
             {/* Delete Confirmation Dialog */}
             <DeleteConfirmDialog

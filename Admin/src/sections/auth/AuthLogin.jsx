@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
+import useAuth from 'hooks/useAuth';
+import { loginURL } from 'api/services';
 
 // material-ui
 import Button from '@mui/material/Button';
@@ -40,24 +42,38 @@ export default function AuthLogin({ isDemo = false }) {
   };
 
   const navigate = useNavigate();
+  const { dispatch } = useAuth();
 
   const handleLoginSubmit = async (values, { setErrors, setStatus, setSubmitting }) => {
     try {
-      // simulate api request delay
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      
-      // mock validation
-      if (values.email === 'admin@praveenclinic.com' && values.password === 'password123') {
-        localStorage.setItem('authToken', 'mock-token-12345');
+      const response = await fetch(loginURL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          identifier: values.email,
+          password: values.password,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data) {
+        const token = data.token || 'mock-token-12345';
+        localStorage.setItem('authToken', token);
+        localStorage.setItem('authUser', JSON.stringify(data.data));
+        
+        dispatch({ type: 'LOGIN', payload: { user: data.data, token }});
         setStatus({ success: true });
         navigate('/dashboard');
       } else {
         setStatus({ success: false });
-        setErrors({ submit: 'Incorrect login or login failed, try again.' });
+        setErrors({ submit: data.message || 'Incorrect login details, try again.' });
       }
     } catch (err) {
       setStatus({ success: false });
-      setErrors({ submit: err.message });
+      setErrors({ submit: err.message || 'Login failed, try again.' });
       setSubmitting(false);
     }
   };
@@ -66,8 +82,8 @@ export default function AuthLogin({ isDemo = false }) {
     <>
       <Formik
         initialValues={{
-          email: 'admin@praveenclinic.com',
-          password: 'password123',
+          email: 'admin@gmail.com',
+          password: 'admin123',
           submit: null
         }}
         validationSchema={Yup.object().shape({
@@ -137,25 +153,13 @@ export default function AuthLogin({ isDemo = false }) {
                   </FormHelperText>
                 )}
               </Grid>
-              {/* <Grid sx={{ mt: -1 }} size={12}>
-                <Stack direction="row" sx={{ gap: 2, alignItems: 'baseline', justifyContent: 'space-between' }}>
-                  <FormControlLabel
-                    control={
-                      <Checkbox
-                        checked={checked}
-                        onChange={(event) => setChecked(event.target.checked)}
-                        name="checked"
-                        color="primary"
-                        size="small"
-                      />
-                    }
-                    label={<Typography variant="h6">Keep me sign in</Typography>}
-                  />
-                  <Link variant="h6" component={RouterLink} to="#" color="text.primary">
+              <Grid sx={{ mt: -1 }} size={12}>
+                <Stack direction="row" sx={{ gap: 2, alignItems: 'baseline', justifyContent: 'flex-end' }}>
+                  <Link variant="body2" component={RouterLink} to="/forgot-password" sx={{ color: '#8B4513', fontWeight: 600, textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
                     Forgot Password?
                   </Link>
                 </Stack>
-              </Grid> */}
+              </Grid>
                 {errors.submit && (
                   <Grid size={12}>
                     <FormHelperText error>{errors.submit}</FormHelperText>

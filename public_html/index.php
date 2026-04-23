@@ -756,6 +756,23 @@
 
 
         <!--===== BLOG AREA STARTS =======-->
+<?php
+// Fetch Blogs from API
+$blogs = [];
+$api_url = 'https://aliceblue-grasshopper-530447.hostingersite.com/api/blogs';
+$ch = curl_init($api_url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$response = curl_exec($ch);
+if($response !== false) {
+    $data = json_decode($response, true);
+    if(isset($data['success']) && $data['success'] && isset($data['data'])) {
+        $blogs = $data['data'];
+        $blogs = array_slice($blogs, 0, 3); // Display only top 3 on home page
+    }
+}
+curl_close($ch);
+?>
 <div class="vl-blog-4-area sp2">
     <div class="container">
        <div class="row">
@@ -771,79 +788,71 @@
           </div>
        </div>
        <div class="row">
-        <div class="col-lg-4  col-md-6" data-aos="fade-left" data-aos-duration="900">
-          <div class="vl-blog-1-item">
-             <div class="vl-blog-1-thumb image-anime">
-                <img src="assets/img/all-images/blog/blog-img4.png" alt="">
+
+        <?php if(!empty($blogs)): ?>
+           <?php foreach($blogs as $blog): ?>
+           <?php 
+             $dateStr = '';
+             if (!empty($blog['dateOfPost'])) {
+                 try {
+                     $dateObj = new DateTime($blog['dateOfPost']);
+                     $dateStr = $dateObj->format('d M Y');
+                 } catch (Exception $e) {}
+             }
+             
+             // Determine image
+             $defaultImage = 'assets/img/all-images/blog/blog-img4.png';
+             $image = $defaultImage;
+             $baseUrl = 'https://aliceblue-grasshopper-530447.hostingersite.com/';
+             
+             if (!empty($blog['postBanner'])) {
+                 $image = strpos($blog['postBanner'], 'http') === 0 ? $blog['postBanner'] : $baseUrl . $blog['postBanner'];
+             }
+             if (!empty($blog['postThumbnail'])) {
+                 $image = strpos($blog['postThumbnail'], 'http') === 0 ? $blog['postThumbnail'] : $baseUrl . $blog['postThumbnail'];
+             }
+             
+             // Using URL slug instead of blogID
+             $blogUrl = 'blog-single.php?url=' . urlencode($blog['url'] ?? '');
+           ?>
+
+           <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-duration="900">
+             <div class="vl-blog-1-item" style="height: 100%; display: flex; flex-direction: column;">
+                <div class="vl-blog-1-thumb image-anime">
+                   <a href="<?php echo htmlspecialchars($blogUrl); ?>">
+                      <img src="<?php echo htmlspecialchars($image); ?>" 
+                           alt="<?php echo htmlspecialchars($blog['title'] ?? ''); ?>" 
+                           style="width: 100%; height: 250px; object-fit: cover;"
+                           onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%25\' height=\'100%25\' viewBox=\'0 0 400 250\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23f5f0eb\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-family=\'sans-serif\' font-size=\'16\' font-weight=\'500\' fill=\'%23b8a99a\' dominant-baseline=\'middle\' text-anchor=\'middle\'%3ENo Image Available%3C/text%3E%3C/svg%3E'">
+                   </a>
+                </div>
+                <div class="vl-blog-1-content" style="flex: 1; display: flex; flex-direction: column;">
+                 <div class="vl-blog-meta">
+                    <ul>
+                     <li>
+                       <a href="#"><?php echo htmlspecialchars($dateStr); ?></a>
+                   </li>
+                    </ul>
+                 </div>
+                 <div class="space16"></div>
+                 <h4 class="vl-blog-1-title"><a href="<?php echo htmlspecialchars($blogUrl); ?>"><?php echo htmlspecialchars($blog['title'] ?? ''); ?></a></h4>
+                 <div class="space28" style="flex: 1;"></div>
+                 <div class="vl-blog-1-icon">
+                   <a href="<?php echo htmlspecialchars($blogUrl); ?>" class="learnmore">Read Article<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                       <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833496C4.04188 0.833496 0.833252 4.04212 0.833252 8.00016C0.833252 11.9582 4.04188 15.1668 7.99992 15.1668C11.958 15.1668 15.1666 11.9582 15.1666 8.00016C15.1666 4.04212 11.958 0.833496 7.99992 0.833496ZM7.33325 5.3335C7.06359 5.3335 6.82052 5.49592 6.71732 5.74504C6.61415 5.99416 6.67119 6.2809 6.86185 6.47157L7.72379 7.3335L5.52851 9.52876C5.26817 9.7891 5.26817 10.2112 5.52851 10.4716C5.78887 10.7319 6.21097 10.7319 6.47133 10.4716L8.66659 8.2763L9.52852 9.13823C9.71919 9.3289 10.0059 9.38596 10.2551 9.28276C10.5042 9.17956 10.6666 8.9365 10.6666 8.66683V6.00016C10.6666 5.63198 10.3681 5.3335 9.99992 5.3335H7.33325Z" fill="#666"/>
+                     </svg></a>
+                 </div>
+               </div>
              </div>
-             <div class="vl-blog-1-content">
-              <div class="vl-blog-meta">
-                 <ul>
-                  <li>
-                    <a href="#">24 Jan 2025</a>
-                </li>
-                 </ul>
-              </div>
-              <div class="space16"></div>
-              <h4 class="vl-blog-1-title"><a href="blog-single.html">Personal Branding For Consultants: Be Authentic To Get More Clients.</a></h4>
-              <div class="space28"></div>
-              <div class="vl-blog-1-icon">
-                <a href="blog-single.html" class="learnmore">Read Article<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833496C4.04188 0.833496 0.833252 4.04212 0.833252 8.00016C0.833252 11.9582 4.04188 15.1668 7.99992 15.1668C11.958 15.1668 15.1666 11.9582 15.1666 8.00016C15.1666 4.04212 11.958 0.833496 7.99992 0.833496ZM7.33325 5.3335C7.06359 5.3335 6.82052 5.49592 6.71732 5.74504C6.61415 5.99416 6.67119 6.2809 6.86185 6.47157L7.72379 7.3335L5.52851 9.52876C5.26817 9.7891 5.26817 10.2112 5.52851 10.4716C5.78887 10.7319 6.21097 10.7319 6.47133 10.4716L8.66659 8.2763L9.52852 9.13823C9.71919 9.3289 10.0059 9.38596 10.2551 9.28276C10.5042 9.17956 10.6666 8.9365 10.6666 8.66683V6.00016C10.6666 5.63198 10.3681 5.3335 9.99992 5.3335H7.33325Z" fill="#666"/>
-                  </svg></a>
-             </div>
            </div>
-          </div>
-       </div>
-  
-       <div class="col-lg-4  col-md-6" data-aos="fade-left" data-aos-duration="900">
-        <div class="vl-blog-1-item">
-           <div class="vl-blog-1-thumb image-anime">
-              <img src="assets/img/all-images/blog/blog-img5.png" alt="">
-           </div>
-           <div class="vl-blog-1-content">
-            <div class="vl-blog-meta">
-               <ul>
-                <li>
-                  <a href="#">24 Jan 2025</a>
-              </li>
-               </ul>
+           
+           <?php endforeach; ?>
+        <?php else: ?>
+            <div class="col-12 text-center">
+                <p>No recent news available.</p>
             </div>
-            <div class="space16"></div>
-            <h4 class="vl-blog-1-title"><a href="blog-single.html">What Is An Entrepreneurial Consultant? (Examples & Stories).</a></h4>
-            <div class="space28"></div>
-            <div class="vl-blog-1-icon">
-              <a href="blog-single.html" class="learnmore">Read Article<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833496C4.04188 0.833496 0.833252 4.04212 0.833252 8.00016C0.833252 11.9582 4.04188 15.1668 7.99992 15.1668C11.958 15.1668 15.1666 11.9582 15.1666 8.00016C15.1666 4.04212 11.958 0.833496 7.99992 0.833496ZM7.33325 5.3335C7.06359 5.3335 6.82052 5.49592 6.71732 5.74504C6.61415 5.99416 6.67119 6.2809 6.86185 6.47157L7.72379 7.3335L5.52851 9.52876C5.26817 9.7891 5.26817 10.2112 5.52851 10.4716C5.78887 10.7319 6.21097 10.7319 6.47133 10.4716L8.66659 8.2763L9.52852 9.13823C9.71919 9.3289 10.0059 9.38596 10.2551 9.28276C10.5042 9.17956 10.6666 8.9365 10.6666 8.66683V6.00016C10.6666 5.63198 10.3681 5.3335 9.99992 5.3335H7.33325Z" fill="#666"/>
-                </svg></a>
-           </div>
-         </div>
-        </div>
-     </div>
-     <div class="col-lg-4  col-md-6" data-aos="fade-left" data-aos-duration="900">
-        <div class="vl-blog-1-item">
-           <div class="vl-blog-1-thumb image-anime">
-              <img src="assets/img/all-images/blog/blog-img6.png" alt="">
-           </div>
-           <div class="vl-blog-1-content">
-            <div class="vl-blog-meta">
-               <ul>
-                <li>
-                  <a href="#">24 Jan 2025</a>
-              </li>
-               </ul>
-            </div>
-            <div class="space16"></div>
-            <h4 class="vl-blog-1-title"><a href="blog-single.html">What Is An Entrepreneurial Consultant? (Examples & Stories).</a></h4>
-            <div class="space28"></div>
-            <div class="vl-blog-1-icon">
-              <a href="blog-single.html" class="learnmore">Read Article<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833496C4.04188 0.833496 0.833252 4.04212 0.833252 8.00016C0.833252 11.9582 4.04188 15.1668 7.99992 15.1668C11.958 15.1668 15.1666 11.9582 15.1666 8.00016C15.1666 4.04212 11.958 0.833496 7.99992 0.833496ZM7.33325 5.3335C7.06359 5.3335 6.82052 5.49592 6.71732 5.74504C6.61415 5.99416 6.67119 6.2809 6.86185 6.47157L7.72379 7.3335L5.52851 9.52876C5.26817 9.7891 5.26817 10.2112 5.52851 10.4716C5.78887 10.7319 6.21097 10.7319 6.47133 10.4716L8.66659 8.2763L9.52852 9.13823C9.71919 9.3289 10.0059 9.38596 10.2551 9.28276C10.5042 9.17956 10.6666 8.9365 10.6666 8.66683V6.00016C10.6666 5.63198 10.3681 5.3335 9.99992 5.3335H7.33325Z" fill="#666"/>
-                </svg></a>
-           </div>
-         </div>
-        </div>
-     </div>
+        <?php endif; ?>
+
        </div>
     </div>
   </div>
@@ -1000,7 +1009,7 @@
 
             <div class="col-lg-6">
               <div class="input-area">
-                <input type="email" id="apt-email" name="email" placeholder="Email Address*" autocomplete="email">
+                <input type="email" id="apt-email" name="email" placeholder="Email Address (Optional)" autocomplete="email">
                 <div class="field-error" id="err-email" style="color:#e74c3c; font-size:12px; margin-top:4px; display:none;"></div>
               </div>
             </div>
@@ -2022,12 +2031,9 @@
       }
     }
 
-    // Email - required, valid format
+    // Email - optional, but validate format if provided
     var email = fields.email.value.trim();
-    if (!email) {
-      showError(fields.email, errors.email, 'Email address is required');
-      isValid = false;
-    } else if (!/^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/.test(email)) {
+    if (email && !/^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/.test(email)) {
       showError(fields.email, errors.email, 'Please enter a valid email address');
       isValid = false;
     }
@@ -2096,7 +2102,7 @@
       gender: fields.gender.value,
       age: parseInt(fields.age.value),
       dateOfBirth: '0000-00-00',
-      email: fields.email.value.trim(),
+      email: fields.email.value.trim() || '',
       doctorID: 1,
       appointmentDate: fields.date.value + ' 10:30:00'
     };

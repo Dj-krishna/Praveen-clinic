@@ -1,4 +1,7 @@
 export const baseURL = "https://aliceblue-grasshopper-530447.hostingersite.com";
+export const loginURL = `${baseURL}/api/users/login`;
+export const resetPasswordURL = `${baseURL}/api/users/reset-password`;
+export const updateProfile = `${baseURL}/api/users/update`;
 export const appointmentURL = `${baseURL}/api/appointments`;
 export const createAppointment = `${baseURL}/api/appointments`;
 export const updateAppointment = `${baseURL}/api/appointments`;

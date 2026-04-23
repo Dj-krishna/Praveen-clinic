@@ -64,6 +64,8 @@ function mapApiDataToRows(apiData) {
     rawAppointmentDate: item.appointmentDate || '',
     appointmentDate: item.appointmentDate ? item.appointmentDate.split(' ')[0] : 'N/A',
     time: item.appointmentDate ? item.appointmentDate.split(' ')[1] : 'N/A',
+    age: item.age,
+    mobile: item.mobile,
     status: typeof item.appointmentStatus === 'string'
       ? (statusStringToNumber[item.appointmentStatus] ?? 0)
       : item.appointmentStatus
@@ -91,7 +93,7 @@ function stableSort(array, comparator) {
     if (order !== 0) {
       return order;
     }
-    return a[1] - b[1];
+    return b[1].appointmentDate.localeCompare(a[1].appointmentDate);
   });
   return stabilizedThis.map((el) => el[0]);
 }
@@ -110,12 +112,6 @@ const headCells = [
     label: 'Patient Name'
   },
   {
-    id: 'doctorName',
-    align: 'left',
-    disablePadding: false,
-    label: 'Doctor Name'
-  },
-  {
     id: 'date',
     align: 'left',
     disablePadding: false,
@@ -127,6 +123,24 @@ const headCells = [
   //   disablePadding: false,
   //   label: 'Time'
   // },
+  {
+    id: 'age',
+    align: 'left',
+    disablePadding: false,
+    label: 'Age (Years)'
+  },
+  {
+    id: 'contactNumber',
+    align: 'left',
+    disablePadding: false,
+    label: 'Contact Number'
+  },
+  {
+    id: 'doctorName',
+    align: 'left',
+    disablePadding: false,
+    label: 'Doctor Name'
+  },
   {
     id: 'status',
     align: 'left',
@@ -231,8 +245,8 @@ AppointmentStatus.propTypes = {
 
 // ==============================|| APPOINTMENT TABLE ||============================== //
 
-export default function AppointmentsTable({ appointmentsData }) {
-  const [order] = useState('asc');
+export default function AppointmentsTable({ appointmentsData, onStatusChange }) {
+  const [order] = useState('desc');
   const [orderBy] = useState('id');
   const [rows, setRows] = useState(initialRows);
   const { enqueueSnackbar } = useSnackbar();
@@ -267,6 +281,10 @@ export default function AppointmentsTable({ appointmentsData }) {
         headers: { 'Content-Type': 'application/json' }
       });
       enqueueSnackbar(`Appointment status updated to "${statusString}"`, { variant: 'success' });
+      // Notify parent so status counts update immediately
+      if (onStatusChange) {
+        onStatusChange(id, statusString);
+      }
     } catch (error) {
       console.error('Failed to update appointment status:', error);
       const errorMsg = error?.response?.data?.message || error?.message || 'Failed to update status. Please try again.';
@@ -313,9 +331,10 @@ export default function AppointmentsTable({ appointmentsData }) {
                     <Link color="secondary">{"#" + row.id || "NA"}</Link>
                   </TableCell>
                   <TableCell sx={cellSx}>{row.patientName || "NA"}</TableCell>
-                  <TableCell sx={cellSx}>{"Dr. Praveen Reddy"}</TableCell>
                   <TableCell sx={cellSx}>{row.appointmentDate || "NA"}</TableCell>
-                  {/* <TableCell>{row.time || "NA"}</TableCell> */}
+                  <TableCell sx={cellSx}>{row.age || "NA"}</TableCell>
+                  <TableCell sx={cellSx}>{row.mobile || "NA"}</TableCell>
+                  <TableCell sx={cellSx}>{"Dr. Praveen Reddy"}</TableCell>
                   <TableCell sx={cellSx}>
                     <AppointmentStatus status={row.status} onChange={(e) => handleStatusChange(row.id, e)} />
                   </TableCell>
@@ -330,6 +349,7 @@ export default function AppointmentsTable({ appointmentsData }) {
 }
 
 AppointmentsTable.propTypes = {
-  appointmentsData: PropTypes.array
+  appointmentsData: PropTypes.array,
+  onStatusChange: PropTypes.func
 };
 

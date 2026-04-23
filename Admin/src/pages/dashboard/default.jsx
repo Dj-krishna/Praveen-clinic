@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // material-ui
 import Grid from '@mui/material/Grid';
@@ -14,27 +15,23 @@ import { useTheme } from '@mui/material/styles';
 // project imports
 import MainCard from 'components/MainCard';
 import OrdersTable from 'sections/dashboard/default/OrdersTable';
-import AddAppointmentModal from 'sections/dashboard/default/AddAppointmentModal';
 
 // assets
 import PlusOutlined from '@ant-design/icons/PlusOutlined';
 import SearchOutlined from '@ant-design/icons/SearchOutlined';
 import axios from 'axios';
-import { appointmentURL, createAppointment } from '../../api/services';
+import { appointmentURL } from '../../api/services';
 
 // ==============================|| DASHBOARD - DEFAULT ||============================== //
 
 export default function DashboardDefault() {
-  const [modalOpen, setModalOpen] = useState(false);
   const [appointments, setAppointments] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));   // < 600px
   const isTablet = useMediaQuery(theme.breakpoints.down('md'));   // < 900px
-
-  const handleOpenModal = () => setModalOpen(true);
-  const handleCloseModal = () => setModalOpen(false);
 
   // Fetch all appointments from API
   const fetchAppointments = async () => {
@@ -43,17 +40,19 @@ export default function DashboardDefault() {
     setAppointments(data);
   };
 
-  // POST new appointment and refresh the list
-  const handleAppointmentSubmit = async (payload) => {
-    await axios.post(createAppointment, payload, {
-      headers: { 'Content-Type': 'application/json' }
-    });
-    // Refresh appointments list after successful creation
-    await fetchAppointments();
-  };
-
   useEffect(() => {
     fetchAppointments();
+  }, []);
+
+  // Callback for OrdersTable to notify parent when a status is updated
+  const handleStatusChange = useCallback((appointmentId, newStatusString) => {
+    setAppointments((prev) =>
+      prev.map((a) =>
+        a.appointmentID === appointmentId
+          ? { ...a, appointmentStatus: newStatusString }
+          : a
+      )
+    );
   }, []);
 
   // Filter appointments based on search query
@@ -124,7 +123,7 @@ export default function DashboardDefault() {
           <Button
             variant="contained"
             startIcon={<PlusOutlined />}
-            onClick={handleOpenModal}
+            onClick={() => navigate('/add-appointment')}
             fullWidth={isMobile}
             sx={{
               borderRadius: '10px',
@@ -255,16 +254,11 @@ export default function DashboardDefault() {
 
         {/* ===== Appointments Table ===== */}
         <MainCard sx={{ mt: 2, overflow: 'hidden' }} content={false}>
-          <OrdersTable appointmentsData={filteredAppointments} />
+          <OrdersTable appointmentsData={filteredAppointments} onStatusChange={handleStatusChange} />
         </MainCard>
       </Grid>
 
-      {/* Add Appointment Modal */}
-      <AddAppointmentModal
-        open={modalOpen}
-        onClose={handleCloseModal}
-        onSubmit={handleAppointmentSubmit}
-      />
+
     </Grid>
   );
 }

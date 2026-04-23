@@ -19,8 +19,9 @@ import '@fontsource/public-sans/700.css';
 // project imports
 import App from './App';
 import { ConfigProvider } from 'contexts/ConfigContext';
+import { AuthProvider } from 'contexts/AuthContext';
 import reportWebVitals from './reportWebVitals';
-
+import "react-quill-new/dist/quill.snow.css";
 const container = document.getElementById('root');
 const root = createRoot(container);
 
@@ -28,7 +29,9 @@ const root = createRoot(container);
 
 root.render(
   <ConfigProvider>
-    <App />
+    <AuthProvider>
+      <App />
+    </AuthProvider>
   </ConfigProvider>
 );
 

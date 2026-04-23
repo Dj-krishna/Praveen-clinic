@@ -8,6 +8,9 @@ import AuthGuard from './AuthGuard';
 
 // render- Dashboard
 const DashboardDefault = Loadable(lazy(() => import('pages/dashboard/default')));
+const AddAppointment = Loadable(lazy(() => import('pages/dashboard/AddAppointment')));
+const BlogForm = Loadable(lazy(() => import('pages/dashboard/BlogForm')));
+const ProfilePage = Loadable(lazy(() => import('pages/dashboard/Profile')));
 
 // render - color
 const Color = Loadable(lazy(() => import('pages/component-overview/color')));
@@ -36,8 +39,24 @@ const MainRoutes = {
       element: <DashboardDefault />
     },
     {
+      path: 'add-appointment',
+      element: <AddAppointment />
+    },
+    {
       path: 'blogs',
       element: <Blogs />
+    },
+    {
+      path: 'create-blog',
+      element: <BlogForm />
+    },
+    {
+      path: 'edit-blog/:id',
+      element: <BlogForm />
+    },
+    {
+      path: 'profile',
+      element: <ProfilePage />
     },
     {
       path: 'color',
