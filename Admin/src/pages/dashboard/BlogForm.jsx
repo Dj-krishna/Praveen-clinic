@@ -302,11 +302,11 @@ export default function BlogFormPage() {
     // Set existing image URLs for preview
     const baseUrl = 'https://aliceblue-grasshopper-530447.hostingersite.com';
     if (editData.postThumbnail) {
-      const thumbUrl = editData.postThumbnail.startsWith('http') ? editData.postThumbnail : `${baseUrl}/${editData.postThumbnail}`;
+      const thumbUrl = editData.postThumbnail.startsWith('http') ? editData.postThumbnail : `${baseUrl}/api/${editData.postThumbnail}`;
       setExistingThumbnail(thumbUrl);
     }
     if (editData.postBanner) {
-      const bannerUrl = editData.postBanner.startsWith('http') ? editData.postBanner : `${baseUrl}/${editData.postBanner}`;
+      const bannerUrl = editData.postBanner.startsWith('http') ? editData.postBanner : `${baseUrl}/api/${editData.postBanner}`;
       setExistingBanner(bannerUrl);
     }
   };

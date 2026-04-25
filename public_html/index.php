@@ -803,13 +803,13 @@ curl_close($ch);
              // Determine image
              $defaultImage = 'assets/img/all-images/blog/blog-img4.png';
              $image = $defaultImage;
-             $baseUrl = 'https://aliceblue-grasshopper-530447.hostingersite.com/';
+             $baseUrl = 'https://aliceblue-grasshopper-530447.hostingersite.com/api/';
              
              if (!empty($blog['postBanner'])) {
-                 $image = strpos($blog['postBanner'], 'http') === 0 ? $blog['postBanner'] : $baseUrl . $blog['postBanner'];
+                 $image = strpos($blog['postBanner'], 'http') === 0 ? $blog['postBanner'] : $baseUrl . ltrim($blog['postBanner'], '/');
              }
              if (!empty($blog['postThumbnail'])) {
-                 $image = strpos($blog['postThumbnail'], 'http') === 0 ? $blog['postThumbnail'] : $baseUrl . $blog['postThumbnail'];
+                 $image = strpos($blog['postThumbnail'], 'http') === 0 ? $blog['postThumbnail'] : $baseUrl . ltrim($blog['postThumbnail'], '/');
              }
              
              // Using URL slug instead of blogID
