@@ -168,7 +168,9 @@ curl_close($ch);
                  $image = strpos($blog['postThumbnail'], 'http') === 0 ? $blog['postThumbnail'] : $baseUrl . ltrim($blog['postThumbnail'], '/');
              }
              
-             $blogUrl = 'blog-single.php?url=' . urlencode($blog['url'] ?? '');
+             // Generate clean URL for blog post (e.g., /sample-blog-posts)
+             $slug = ltrim($blog['url'] ?? '', '/');
+             $blogUrl = '/' . $slug;
            ?>
 
            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="900">
