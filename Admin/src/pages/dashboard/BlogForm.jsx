@@ -430,7 +430,7 @@ export default function BlogFormPage() {
                   id="url"
                   name="url"
                   label="URL Slug"
-                  placeholder="/blogs/my-post"
+                  placeholder="/blog/my-post"
                   value={formik.values.url}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}

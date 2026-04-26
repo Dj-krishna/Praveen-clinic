@@ -1,5 +1,5 @@
 <?php
-// Support both ?url=... and clean URLs like /blogs/slug
+// Support both ?url=... and clean URLs like /blog/slug
 $targetUrl = $_GET['url'] ?? '';
 if (empty($targetUrl)) {
     $requestUri = $_SERVER['REQUEST_URI'] ?? '';
@@ -10,9 +10,9 @@ if (empty($targetUrl)) {
     if (strpos($uri, $scriptName) === 0) {
         $uri = substr($uri, strlen($scriptName));
     }
-    // Match /blogs/slug
-    if (preg_match('#^/blogs/([a-zA-Z0-9\-]+)$#', $uri, $matches)) {
-        $targetUrl = '/blogs/' . $matches[1];
+    // Match /blog/slug
+    if (preg_match('#^/blog/([a-zA-Z0-9\-]+)$#', $uri, $matches)) {
+        $targetUrl = '/blog/' . $matches[1];
     }
 }
 $currentBlog = null;
@@ -29,7 +29,7 @@ if($response !== false) {
         $allBlogs = $data['data'];
         if (!empty($targetUrl)) {
             foreach($data['data'] as $blog) {
-                if ($blog['url'] === $targetUrl || $blog['url'] === '/blogs/' . ltrim($targetUrl, '/')) {
+                if ($blog['url'] === $targetUrl || $blog['url'] === '/blog/' . ltrim($targetUrl, '/')) {
                     $currentBlog = $blog;
                     break;
                 }

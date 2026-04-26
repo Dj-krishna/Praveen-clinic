@@ -92,7 +92,7 @@ curl_close($ch);
                  $image = strpos($blog['postThumbnail'], 'http') === 0 ? $blog['postThumbnail'] : $baseUrl . ltrim($blog['postThumbnail'], '/');
              }
              
-             // Generate clean URL for blog post (e.g., /blogs/slug)
+             // Generate clean URL for blog post (e.g., /blog/slug)
              $slug = ltrim($blog['url'] ?? '', '/');
              $blogUrl = '/' . $slug;
            ?>

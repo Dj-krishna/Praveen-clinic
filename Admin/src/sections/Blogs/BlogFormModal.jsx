@@ -183,7 +183,7 @@ const BlogFormModal = ({ open, onClose, onSubmit, editData }) => {
                             <TextField fullWidth name="title" label="Title *" value={form.title} onChange={handleChange} disabled={submitting} sx={inputSx} />
                         </Grid>
                         <Grid size={{ xs: 12, sm: 6 }}>
-                            <TextField fullWidth name="url" label="URL Slug" placeholder="/blogs/my-post" value={form.url} onChange={handleChange} disabled={submitting} sx={inputSx} />
+                            <TextField fullWidth name="url" label="URL Slug" placeholder="/blog/my-post" value={form.url} onChange={handleChange} disabled={submitting} sx={inputSx} />
                         </Grid>
                         <Grid size={{ xs: 12, sm: 6 }}>
                             <TextField fullWidth name="category" label="Category" value={form.category} onChange={handleChange} disabled={submitting} sx={inputSx} />
