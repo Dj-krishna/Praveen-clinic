@@ -1,5 +1,20 @@
 <?php
+// Support both ?url=... and clean URLs like /blogs/slug
 $targetUrl = $_GET['url'] ?? '';
+if (empty($targetUrl)) {
+    $requestUri = $_SERVER['REQUEST_URI'] ?? '';
+    $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
+    // Remove query string
+    $uri = explode('?', $requestUri, 2)[0];
+    // Remove script name if present
+    if (strpos($uri, $scriptName) === 0) {
+        $uri = substr($uri, strlen($scriptName));
+    }
+    // Match /blogs/slug
+    if (preg_match('#^/blogs/([a-zA-Z0-9\-]+)$#', $uri, $matches)) {
+        $targetUrl = '/blogs/' . $matches[1];
+    }
+}
 $currentBlog = null;
 $allBlogs = [];
 
@@ -28,6 +43,7 @@ curl_close($ch);
 <html lang="en">
  
 <head>
+     <base href="/">
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Dr Prveeen Reddy - Bone & Joint Surgeon </title>
@@ -39,19 +55,19 @@ curl_close($ch);
     <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
 
     <!--===== CSS LINK =======-->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/aos.css">
-    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/sidebar.css">
-    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
-    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="/assets/css/plugins/fontawesome.css">
+    <link rel="stylesheet" href="/assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/plugins/owlcarousel.min.css">
+    <link rel="stylesheet" href="/assets/css/plugins/sidebar.css">
+    <link rel="stylesheet" href="/assets/css/plugins/slick-slider.css">
+    <link rel="stylesheet" href="/assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="/assets/css/plugins/swiper-bundle.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <!--=====  JS SCRIPT LINK =======-->
-    <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+    <script src="/assets/js/plugins/jquery-3-7-1.min.js"></script>
 </head>
 <body class="homepage1-body">
 
@@ -218,24 +234,24 @@ curl_close($ch);
 <?php include('footer.php'); ?>
 
 <!--===== JS SCRIPT LINK =======-->
-<script src="assets/js/plugins/bootstrap.min.js"></script>
-<script src="assets/js/plugins/fontawesome.js"></script>
-<script src="assets/js/plugins/aos.js"></script>
-<script src="assets/js/plugins/counter.js"></script>
-<script src="assets/js/plugins/gsap.min.js"></script>
-<script src="assets/js/plugins/ScrollTrigger.min.js"></script>
-<script src="assets/js/plugins/Splitetext.js"></script>
-<script src="assets/js/plugins/SmoothScroll.js"></script>
-<script src="assets/js/plugins/sidebar.js"></script>
-<script src="assets/js/plugins/magnific-popup.js"></script>
-<script src="assets/js/plugins/mobilemenu.js"></script>
-<script src="assets/js/plugins/owlcarousel.min.js"></script>
-<script src="assets/js/plugins/nice-select.js"></script>
-<script src="assets/js/plugins/waypoints.js"></script>
-<script src="assets/js/plugins/slick-slider.js"></script>
-<script src="assets/js/plugins/circle-progress.js"></script>
-<script src="assets/js/plugins/swiper.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="/assets/js/plugins/bootstrap.min.js"></script>
+<script src="/assets/js/plugins/fontawesome.js"></script>
+<script src="/assets/js/plugins/aos.js"></script>
+<script src="/assets/js/plugins/counter.js"></script>
+<script src="/assets/js/plugins/gsap.min.js"></script>
+<script src="/assets/js/plugins/ScrollTrigger.min.js"></script>
+<script src="/assets/js/plugins/Splitetext.js"></script>
+<script src="/assets/js/plugins/SmoothScroll.js"></script>
+<script src="/assets/js/plugins/sidebar.js"></script>
+<script src="/assets/js/plugins/magnific-popup.js"></script>
+<script src="/assets/js/plugins/mobilemenu.js"></script>
+<script src="/assets/js/plugins/owlcarousel.min.js"></script>
+<script src="/assets/js/plugins/nice-select.js"></script>
+<script src="/assets/js/plugins/waypoints.js"></script>
+<script src="/assets/js/plugins/slick-slider.js"></script>
+<script src="/assets/js/plugins/circle-progress.js"></script>
+<script src="/assets/js/plugins/swiper.js"></script>
+<script src="/assets/js/main.js"></script>
 
 </body>
  

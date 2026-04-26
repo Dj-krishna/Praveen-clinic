@@ -812,8 +812,9 @@ curl_close($ch);
                  $image = strpos($blog['postThumbnail'], 'http') === 0 ? $blog['postThumbnail'] : $baseUrl . ltrim($blog['postThumbnail'], '/');
              }
              
-             // Using URL slug instead of blogID
-             $blogUrl = 'blog-single.php?url=' . urlencode($blog['url'] ?? '');
+             // Generate clean URL for blog post
+             $slug = ltrim($blog['url'] ?? '', '/');
+             $blogUrl = '/' . $slug;
            ?>
 
            <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-duration="900">

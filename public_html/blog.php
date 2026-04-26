@@ -10,22 +10,22 @@
     <meta name="description" content="" />
 
      <!--=====FAB ICON=======-->
-    <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/logo/fav-logo1.png" type="image/x-icon">
 
     <!--===== CSS LINK =======-->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/aos.css">
-    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/sidebar.css">
-    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
-    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="/assets/css/plugins/fontawesome.css">
+    <link rel="stylesheet" href="/assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/plugins/owlcarousel.min.css">
+    <link rel="stylesheet" href="/assets/css/plugins/sidebar.css">
+    <link rel="stylesheet" href="/assets/css/plugins/slick-slider.css">
+    <link rel="stylesheet" href="/assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="/assets/css/plugins/swiper-bundle.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <!--=====  JS SCRIPT LINK =======-->
-    <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+    <script src="/assets/js/plugins/jquery-3-7-1.min.js"></script>
 </head>
 <body class="homepage1-body">
   
@@ -92,7 +92,9 @@ curl_close($ch);
                  $image = strpos($blog['postThumbnail'], 'http') === 0 ? $blog['postThumbnail'] : $baseUrl . ltrim($blog['postThumbnail'], '/');
              }
              
-             $blogUrl = 'blog-single.php?url=' . urlencode($blog['url'] ?? '');
+             // Generate clean URL for blog post (e.g., /blogs/slug)
+             $slug = ltrim($blog['url'] ?? '', '/');
+             $blogUrl = '/' . $slug;
            ?>
 
            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="900">
@@ -142,24 +144,24 @@ curl_close($ch);
 
 
 <!--===== JS SCRIPT LINK =======-->
-<script src="assets/js/plugins/bootstrap.min.js"></script>
-<script src="assets/js/plugins/fontawesome.js"></script>
-<script src="assets/js/plugins/aos.js"></script>
-<script src="assets/js/plugins/counter.js"></script>
-<script src="assets/js/plugins/gsap.min.js"></script>
-<script src="assets/js/plugins/ScrollTrigger.min.js"></script>
-<script src="assets/js/plugins/Splitetext.js"></script>
-<script src="assets/js/plugins/SmoothScroll.js"></script>
-<script src="assets/js/plugins/sidebar.js"></script>
-<script src="assets/js/plugins/magnific-popup.js"></script>
-<script src="assets/js/plugins/mobilemenu.js"></script>
-<script src="assets/js/plugins/owlcarousel.min.js"></script>
-<script src="assets/js/plugins/nice-select.js"></script>
-<script src="assets/js/plugins/waypoints.js"></script>
-<script src="assets/js/plugins/slick-slider.js"></script>
-<script src="assets/js/plugins/circle-progress.js"></script>
-<script src="assets/js/plugins/swiper.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="/assets/js/plugins/bootstrap.min.js"></script>
+<script src="/assets/js/plugins/fontawesome.js"></script>
+<script src="/assets/js/plugins/aos.js"></script>
+<script src="/assets/js/plugins/counter.js"></script>
+<script src="/assets/js/plugins/gsap.min.js"></script>
+<script src="/assets/js/plugins/ScrollTrigger.min.js"></script>
+<script src="/assets/js/plugins/Splitetext.js"></script>
+<script src="/assets/js/plugins/SmoothScroll.js"></script>
+<script src="/assets/js/plugins/sidebar.js"></script>
+<script src="/assets/js/plugins/magnific-popup.js"></script>
+<script src="/assets/js/plugins/mobilemenu.js"></script>
+<script src="/assets/js/plugins/owlcarousel.min.js"></script>
+<script src="/assets/js/plugins/nice-select.js"></script>
+<script src="/assets/js/plugins/waypoints.js"></script>
+<script src="/assets/js/plugins/slick-slider.js"></script>
+<script src="/assets/js/plugins/circle-progress.js"></script>
+<script src="/assets/js/plugins/swiper.js"></script>
+<script src="/assets/js/main.js"></script>
 
 </body>
  
