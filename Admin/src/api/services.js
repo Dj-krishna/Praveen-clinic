@@ -1,4 +1,5 @@
-export const baseURL = "https://aliceblue-grasshopper-530447.hostingersite.com";
+// export const baseURL = "https://aliceblue-grasshopper-530447.hostingersite.com";
+export const baseURL = "https://drpraveenreddyortho.com";
 export const loginURL = `${baseURL}/api/users/login`;
 export const resetPasswordURL = `${baseURL}/api/users/reset-password`;
 export const updateProfile = `${baseURL}/api/users/update`;

@@ -14,7 +14,7 @@ const BlogCard = ({ blog, getImageUrl, formatDate, parseTags, handleOpenEdit, ha
                 sx={{
                     height: '100%',
                     display: 'flex',
-                    flexDirection: 'column', 
+                    flexDirection: 'column',
                     borderRadius: 3,
                     border: '1px solid',
                     borderColor: 'grey.200',
@@ -87,7 +87,7 @@ const BlogCard = ({ blog, getImageUrl, formatDate, parseTags, handleOpenEdit, ha
                     <Typography variant="h6" component="h3" sx={{ fontWeight: 'bold', mb: 1 }}>
                         {blog.title}
                     </Typography>
-                    <Box
+                    {/* <Box
                         sx={{
                             display: '-webkit-box',
                             WebkitLineClamp: 3,
@@ -109,7 +109,7 @@ const BlogCard = ({ blog, getImageUrl, formatDate, parseTags, handleOpenEdit, ha
                             theme="bubble"
                             modules={{ toolbar: false }}
                         />
-                    </Box>
+                    </Box> */}
 
                     {/* Tags */}
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>

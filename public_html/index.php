@@ -759,7 +759,7 @@
 <?php
 // Fetch Blogs from API
 $blogs = [];
-$api_url = 'https://aliceblue-grasshopper-530447.hostingersite.com/api/blogs';
+$api_url = 'https://drpraveenreddyortho.com/api/blogs';
 $ch = curl_init($api_url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -803,7 +803,7 @@ curl_close($ch);
              // Determine image
              $defaultImage = 'assets/img/all-images/blog/blog-img4.png';
              $image = $defaultImage;
-             $baseUrl = 'https://aliceblue-grasshopper-530447.hostingersite.com/api/';
+             $baseUrl = 'https://drpraveenreddyortho.com/';
              
              if (!empty($blog['postBanner'])) {
                  $image = strpos($blog['postBanner'], 'http') === 0 ? $blog['postBanner'] : $baseUrl . ltrim($blog['postBanner'], '/');
@@ -1908,7 +1908,7 @@ curl_close($ch);
 
 <script>
 (function () {
-  const API_BASE = "https://aliceblue-grasshopper-530447.hostingersite.com";
+  const API_BASE = "https://drpraveenreddyortho.com";//"https://aliceblue-grasshopper-530447.hostingersite.com";
   const CREATE_APPOINTMENT_URL = API_BASE + "/api/appointments";
 
   const form = document.getElementById('appointmentForm');
@@ -2125,6 +2125,33 @@ curl_close($ch);
       setLoading(false);
       if (result.status >= 200 && result.status < 300) {
         showToast('success', 'Appointment booked successfully! We will contact you shortly.');
+
+        // Send confirmation email if patient provided email address
+        var patientEmail = fields.email.value.trim();
+        if (patientEmail) {
+          fetch('send-appointment-email.php', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify(payload)
+          })
+          .then(function (emailResponse) {
+            return emailResponse.json();
+          })
+          .then(function (emailResult) {
+            if (emailResult.success) {
+              console.log('Confirmation email sent to ' + patientEmail);
+            } else {
+              console.warn('Email sending failed:', emailResult.message);
+            }
+          })
+          .catch(function (emailError) {
+            console.warn('Could not send confirmation email:', emailError);
+          });
+        }
+
         form.reset();
       } else {
         var errorMsg = (result.data && result.data.message) ? result.data.message : 'Failed to book appointment. Please try again.';

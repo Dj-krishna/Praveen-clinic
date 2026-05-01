@@ -1,43 +1,28 @@
 <?php
-// Support both ?url=... and clean URLs like /blog/slug
-$targetUrl = $_GET['url'] ?? '';
-if (empty($targetUrl)) {
-    $requestUri = $_SERVER['REQUEST_URI'] ?? '';
-    $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
-    // Remove query string
-    $uri = explode('?', $requestUri, 2)[0];
-    // Remove script name if present
-    if (strpos($uri, $scriptName) === 0) {
-        $uri = substr($uri, strlen($scriptName));
-    }
-    // Match /blog/slug
-    if (preg_match('#^/blog/([a-zA-Z0-9\-]+)$#', $uri, $matches)) {
-        $targetUrl = '/blog/' . $matches[1];
-    }
-}
-$currentBlog = null;
-$allBlogs = [];
+$blogUrlParam = $_GET['url'] ?? '';
+$blog = null;
+$error = false;
 
-$api_url = 'https://aliceblue-grasshopper-530447.hostingersite.com/api/blogs';
-$ch = curl_init($api_url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-$response = curl_exec($ch);
-if($response !== false) {
-    $data = json_decode($response, true);
-    if(isset($data['success']) && $data['success'] && isset($data['data'])) {
-        $allBlogs = $data['data'];
-        if (!empty($targetUrl)) {
-            foreach($data['data'] as $blog) {
-                if ($blog['url'] === $targetUrl || $blog['url'] === '/blog/' . ltrim($targetUrl, '/')) {
-                    $currentBlog = $blog;
-                    break;
-                }
-            }
+if (!empty($blogUrlParam)) {
+    $apiUrl = 'https://drpraveenreddyortho.com/api/blogs?url=' . urlencode($blogUrlParam);
+    $ch = curl_init($apiUrl);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    $response = curl_exec($ch);
+    if ($response !== false) {
+        $data = json_decode($response, true);
+        if (isset($data['success']) && $data['success'] && !empty($data['data'])) {
+            $blog = $data['data'][0];
+        } else {
+            $error = true;
         }
+    } else {
+        $error = true;
     }
+    curl_close($ch);
+} else {
+    $error = true;
 }
-curl_close($ch);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,10 +31,21 @@ curl_close($ch);
      <base href="/">
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Dr Prveeen Reddy - Bone & Joint Surgeon </title>
+     <title><?php echo !empty($blog['title']) ? htmlspecialchars($blog['title']) . ' | Dr Praveen Reddy P' : 'Blog | Dr Praveen Reddy - Bone & Joint Surgeon'; ?></title>
 
-     <meta name="keywords" content="" />
-    <meta name="description" content="" />
+     <meta name="keywords" content="<?php echo htmlspecialchars($blog['metaKeywords'] ?? 'orthopedic doctor, bone specialist, joint surgeon, Dr Praveen Reddy'); ?>" />
+    <meta name="description" content="<?php echo htmlspecialchars($blog['metaDescription'] ?? 'Read the latest health articles and orthopedic insights from Dr Praveen Reddy P, a leading bone and joint surgeon in LB Nagar, Hyderabad.'); ?>" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="<?php echo htmlspecialchars($blog['title'] ?? 'Blog | Dr Praveen Reddy P'); ?>" />
+    <meta property="og:description" content="<?php echo htmlspecialchars($blog['metaDescription'] ?? ''); ?>" />
+    <meta property="og:type" content="article" />
+    <?php if (!empty($blog['postBanner'])): ?>
+    <meta property="og:image" content="<?php echo htmlspecialchars(strpos($blog['postBanner'], 'http') === 0 ? $blog['postBanner'] : 'https://drpraveenreddyortho.com/' . $blog['postBanner']); ?>" />
+    <?php endif; ?>
+    <meta property="og:url" content="<?php echo htmlspecialchars('https://drpraveenreddyortho.com/blog-single.php?url=' . ($blogUrlParam ?? '')); ?>" />
+    <meta property="og:site_name" content="Dr Praveen Reddy Ortho Clinic" />
+    <meta name="author" content="<?php echo htmlspecialchars($blog['authorName'] ?? 'Dr Praveen Reddy P'); ?>" />
 
      <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
@@ -81,9 +77,7 @@ curl_close($ch);
     <div class="row align-items-center">
       <div class="col-lg-12">
         <div class="hero-header">
-          <h1 class="text-anime-style-1">Blog Details</h1>
-          <div class="space28"></div>
-          <a href="index.html" class="bradecrumb">Home <i class="fa-solid fa-angle-right"></i> Our Blog <i class="fa-solid fa-angle-right"></i> Blog Details</a>
+          <h1 class="text-anime-style-1"><?php echo !empty($blog['title']) ? htmlspecialchars($blog['title']) : 'Blog'; ?></h1>
         </div>
       </div>
     </div>
@@ -97,49 +91,107 @@ curl_close($ch);
         <div class="row">
             <div class="col-lg-8 m-auto">
                 <div class="blog-others-sidebar">
-                    <?php if($currentBlog): ?>
-                    <?php 
-                        $dateStr = '';
-                        if (!empty($currentBlog['dateOfPost'])) {
-                            try {
-                                $dateObj = new DateTime($currentBlog['dateOfPost']);
-                                $dateStr = $dateObj->format('d F Y');
-                            } catch (Exception $e) {}
-                        }
-                        $baseUrl = 'https://aliceblue-grasshopper-530447.hostingersite.com/api/';
-                        $bannerImage = 'assets/img/all-images/blog/blog-img33.html';
-                        if (!empty($currentBlog['postBanner'])) {
-                            $bannerImage = strpos($currentBlog['postBanner'], 'http') === 0 ? $currentBlog['postBanner'] : $baseUrl . ltrim($currentBlog['postBanner'], '/');
-                        } elseif (!empty($currentBlog['postThumbnail'])) {
-                            $bannerImage = strpos($currentBlog['postThumbnail'], 'http') === 0 ? $currentBlog['postThumbnail'] : $baseUrl . ltrim($currentBlog['postThumbnail'], '/');
-                        }
-                    ?>
-                    <div class="img1">
-                        <img src="<?php echo htmlspecialchars($bannerImage); ?>" alt="<?php echo htmlspecialchars($currentBlog['title'] ?? ''); ?>" style="width: 100%; border-radius: 12px; object-fit: cover;">
-                    </div>
-                    <div class="space32"></div>
-                    <ul class="list-author" style="display: flex; gap: 15px; list-style: none; padding: 0; flex-wrap: wrap;">
-                        <li><a href="#" style="color: #666; font-weight: 500;">#<?php echo htmlspecialchars($currentBlog['category'] ?? 'HealthMatters'); ?></a></li>
-                        <li><span style="color: #666;"><i class="fa-regular fa-calendar"></i> <?php echo htmlspecialchars($dateStr); ?></span></li>
-                        <li><span style="color: #666;"><i class="fa-regular fa-user"></i> <?php echo htmlspecialchars($currentBlog['authorName'] ?? 'Admin'); ?></span></li>
-                    </ul>
-                    <div class="space24"></div>
-                    <h2><?php echo htmlspecialchars($currentBlog['title'] ?? ''); ?></h2>
-                    <div class="space18"></div>
-                    <div class="blog-content">
-                        <?php echo $currentBlog['blogContent'] ?? ''; ?>
-                    </div>
-                    <div class="space40"></div>
+                    <?php if ($error || empty($blog)): ?>
+                        <div class="text-center py-5">
+                            <h2>Blog article not found</h2>
+                            <p>The article you are looking for might have been removed or the URL is incorrect.</p>
+                            <a href="index.php" class="vl-btn4 mt-3">Return Home</a>
+                        </div>
                     <?php else: ?>
-                    <div class="text-center" style="padding: 50px 0;">
-                        <h2>Blog not found</h2>
-                        <div class="space20"></div>
-                        <p>The article you are looking for does not exist or has been removed.</p>
-                        <div class="space30"></div>
-                        <a href="blog.php" class="vl-btn4">Back to Blogs</a>
-                    </div>
+                        <?php 
+                          $baseUrl = 'https://drpraveenreddyortho.com/';
+                          $image = 'assets/img/all-images/blog/blog-img4.png';
+                          
+                          if (!empty($blog['postBanner'])) {
+                              $image = strpos($blog['postBanner'], 'http') === 0 ? $blog['postBanner'] : $baseUrl . $blog['postBanner'];
+                          } else if (!empty($blog['postThumbnail'])) {
+                              $image = strpos($blog['postThumbnail'], 'http') === 0 ? $blog['postThumbnail'] : $baseUrl . $blog['postThumbnail'];
+                          }
+
+                          $dateStr = '';
+                          if (!empty($blog['dateOfPost'])) {
+                              try {
+                                  $dateObj = new DateTime($blog['dateOfPost']);
+                                  $dateStr = $dateObj->format('d F Y');
+                              } catch (Exception $e) {}
+                          }
+                        ?>
+                        <div class="img1">
+                            <img src="<?php echo htmlspecialchars($image); ?>" alt="<?php echo htmlspecialchars($blog['title'] ?? ''); ?>" style="width: 100%; border-radius: 8px;" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%25\' height=\'400\' viewBox=\'0 0 800 400\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23f5f0eb\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-family=\'sans-serif\' font-size=\'24\' font-weight=\'500\' fill=\'%23b8a99a\' dominant-baseline=\'middle\' text-anchor=\'middle\'%3ENo Image Available%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="space32"></div>
+                        <ul class="list-author">
+                            <li><a href="javascript:void(0);">#<?php echo htmlspecialchars($blog['category'] ?? 'Health'); ?></a></li>
+                            <li><a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                              <path d="M5.5384 1C5.68692 1 5.82936 1.06637 5.93438 1.18452C6.0394 1.30267 6.0984 1.46291 6.0984 1.63V2.8081H12.112V1.6381C12.112 1.47101 12.171 1.31077 12.276 1.19262C12.381 1.07447 12.5235 1.0081 12.672 1.0081C12.8205 1.0081 12.963 1.07447 13.068 1.19262C13.173 1.31077 13.232 1.47101 13.232 1.6381V2.8081H15.4C15.8242 2.8081 16.2311 2.99762 16.5311 3.33499C16.8311 3.67236 16.9998 4.12997 17 4.6072V17.2009C16.9998 17.6781 16.8311 18.1357 16.5311 18.4731C16.2311 18.8105 15.8242 19 15.4 19H2.6C2.17579 19 1.76895 18.8105 1.46891 18.4731C1.16888 18.1357 1.00021 17.6781 1 17.2009V4.6072C1.00021 4.12997 1.16888 3.67236 1.46891 3.33499C1.76895 2.99762 2.17579 2.8081 2.6 2.8081H4.9784V1.6291C4.97861 1.46217 5.03771 1.30216 5.1427 1.1842C5.2477 1.06625 5.39002 1 5.5384 1ZM2.12 7.9678V17.2009C2.12 17.2718 2.13242 17.342 2.15654 17.4075C2.18066 17.4731 2.21602 17.5326 2.26059 17.5827C2.30516 17.6329 2.35808 17.6727 2.41631 17.6998C2.47455 17.7269 2.53697 17.7409 2.6 17.7409H15.4C15.463 17.7409 15.5255 17.7269 15.5837 17.6998C15.6419 17.6727 15.6948 17.6329 15.7394 17.5827C15.784 17.5326 15.8193 17.4731 15.8435 17.4075C15.8676 17.342 15.88 17.2718 15.88 17.2009V7.9804L2.12 7.9678ZM6.3336 14.1571V15.6565H5V14.1571H6.3336ZM9.6664 14.1571V15.6565H8.3336V14.1571H9.6664ZM13 14.1571V15.6565H11.6664V14.1571H13ZM6.3336 10.5778V12.0772H5V10.5778H6.3336ZM9.6664 10.5778V12.0772H8.3336V10.5778H9.6664ZM13 10.5778V12.0772H11.6664V10.5778H13ZM4.9784 4.0672H2.6C2.53697 4.0672 2.47455 4.08117 2.41631 4.1083C2.35808 4.13544 2.30516 4.17522 2.26059 4.22536C2.21602 4.27551 2.18066 4.33504 2.15654 4.40055C2.13242 4.46607 2.12 4.53629 2.12 4.6072V6.7087L15.88 6.7213V4.6072C15.88 4.53629 15.8676 4.46607 15.8435 4.40055C15.8193 4.33504 15.784 4.27551 15.7394 4.22536C15.6948 4.17522 15.6419 4.13544 15.5837 4.1083C15.5255 4.08117 15.463 4.0672 15.4 4.0672H13.232V4.9033C13.232 5.07039 13.173 5.23063 13.068 5.34878C12.963 5.46693 12.8205 5.5333 12.672 5.5333C12.5235 5.5333 12.381 5.46693 12.276 5.34878C12.171 5.23063 12.112 5.07039 12.112 4.9033V4.0672H6.0984V4.8952C6.0984 5.06229 6.0394 5.22253 5.93438 5.34068C5.82936 5.45883 5.68692 5.5252 5.5384 5.5252C5.38988 5.5252 5.24744 5.45883 5.14242 5.34068C5.0374 5.22253 4.9784 5.06229 4.9784 4.8952V4.0672Z" fill="#31353D"/>
+                              </svg> <?php echo htmlspecialchars($dateStr); ?> <span> | </span></a></li>
+                            <li><a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path d="M4.16406 17.5C4.16406 14.2783 6.77574 11.6667 9.9974 11.6667C13.2191 11.6667 15.8307 14.2783 15.8307 17.5M13.3307 5.83333C13.3307 7.67428 11.8383 9.16667 9.9974 9.16667C8.15645 9.16667 6.66406 7.67428 6.66406 5.83333C6.66406 3.99238 8.15645 2.5 9.9974 2.5C11.8383 2.5 13.3307 3.99238 13.3307 5.83333Z" stroke="#31353D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> <?php echo htmlspecialchars($blog['authorName'] ?? 'Medicax Clinic'); ?> <span> | </span></a></li>
+                        </ul>
+                        <div class="space24"></div>
+                        <h2><?php echo htmlspecialchars($blog['title'] ?? ''); ?></h2>
+                        <div class="space18"></div>
+                        <style>
+                            .blog-formatted-content {
+                                max-width: 100%;
+                                overflow-wrap: break-word;
+                                word-wrap: break-word;
+                                word-break: break-word;
+                                overflow-x: hidden;
+                            }
+                            .blog-formatted-content img {
+                                max-width: 100%;
+                                height: auto;
+                            }
+                            .blog-formatted-content p,
+                            .blog-formatted-content h1,
+                            .blog-formatted-content h2,
+                            .blog-formatted-content h3,
+                            .blog-formatted-content h4,
+                            .blog-formatted-content h5,
+                            .blog-formatted-content h6,
+                            .blog-formatted-content li,
+                            .blog-formatted-content span {
+                                max-width: 100%;
+                                overflow-wrap: break-word;
+                                word-wrap: break-word;
+                            }
+                        </style>
+                        <div class="blog-formatted-content">
+                            <?php 
+                                // Replace &nbsp; with regular spaces so text wraps properly
+                                $content = $blog['blogContent'] ?? '';
+                                $content = str_replace('&nbsp;', ' ', $content);
+                                echo $content; 
+                            ?>
+                        </div>
+                        <div class="space32"></div>
+                        
+                        <?php 
+                        $tagsStr = $blog['tags'] ?? '[]';
+                        $tags = [];
+                        if (is_string($tagsStr)) {
+                            $tags = json_decode($tagsStr, true);
+                            if (!is_array($tags)) $tags = [];
+                        }
+                        ?>
+                        <?php if(!empty($tags)): ?>
+                        <div class="tags-social">
+                            <div class="tags">
+                                <ul>
+                                    <li>Tags:</li>
+                                    <?php foreach($tags as $index => $tag): ?>
+                                    <li><a href="javascript:void(0);" class="<?php echo $index === count($tags)-1 ? 'm-0' : ''; ?>">#<?php echo htmlspecialchars(trim($tag)); ?></a></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </div>
+                        <?php endif; ?>
+                        
+                        <div class="space48"></div>
                     <?php endif; ?>
-</div>
+                </div>
             </div>
 
         </div>

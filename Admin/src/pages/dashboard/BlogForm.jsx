@@ -36,9 +36,15 @@ import { blogsURL, createBlog } from '../../api/services';
 // Rich text editor
 import ReactQuill from 'react-quill-new';
 import 'react-quill-new/dist/quill.snow.css';
+import htmlEditButton from "quill-html-edit-button";
+import Quill from "quill";
+
+Quill.register("modules/htmlEditButton", htmlEditButton);
+
 
 // Quill toolbar configuration
 const quillModules = {
+  htmlEditButton: {},
   toolbar: [
     [{ header: [1, 2, 3, 4, 5, 6, false] }],
     [
@@ -55,6 +61,7 @@ const quillModules = {
       "clean",
       "code",
       "script",
+      "html"
     ],
     [
       { list: "ordered" },
