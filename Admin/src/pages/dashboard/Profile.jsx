@@ -67,7 +67,7 @@ export default function ProfilePage() {
     }),
     onSubmit: async (values, { setSubmitting }) => {
       try {
-        const response = await axios.put('https://aliceblue-grasshopper-530447.hostingersite.com/api/users/update', {
+        const response = await axios.put('https://drpraveenreddyortho.com/api/users/update', {
           userID: user.userID,
           userName: values.userName,
           mobile: values.mobile,

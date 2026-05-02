@@ -1908,7 +1908,7 @@ curl_close($ch);
 
 <script>
 (function () {
-  const API_BASE = "https://drpraveenreddyortho.com";//"https://aliceblue-grasshopper-530447.hostingersite.com";
+  const API_BASE = "https://drpraveenreddyortho.com";//"https://drpraveenreddyortho.com";
   const CREATE_APPOINTMENT_URL = API_BASE + "/api/appointments";
 
   const form = document.getElementById('appointmentForm');

@@ -274,7 +274,7 @@ export default function AppointmentsTable({ appointmentsData, onStatusChange }) 
     setRows((prevRows) => prevRows.map((row) => (row.id === id ? { ...row, status: newStatus } : row)));
 
     try {
-      await axios.put(`${'https://aliceblue-grasshopper-530447.hostingersite.com/api/appointments'}?id=${id}`, {
+      await axios.put(`${'https://drpraveenreddyortho.com/api/appointments'}?id=${id}`, {
         appointmentDate,
         appointmentStatus: statusString
       }, {

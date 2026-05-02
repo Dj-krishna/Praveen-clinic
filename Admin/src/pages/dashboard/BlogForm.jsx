@@ -307,7 +307,7 @@ export default function BlogFormPage() {
     });
 
     // Set existing image URLs for preview
-    const baseUrl = 'https://aliceblue-grasshopper-530447.hostingersite.com';
+    const baseUrl = 'https://drpraveenreddyortho.com';
     if (editData.postThumbnail) {
       const thumbUrl = editData.postThumbnail.startsWith('http') ? editData.postThumbnail : `${baseUrl}/api/${editData.postThumbnail}`;
       setExistingThumbnail(thumbUrl);

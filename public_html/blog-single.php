@@ -227,7 +227,7 @@ if (!empty($blogUrlParam)) {
              
              $defaultImage = 'assets/img/all-images/blog/blog-img4.png';
              $image = $defaultImage;
-             $baseUrl = 'https://aliceblue-grasshopper-530447.hostingersite.com/api/';
+             $baseUrl = 'https://drpraveenreddyortho.com/api/';
              
              if (!empty($blog['postBanner'])) {
                  $image = strpos($blog['postBanner'], 'http') === 0 ? $blog['postBanner'] : $baseUrl . ltrim($blog['postBanner'], '/');

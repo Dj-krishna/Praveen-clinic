@@ -33,7 +33,7 @@
 <?php include('header.php'); ?>
 <?php
 $blogs = [];
-$api_url = 'https://aliceblue-grasshopper-530447.hostingersite.com/api/blogs';
+$api_url = 'https://drpraveenreddyortho.com/api/blogs';
 $ch = curl_init($api_url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -83,7 +83,7 @@ curl_close($ch);
              
              $defaultImage = 'assets/img/all-images/blog/blog-img4.png';
              $image = $defaultImage;
-             $baseUrl = 'https://aliceblue-grasshopper-530447.hostingersite.com/api/';
+             $baseUrl = 'https://drpraveenreddyortho.com/api/';
              
              if (!empty($blog['postBanner'])) {
                  $image = strpos($blog['postBanner'], 'http') === 0 ? $blog['postBanner'] : $baseUrl . ltrim($blog['postBanner'], '/');
