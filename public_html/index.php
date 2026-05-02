@@ -803,7 +803,7 @@ curl_close($ch);
              // Determine image
              $defaultImage = 'assets/img/all-images/blog/blog-img4.png';
              $image = $defaultImage;
-             $baseUrl = 'https://drpraveenreddyortho.com/';
+             $baseUrl = 'https://drpraveenreddyortho.com/api/';
              
              if (!empty($blog['postBanner'])) {
                  $image = strpos($blog['postBanner'], 'http') === 0 ? $blog['postBanner'] : $baseUrl . ltrim($blog['postBanner'], '/');
