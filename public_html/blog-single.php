@@ -99,7 +99,7 @@ if (!empty($blogUrlParam)) {
                         </div>
                     <?php else: ?>
                         <?php 
-                          $baseUrl = 'https://drpraveenreddyortho.com/';
+                          $baseUrl = 'https://drpraveenreddyortho.com/api/';
                           $image = 'assets/img/all-images/blog/blog-img4.png';
                           
                           if (!empty($blog['postBanner'])) {
