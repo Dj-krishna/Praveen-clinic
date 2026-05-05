@@ -27,6 +27,7 @@
 
     <!--=====  JS SCRIPT LINK =======-->
     <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
 
 </head>
 <body>
@@ -55,8 +56,8 @@
                   <!-- <p>At Dr. Praveen Reddy Orthopedic Clinic, we provide advanced orthopedic care focused on relieving pain, restoring mobility, and helping patients recover faster for healthier, active lives.</p> -->
                   <div class="space28"></div>
                   <div class="btn-area1">
-                    <a href="contact.html" class="vl-btn3"><span class="text">Schedule Your Visit Now <i class="fa-solid fa-arrow-right"></i></span></a>
-                    <a href="https://www.youtube.com/watch?v=Y8XpQpW5OVY" class="play-btn popup-youtube"> <span class="video"><i class="fa-solid fa-play"></i></span> Play Video</a>
+                    <a href="about-praveen-reddy.php" class="vl-btn3"><span class="text">Schedule Your Visit Now <i class="fa-solid fa-arrow-right"></i></span></a>
+                    <!--<a href="https://www.youtube.com/watch?v=Y8XpQpW5OVY" class="play-btn popup-youtube"> <span class="video"><i class="fa-solid fa-play"></i></span> Play Video</a>-->
                 </div>
                 </div>
               </div>
@@ -81,8 +82,8 @@
                   <p>At Dr. Praveen Reddy Orthopedic Clinic, we provide advanced orthopedic care focused on relieving pain, restoring mobility, and helping patients recover faster for healthier, active lives.</p>
                   <div class="space28"></div>
                   <div class="btn-area1">
-                    <a href="contact.html" class="vl-btn3"><span class="text">Schedule Your Visit Now <i class="fa-solid fa-arrow-right"></i></span></a>
-                    <a href="https://www.youtube.com/watch?v=Y8XpQpW5OVY" class="play-btn popup-youtube"> <span class="video"><i class="fa-solid fa-play"></i></span> Play Video</a>
+                    <a href="about-praveen-reddy.php" class="vl-btn3"><span class="text">Schedule Your Visit Now <i class="fa-solid fa-arrow-right"></i></span></a>
+                    <!--<a href="https://www.youtube.com/watch?v=Y8XpQpW5OVY" class="play-btn popup-youtube"> <span class="video"><i class="fa-solid fa-play"></i></span> Play Video</a>-->
                 </div>
                 </div>
               </div>
@@ -144,7 +145,7 @@
                                         <h2>Book Appointment</h2>
                                         <p>Choose a date and time that works for you we'll take care of the rest.</p>
                                         <div class="micon-button">
-                                            <a href="book-appointment.html" class="read-more-btn">Request an Appointment <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <a href="about-praveen-reddy.php" class="read-more-btn">Request an Appointment <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833496C4.04188 0.833496 0.833252 4.04212 0.833252 8.00016C0.833252 11.9582 4.04188 15.1668 7.99992 15.1668C11.958 15.1668 15.1666 11.9582 15.1666 8.00016C15.1666 4.04212 11.958 0.833496 7.99992 0.833496ZM7.33325 5.3335C7.06359 5.3335 6.82052 5.49592 6.71732 5.74504C6.61415 5.99416 6.67119 6.2809 6.86185 6.47157L7.72379 7.3335L5.52851 9.52876C5.26817 9.7891 5.26817 10.2112 5.52851 10.4716C5.78887 10.7319 6.21097 10.7319 6.47133 10.4716L8.66659 8.2763L9.52852 9.13823C9.71919 9.3289 10.0059 9.38596 10.2551 9.28276C10.5042 9.17956 10.6666 8.9365 10.6666 8.66683V6.00016C10.6666 5.63198 10.3681 5.3335 9.99992 5.3335H7.33325Z" fill="#666"></path>
                 </svg></a>
                                         </div>
@@ -164,7 +165,7 @@
                                         <h2>Qualified Doctors</h2>
                                         <p>Our team of expert doctors ensures top-quality treatment every time.</p>
                                         <div class="micon-button">
-                                            <a href="doctor.html" class="read-more-btn">View All Doctor <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <a href="about-praveen-reddy.php" class="read-more-btn">About Doctor <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833496C4.04188 0.833496 0.833252 4.04212 0.833252 8.00016C0.833252 11.9582 4.04188 15.1668 7.99992 15.1668C11.958 15.1668 15.1666 11.9582 15.1666 8.00016C15.1666 4.04212 11.958 0.833496 7.99992 0.833496ZM7.33325 5.3335C7.06359 5.3335 6.82052 5.49592 6.71732 5.74504C6.61415 5.99416 6.67119 6.2809 6.86185 6.47157L7.72379 7.3335L5.52851 9.52876C5.26817 9.7891 5.26817 10.2112 5.52851 10.4716C5.78887 10.7319 6.21097 10.7319 6.47133 10.4716L8.66659 8.2763L9.52852 9.13823C9.71919 9.3289 10.0059 9.38596 10.2551 9.28276C10.5042 9.17956 10.6666 8.9365 10.6666 8.66683V6.00016C10.6666 5.63198 10.3681 5.3335 9.99992 5.3335H7.33325Z" fill="#666"></path>
                 </svg></a>
                                         </div>
@@ -184,7 +185,7 @@
                                         <h2>24/7 Services</h2>
                                         <p>24/7 care you can count on anybody, anytime, anywhere.</p>
                                         <div class="micon-button">
-                                            <a href="contact.html" class="read-more-btn">Contact Us <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <a href="contact.php" class="read-more-btn">Contact Us <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833496C4.04188 0.833496 0.833252 4.04212 0.833252 8.00016C0.833252 11.9582 4.04188 15.1668 7.99992 15.1668C11.958 15.1668 15.1666 11.9582 15.1666 8.00016C15.1666 4.04212 11.958 0.833496 7.99992 0.833496ZM7.33325 5.3335C7.06359 5.3335 6.82052 5.49592 6.71732 5.74504C6.61415 5.99416 6.67119 6.2809 6.86185 6.47157L7.72379 7.3335L5.52851 9.52876C5.26817 9.7891 5.26817 10.2112 5.52851 10.4716C5.78887 10.7319 6.21097 10.7319 6.47133 10.4716L8.66659 8.2763L9.52852 9.13823C9.71919 9.3289 10.0059 9.38596 10.2551 9.28276C10.5042 9.17956 10.6666 8.9365 10.6666 8.66683V6.00016C10.6666 5.63198 10.3681 5.3335 9.99992 5.3335H7.33325Z" fill="#666"></path>
                 </svg></a>
                                         </div>
@@ -201,7 +202,7 @@
 <div class="about4-section-area sp1">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <div class="about-images-area">
           <div class="img1 image-anime reveal">
             <img src="assets/img/all-images/home/best-orthoclinic.png" alt="">
@@ -211,7 +212,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-8">
         <div class="about4-heading heading4">
           <h5 class="vl-section-subtitle" data-aos="fade-left" data-aos-duration="800"> About Us <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
             <path d="M0.667969 4.00033H11.049M8.00137 7.33366L11.3346 4.00033L8.0013 0.666992" stroke="#02015A" stroke-width="1.5"/>
@@ -351,317 +352,205 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="service4-slider-area owl-carousel">
+          
+          
           <div class="service4-boxarea">
-            <div class="content-area">
-              <a href="service-single.html" class="title">Cardiology</a>
-              <div class="space16"></div>
-              <p>Specializing in the diagnosis and treatment of heart-related conditions.</p>
-              <div class="space24"></div>
-              <a href="service-single.html" class="readmore">
-                Learn More 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <g clip-path="url(#clip0_5927_10805)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_5927_10805">
-                    <rect width="16" height="16" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            </div>
+  <div class="content-area">
+    <a href="jobotic-knee-replacement.php" class="title">Robotic Knee Replacement</a>
+    <div class="space16"></div>
+    <p>Advanced precision surgery using robotic assistance to restore knee function and mobility.</p>
+    <div class="space24"></div>
+    <a href="jobotic-knee-replacement.php" class="readmore">
+      Read More
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <g clip-path="url(#clip0_5927_10805)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_5927_10805">
+        <rect width="16" height="16" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </a>
+  </div>
+  <div class="img1 image-anime">
+    <img src="assets/img/all-images/service/robotic-knee-replacement.jpg" alt="">
+  </div>
+</div>
+<div class="service4-boxarea">
+  <div class="content-area">
+    <a href="joint-replacement.php" class="title">Joint Replacement</a>
+    <div class="space16"></div>
+    <p>Surgical procedures to replace damaged joints and relieve pain, improving movement and quality of life.</p>
+    <div class="space24"></div>
+    <a href="joint-replacement.php" class="readmore">
+      Read More
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <g clip-path="url(#clip0_5927_10805)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_5927_10805">
+        <rect width="16" height="16" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </a>
+  </div>
+  <div class="img1 image-anime">
+    <img src="assets/img/all-images/service/joint-replacement.jpg" alt="">
+  </div>
+</div>
 
-            <div class="img1 image-anime">
-              <img src="assets/img/all-images/service/service-img17.png" alt="">
-            </div>
-          </div>
 
-          <div class="service4-boxarea">
-            <div class="content-area">
-              <a href="service-single.html" class="title">Pediatrics</a>
-              <div class="space16"></div>
-              <p>Specializing in the diagnosis and treatment of heart-related conditions.</p>
-              <div class="space24"></div>
-              <a href="service-single.html" class="readmore">
-                Learn More 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <g clip-path="url(#clip0_5927_10805)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_5927_108051">
-                    <rect width="16" height="16" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            </div>
-
-            <div class="img1 image-anime">
-              <img src="assets/img/all-images/service/service-img18.png" alt="">
-            </div>
-          </div>
-
-          <div class="service4-boxarea">
-            <div class="content-area">
-              <a href="service-single.html" class="title">Gynaecology</a>
-              <div class="space16"></div>
-              <p>Specializing in the diagnosis and treatment of heart-related conditions.</p>
-              <div class="space24"></div>
-              <a href="service-single.html" class="readmore">
-                Learn More 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <g clip-path="url(#clip0_5927_10805)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_5927_108052">
-                    <rect width="16" height="16" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            </div>
-
-            <div class="img1 image-anime">
-              <img src="assets/img/all-images/service/service-img19.png" alt="">
-            </div>
-          </div>
-
-          <div class="service4-boxarea">
-            <div class="content-area">
-              <a href="service-single.html" class="title">Dermatology</a>
-              <div class="space16"></div>
-              <p>Specializing in the diagnosis and treatment of heart-related conditions.</p>
-              <div class="space24"></div>
-              <a href="service-single.html" class="readmore">
-                Learn More 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <g clip-path="url(#clip0_5927_10805)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_5927_108053">
-                    <rect width="16" height="16" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            </div>
-
-            <div class="img1 image-anime">
-              <img src="assets/img/all-images/service/service-img20.png" alt="">
-            </div>
-          </div>
-
-          <div class="service4-boxarea">
-            <div class="content-area">
-              <a href="service-single.html" class="title">Orthopedics</a>
-              <div class="space16"></div>
-              <p>Specializing in the diagnosis and treatment of heart-related conditions.</p>
-              <div class="space24"></div>
-              <a href="service-single.html" class="readmore">
-                Learn More 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <g clip-path="url(#clip0_5927_10805)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_5927_108054">
-                    <rect width="16" height="16" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            </div>
-
-            <div class="img1 image-anime">
-              <img src="assets/img/all-images/service/service-img21.png" alt="">
-            </div>
-          </div>
-
-          <div class="service4-boxarea">
-            <div class="content-area">
-              <a href="service-single.html" class="title">Cardiology</a>
-              <div class="space16"></div>
-              <p>Specializing in the diagnosis and treatment of heart-related conditions.</p>
-              <div class="space24"></div>
-              <a href="service-single.html" class="readmore">
-                Learn More 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <g clip-path="url(#clip0_5927_10805)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_5927_108055">
-                    <rect width="16" height="16" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            </div>
-
-            <div class="img1 image-anime">
-              <img src="assets/img/all-images/service/service-img17.png" alt="">
-            </div>
-          </div>
-
-          <div class="service4-boxarea">
-            <div class="content-area">
-              <a href="service-single.html" class="title">Pediatrics</a>
-              <div class="space16"></div>
-              <p>Specializing in the diagnosis and treatment of heart-related conditions.</p>
-              <div class="space24"></div>
-              <a href="service-single.html" class="readmore">
-                Learn More 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <g clip-path="url(#clip0_5927_10805)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_5927_108056">
-                    <rect width="16" height="16" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            </div>
-
-            <div class="img1 image-anime">
-              <img src="assets/img/all-images/service/service-img18.png" alt="">
-            </div>
-          </div>
-
-          <div class="service4-boxarea">
-            <div class="content-area">
-              <a href="service-single.html" class="title">Gynaecology</a>
-              <div class="space16"></div>
-              <p>Specializing in the diagnosis and treatment of heart-related conditions.</p>
-              <div class="space24"></div>
-              <a href="service-single.html" class="readmore">
-                Learn More 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <g clip-path="url(#clip0_5927_10805)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_5927_108057">
-                    <rect width="16" height="16" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            </div>
-
-            <div class="img1 image-anime">
-              <img src="assets/img/all-images/service/service-img19.png" alt="">
-            </div>
-          </div>
-
-          <div class="service4-boxarea">
-            <div class="content-area">
-              <a href="service-single.html" class="title">Dermatology</a>
-              <div class="space16"></div>
-              <p>Specializing in the diagnosis and treatment of heart-related conditions.</p>
-              <div class="space24"></div>
-              <a href="service-single.html" class="readmore">
-                Learn More 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <g clip-path="url(#clip0_5927_10805)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_5927_108058">
-                    <rect width="16" height="16" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            </div>
-
-            <div class="img1 image-anime">
-              <img src="assets/img/all-images/service/service-img20.png" alt="">
-            </div>
-          </div>
-
-          <div class="service4-boxarea">
-            <div class="content-area">
-              <a href="service-single.html" class="title">Orthopedics</a>
-              <div class="space16"></div>
-              <p>Specializing in the diagnosis and treatment of heart-related conditions.</p>
-              <div class="space24"></div>
-              <a href="service-single.html" class="readmore">
-                Learn More 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <g clip-path="url(#clip0_5927_10805)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_5927_108058N">
-                    <rect width="16" height="16" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            </div>
-
-            <div class="img1 image-anime">
-              <img src="assets/img/all-images/service/service-img21.png" alt="">
-            </div>
-          </div>
-
-          <div class="service4-boxarea">
-            <div class="content-area">
-              <a href="service-single.html" class="title">Cardiology</a>
-              <div class="space16"></div>
-              <p>Specializing in the diagnosis and treatment of heart-related conditions.</p>
-              <div class="space24"></div>
-              <a href="service-single.html" class="readmore">
-                Learn More 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <g clip-path="url(#clip0_5927_10805)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_5927_108059">
-                    <rect width="16" height="16" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            </div>
-
-            <div class="img1 image-anime">
-              <img src="assets/img/all-images/service/service-img17.png" alt="">
-            </div>
-          </div>
-
-          <div class="service4-boxarea">
-            <div class="content-area">
-              <a href="service-single.html" class="title">Pediatrics</a>
-              <div class="space16"></div>
-              <p>Specializing in the diagnosis and treatment of heart-related conditions.</p>
-              <div class="space24"></div>
-              <a href="service-single.html" class="readmore">
-                Learn More 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <g clip-path="url(#clip0_5927_10805)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_5927_10805a">
-                    <rect width="16" height="16" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            </div>
-
-            <div class="img1 image-anime">
-              <img src="assets/img/all-images/service/service-img18.png" alt="">
-            </div>
-          </div>
+<div class="service4-boxarea">
+  <div class="content-area">
+    <a href="trauma-surgeries.php" class="title">Trauma Surgeries</a>
+    <div class="space16"></div>
+    <p>Expert care for fractures and injuries caused by accidents or sudden physical trauma.</p>
+    <div class="space24"></div>
+    <a href="trauma-surgeries.php" class="readmore">
+      Read More
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <g clip-path="url(#clip0_5927_10805)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_5927_10805">
+        <rect width="16" height="16" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </a>
+  </div>
+  <div class="img1 image-anime">
+    <img src="assets/img/all-images/service/trauma-surgeries.jpg" alt="">
+  </div>
+</div>
+<div class="service4-boxarea">
+  <div class="content-area">
+    <a href="sports-medicine.php" class="title">Sports Medicine</a>
+    <div class="space16"></div>
+    <p>Specialized treatment for sports-related injuries to help patients recover and return to peak performance.</p>
+    <div class="space24"></div>
+    <a href="sports-medicine.php" class="readmore">
+      Read More
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <g clip-path="url(#clip0_5927_10805)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_5927_10805">
+        <rect width="16" height="16" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </a>
+  </div>
+  <div class="img1 image-anime">
+    <img src="assets/img/all-images/service/sports-medicine.jpg" alt="">
+  </div>
+</div>
+<div class="service4-boxarea">
+  <div class="content-area">
+    <a href="general-orthopaedics.php" class="title">General Orthopaedics</a>
+    <div class="space16"></div>
+    <p>Comprehensive care for bones, joints, and musculoskeletal conditions across all age groups.</p>
+    <div class="space24"></div>
+    <a href="general-orthopaedics.php" class="readmore">
+      Read More
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <g clip-path="url(#clip0_5927_10805)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_5927_10805">
+        <rect width="16" height="16" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </a>
+  </div>
+  <div class="img1 image-anime">
+    <img src="assets/img/all-images/service/general-orthopaedics.jpg" alt="">
+  </div>
+</div>
+<div class="service4-boxarea">
+  <div class="content-area">
+    <a href="osteoporosis.php" class="title">Osteoporosis</a>
+    <div class="space16"></div>
+    <p>Diagnosis and management of bone weakening conditions to prevent fractures and maintain bone health.</p>
+    <div class="space24"></div>
+    <a href="osteoporosis.php" class="readmore">
+      Read More
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <g clip-path="url(#clip0_5927_10805)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_5927_10805">
+        <rect width="16" height="16" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </a>
+  </div>
+  <div class="img1 image-anime">
+    <img src="assets/img/all-images/service/osteoporosis.jpg" alt="">
+  </div>
+</div>
+<div class="service4-boxarea">
+  <div class="content-area">
+    <a href="rheumatoid-arthritis.php" class="title">Rheumatoid Arthritis</a>
+    <div class="space16"></div>
+    <p>Treatment of autoimmune joint disorders to reduce inflammation, pain, and long-term damage.</p>
+    <div class="space24"></div>
+    <a href="rheumatoid-arthritis.php" class="readmore">
+      Read More
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <g clip-path="url(#clip0_5927_10805)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_5927_10805">
+        <rect width="16" height="16" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </a>
+  </div>
+  <div class="img1 image-anime">
+    <img src="assets/img/all-images/service/rheumatoid-arthritis.jpg" alt="">
+  </div>
+</div>
+<div class="service4-boxarea">
+  <div class="content-area">
+    <a href="physiotherapy-rehabilitation.php" class="title">Physiotherapy & Rehab</a>
+    <div class="space16"></div>
+    <p>Personalized rehabilitation programs to restore strength, mobility, and functional independence.</p>
+    <div class="space24"></div>
+    <a href="physiotherapy-rehabilitation.php" class="readmore">
+      Read More
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <g clip-path="url(#clip0_5927_10805)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833008C4.04188 0.833008 0.833252 4.04163 0.833252 7.99967C0.833252 11.9577 4.04188 15.1663 7.99992 15.1663C11.958 15.1663 15.1666 11.9577 15.1666 7.99967C15.1666 4.04163 11.958 0.833008 7.99992 0.833008ZM7.33325 5.33301C7.06359 5.33301 6.82052 5.49543 6.71732 5.74455C6.61415 5.99367 6.67119 6.28042 6.86185 6.47108L7.72379 7.33301L5.52851 9.52827C5.26817 9.78861 5.26817 10.2107 5.52851 10.4711C5.78887 10.7314 6.21097 10.7314 6.47133 10.4711L8.66659 8.27581L9.52852 9.13774C9.71919 9.32841 10.0059 9.38547 10.2551 9.28227C10.5042 9.17907 10.6666 8.93601 10.6666 8.66634V5.99967C10.6666 5.63149 10.3681 5.33301 9.99992 5.33301H7.33325Z" fill="#9FA080"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_5927_10805">
+        <rect width="16" height="16" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </a>
+  </div>
+  <div class="img1 image-anime">
+    <img src="assets/img/all-images/service/physiotherapy-rehab.jpg" alt="">
+  </div>
+</div>
+         
+ 
+ 
         </div>
       </div>
     </div>
@@ -914,7 +803,7 @@ curl_close($ch);
                 <div class="text">
                   <h4>locations</h4>
                   <div class="space14"></div>
-                  <a href="#">Sri Durga Enclave, SBH <br>Colony, Hyderabad</a>
+                  <a href="#">Omkar Nagar, Nagarjuna Sagar Road, LB Nagar, Hyd</a>
                 </div>
               </div>
             </div>
@@ -1068,6 +957,9 @@ curl_close($ch);
     <div class="row">
       <div class="col-lg-12">
         <div class="testimonial4-slider-area owl-carousel">
+
+
+
           <div class="testimonial4-boxarea">
             <div class="icons">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1078,10 +970,10 @@ curl_close($ch);
               </svg>
             </div>
             <div class="space16"></div>
-            <p>"I've been a patient at Dr Praveen Reddy Medical Clinic for years, and I couldn't be happier with the level of care I receive. The staff is friendly, knowledgeable, and always goes above and beyond to ensure my needs are met. I highly recommend PrimeCare to anyone looking for a reliable medical clinic." </p>
+            <p>Dr Praveen Reddy is a good doctor. My daughter went through a surgery which is successful. He is very caring and treated her very good. The doctor is patient in clearing doubts, explaining about the surgery and rehabilitation stages as well. </p>
             <div class="space24"></div>
             <div class="text-area">
-              <a href="#">Eleanor Pena</a>
+              <a href="#">Sridevi Dasika</a>
               <ul>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
                   <g clip-path="url(#clip0_5927_9777)">
@@ -1126,10 +1018,17 @@ curl_close($ch);
                     </clipPath>
                   </defs>
                 </svg></li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <path d="M9.00002 0C8.64377 0 8.28751 0.184375 8.10314 0.55625L6.06251 4.69375L1.49689 5.35625C0.67814 5.475 0.350015 6.48437 0.943765 7.0625L4.24689 10.2812L3.46564 14.8281C3.32501 15.6437 4.18439 16.2656 4.91564 15.8812L9.00002 13.7375V0Z" fill="#F2C94C"/>
+                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777f">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
                 </svg></li>
-                <li>(4.5)</li>
+                <li>(5.0)</li>
               </ul>
             </div>
           </div>
@@ -1144,17 +1043,17 @@ curl_close($ch);
               </svg>
             </div>
             <div class="space16"></div>
-            <p>I recently visited Clini for a minor injury, and I was impressed by the efficiency and professionalism of the staff. From check-in to discharge, everything went smoothly, and I felt well taken care of throughout the entire process. I highly recommend PrimeCare to quality medical care.</p>
+            <p>I was involved in a traumatic accident four years ago, resulting in fractures to my right femur and clavicle. I was treated by Dr. Praveen Reddy sir and was truly fortunate to be under his care. Recently, the implant was removed, which had become complicated for the removing. I am very happy that the surgery went successfully. I also deeply appreciate the great response, support, and empathy shown by Swapna ma’am, the personal assistant. </p>
             <div class="space24"></div>
             <div class="text-area">
-              <a href="#">Devon Lane</a>
+              <a href="#">Gommani Srinivas</a>
               <ul>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
                   <g clip-path="url(#clip0_5927_9777)">
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777h">
+                    <clipPath id="clip0_5927_9777">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1165,7 +1064,7 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777i">
+                    <clipPath id="clip0_5927_9777e">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1176,7 +1075,7 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777j">
+                    <clipPath id="clip0_5927_9777f">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1187,15 +1086,22 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777k">
+                    <clipPath id="clip0_5927_9777g">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
                 </svg></li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <path d="M9.00002 0C8.64377 0 8.28751 0.184375 8.10314 0.55625L6.06251 4.69375L1.49689 5.35625C0.67814 5.475 0.350015 6.48437 0.943765 7.0625L4.24689 10.2812L3.46564 14.8281C3.32501 15.6437 4.18439 16.2656 4.91564 15.8812L9.00002 13.7375V0Z" fill="#F2C94C"/>
+                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777f">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
                 </svg></li>
-                <li>(4.5)</li>
+                <li>(5.0)</li>
               </ul>
             </div>
           </div>
@@ -1210,17 +1116,17 @@ curl_close($ch);
               </svg>
             </div>
             <div class="space16"></div>
-            <p>"I've had the pleasure of being a patient at Clinic for several years now, and I couldn't be happier with the level of care I've received. The doctors and staff are always friendly and attentive, and I appreciate the personalized approach to my healthcare.</p>
+            <p>Dr Praveen Reddy has been an exceptional doctor who eased my treatment. I had gone through diagnostic arthroscopy and a graft surgery for my ankle. He came and checked twice when I was in ICU, he came and checked before i got discharged. He is always concerned about his patients. He tends to crack jokes as well to make sure his patients are at ease.</p>
             <div class="space24"></div>
             <div class="text-area">
-              <a href="#">Courtney Henry</a>
+              <a href="#">Gayatri Kitti</a>
               <ul>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
                   <g clip-path="url(#clip0_5927_9777)">
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777l">
+                    <clipPath id="clip0_5927_9777">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1231,7 +1137,7 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777m">
+                    <clipPath id="clip0_5927_9777e">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1242,7 +1148,7 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777n">
+                    <clipPath id="clip0_5927_9777f">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1253,15 +1159,22 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777o">
+                    <clipPath id="clip0_5927_9777g">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
                 </svg></li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <path d="M9.00002 0C8.64377 0 8.28751 0.184375 8.10314 0.55625L6.06251 4.69375L1.49689 5.35625C0.67814 5.475 0.350015 6.48437 0.943765 7.0625L4.24689 10.2812L3.46564 14.8281C3.32501 15.6437 4.18439 16.2656 4.91564 15.8812L9.00002 13.7375V0Z" fill="#F2C94C"/>
+                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777f">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
                 </svg></li>
-                <li>(4.5)</li>
+                <li>(5.0)</li>
               </ul>
             </div>
           </div>
@@ -1276,17 +1189,17 @@ curl_close($ch);
               </svg>
             </div>
             <div class="space16"></div>
-            <p>"I've been a patient at Dr Praveen Reddy Medical Clinic for years, and I couldn't be happier with the level of care I receive. The staff is friendly, knowledgeable, and always goes above and beyond to ensure my needs are met. I highly recommend PrimeCare to anyone looking for a reliable medical clinic." </p>
+            <p>Dr. Praveen Reddy sir is a best orthopedic surgeon.. the doctor who is not only best in his treatment but also in his behaviour that how he treats his patients with a humble and well mannered person I could ever experienced before.. thank you so much sir for u and ur team. </p>
             <div class="space24"></div>
             <div class="text-area">
-              <a href="#">Eleanor Pena</a>
+              <a href="#">Chandrakala Chepuri</a>
               <ul>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
                   <g clip-path="url(#clip0_5927_9777)">
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777p">
+                    <clipPath id="clip0_5927_9777">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1297,7 +1210,7 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777q">
+                    <clipPath id="clip0_5927_9777e">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1308,7 +1221,7 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777r">
+                    <clipPath id="clip0_5927_9777f">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1319,15 +1232,22 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777s">
+                    <clipPath id="clip0_5927_9777g">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
                 </svg></li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <path d="M9.00002 0C8.64377 0 8.28751 0.184375 8.10314 0.55625L6.06251 4.69375L1.49689 5.35625C0.67814 5.475 0.350015 6.48437 0.943765 7.0625L4.24689 10.2812L3.46564 14.8281C3.32501 15.6437 4.18439 16.2656 4.91564 15.8812L9.00002 13.7375V0Z" fill="#F2C94C"/>
+                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777f">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
                 </svg></li>
-                <li>(4.5)</li>
+                <li>(5.0)</li>
               </ul>
             </div>
           </div>
@@ -1342,17 +1262,17 @@ curl_close($ch);
               </svg>
             </div>
             <div class="space16"></div>
-            <p>I recently visited Clinic for a minor injury, and I was impressed by the efficiency and professionalism of the staff. From check-in to discharge, everything went smoothly, and I felt well taken care of throughout the entire process. I highly recommend PrimeCare to quality medical care.</p>
+            <p>Greatful for excellent surgeon and care Dr.Praveen Reddy sir is one of the best orthopedic surgeon who listens to the patient issue and receive us like a family member and gives the best treatment ..we thankful for u and your team sir</p>
             <div class="space24"></div>
             <div class="text-area">
-              <a href="#">Devon Lane</a>
+              <a href="#">Shirisha</a>
               <ul>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
                   <g clip-path="url(#clip0_5927_9777)">
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777t">
+                    <clipPath id="clip0_5927_9777">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1363,7 +1283,7 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777u">
+                    <clipPath id="clip0_5927_9777e">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1374,7 +1294,7 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_97770">
+                    <clipPath id="clip0_5927_9777f">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1385,15 +1305,22 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777v">
+                    <clipPath id="clip0_5927_9777g">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
                 </svg></li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <path d="M9.00002 0C8.64377 0 8.28751 0.184375 8.10314 0.55625L6.06251 4.69375L1.49689 5.35625C0.67814 5.475 0.350015 6.48437 0.943765 7.0625L4.24689 10.2812L3.46564 14.8281C3.32501 15.6437 4.18439 16.2656 4.91564 15.8812L9.00002 13.7375V0Z" fill="#F2C94C"/>
+                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777f">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
                 </svg></li>
-                <li>(4.5)</li>
+                <li>(5.0)</li>
               </ul>
             </div>
           </div>
@@ -1408,17 +1335,17 @@ curl_close($ch);
               </svg>
             </div>
             <div class="space16"></div>
-            <p>"I've had the pleasure of being a patient at Clinic for several years now, and I couldn't be happier with the level of care I've received. The doctors and staff are always friendly and attentive, and I appreciate the personalized approach to my healthcare.</p>
+            <p>Before 2 years my hand was fracture Dr.praveen Reddy sir is do my operation rod and implant after on 26 January 2024 the sir do my surgery and remove implant and rod it was totally good iam feel better and allhamduillah iam lifting heavy weights in gym good Dr. In my life who cares me and do my surgery TQ Dr.praveen Reddy sir</p>
             <div class="space24"></div>
             <div class="text-area">
-              <a href="#">Courtney Henry</a>
+              <a href="#">Shaikh Abdul Sameer</a>
               <ul>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
                   <g clip-path="url(#clip0_5927_9777)">
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777w">
+                    <clipPath id="clip0_5927_9777">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1429,7 +1356,7 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777x">
+                    <clipPath id="clip0_5927_9777e">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1440,7 +1367,7 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777y">
+                    <clipPath id="clip0_5927_9777f">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1451,15 +1378,244 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777z">
+                    <clipPath id="clip0_5927_9777g">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
                 </svg></li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <path d="M9.00002 0C8.64377 0 8.28751 0.184375 8.10314 0.55625L6.06251 4.69375L1.49689 5.35625C0.67814 5.475 0.350015 6.48437 0.943765 7.0625L4.24689 10.2812L3.46564 14.8281C3.32501 15.6437 4.18439 16.2656 4.91564 15.8812L9.00002 13.7375V0Z" fill="#F2C94C"/>
+                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777f">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
                 </svg></li>
-                <li>(4.5)</li>
+                <li>(5.0)</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="testimonial4-boxarea">
+            <div class="icons">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M5.94797 12.75C5.0495 12.75 4.30029 12.7501 3.70552 12.6701C3.07772 12.5857 2.51092 12.4 2.05545 11.9445C1.59998 11.4891 1.41431 10.9223 1.32991 10.2945C1.24994 9.6997 1.24997 8.95049 1.25 8.05202V7.948C1.24997 7.04953 1.24994 6.30029 1.32991 5.70552C1.41431 5.07772 1.59998 4.51092 2.05546 4.05545C2.51093 3.59998 3.07772 3.41431 3.70552 3.32991C4.30029 3.24994 5.04951 3.24997 5.94797 3.25H6.05199C6.95046 3.24997 7.6997 3.24994 8.29448 3.32991C8.92227 3.41431 9.48907 3.59998 9.94454 4.05545C10.4 4.51092 10.5857 5.07772 10.6701 5.70552C10.7501 6.30029 10.75 7.0495 10.75 7.94797V8.052C10.75 8.95046 10.7501 9.6997 10.6701 10.2945C10.5857 10.9223 10.4 11.4891 9.94454 11.9445C9.48907 12.4 8.92227 12.5857 8.29448 12.6701C7.6997 12.7501 6.95049 12.75 6.05203 12.75H5.94797Z" fill="#02015A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.79531 20.0475C2.63099 19.5202 2.92522 18.9596 3.45249 18.7953C6.56016 17.8268 8.75002 15.0749 8.75002 11.8873V7.75C8.75002 7.19771 9.19774 6.75 9.75002 6.75C10.3023 6.75 10.75 7.19771 10.75 7.75V11.8873C10.75 16.0337 7.90846 19.5015 4.04755 20.7047C3.52027 20.869 2.95963 20.5748 2.79531 20.0475Z" fill="#02015A"/>
+                <path d="M17.948 12.75C17.0495 12.75 16.3003 12.7501 15.7055 12.6701C15.0777 12.5857 14.5109 12.4 14.0555 11.9445C13.6 11.4891 13.4143 10.9223 13.3299 10.2945C13.2499 9.6997 13.25 8.95049 13.25 8.05202V7.948C13.25 7.04953 13.2499 6.30029 13.3299 5.70552C13.4143 5.07772 13.6 4.51092 14.0555 4.05545C14.5109 3.59998 15.0777 3.41431 15.7055 3.32991C16.3003 3.24994 17.0495 3.24997 17.948 3.25H18.052C18.9505 3.24997 19.6997 3.24994 20.2945 3.32991C20.9223 3.41431 21.4891 3.59998 21.9445 4.05545C22.4 4.51092 22.5857 5.07772 22.6701 5.70552C22.7501 6.30029 22.75 7.0495 22.75 7.94797V8.052C22.75 8.95046 22.7501 9.6997 22.6701 10.2945C22.5857 10.9223 22.4 11.4891 21.9445 11.9445C21.4891 12.4 20.9223 12.5857 20.2945 12.6701C19.6997 12.7501 18.9505 12.75 18.052 12.75H17.948Z" fill="#02015A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7953 20.0475C14.631 19.5202 14.9252 18.9596 15.4525 18.7953C18.5601 17.8268 20.75 15.0749 20.75 11.8873V7.75C20.75 7.19771 21.1977 6.75 21.75 6.75C22.3023 6.75 22.75 7.19771 22.75 7.75V11.8873C22.75 16.0337 19.9084 19.5015 16.0475 20.7047C15.5203 20.869 14.9596 20.5748 14.7953 20.0475Z" fill="#02015A"/>
+              </svg>
+            </div>
+            <div class="space16"></div>
+            <p>Dr. Praveen reddy sir is truly a remarkable doctor and professional that we respect and trust. He is one of the best orthopedist in Hyderabad.</p>
+            <div class="space24"></div>
+            <div class="text-area">
+              <a href="#">Soniya Babychan</a>
+              <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777e">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777f">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777g">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777f">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+                <li>(5.0)</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="testimonial4-boxarea">
+            <div class="icons">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M5.94797 12.75C5.0495 12.75 4.30029 12.7501 3.70552 12.6701C3.07772 12.5857 2.51092 12.4 2.05545 11.9445C1.59998 11.4891 1.41431 10.9223 1.32991 10.2945C1.24994 9.6997 1.24997 8.95049 1.25 8.05202V7.948C1.24997 7.04953 1.24994 6.30029 1.32991 5.70552C1.41431 5.07772 1.59998 4.51092 2.05546 4.05545C2.51093 3.59998 3.07772 3.41431 3.70552 3.32991C4.30029 3.24994 5.04951 3.24997 5.94797 3.25H6.05199C6.95046 3.24997 7.6997 3.24994 8.29448 3.32991C8.92227 3.41431 9.48907 3.59998 9.94454 4.05545C10.4 4.51092 10.5857 5.07772 10.6701 5.70552C10.7501 6.30029 10.75 7.0495 10.75 7.94797V8.052C10.75 8.95046 10.7501 9.6997 10.6701 10.2945C10.5857 10.9223 10.4 11.4891 9.94454 11.9445C9.48907 12.4 8.92227 12.5857 8.29448 12.6701C7.6997 12.7501 6.95049 12.75 6.05203 12.75H5.94797Z" fill="#02015A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.79531 20.0475C2.63099 19.5202 2.92522 18.9596 3.45249 18.7953C6.56016 17.8268 8.75002 15.0749 8.75002 11.8873V7.75C8.75002 7.19771 9.19774 6.75 9.75002 6.75C10.3023 6.75 10.75 7.19771 10.75 7.75V11.8873C10.75 16.0337 7.90846 19.5015 4.04755 20.7047C3.52027 20.869 2.95963 20.5748 2.79531 20.0475Z" fill="#02015A"/>
+                <path d="M17.948 12.75C17.0495 12.75 16.3003 12.7501 15.7055 12.6701C15.0777 12.5857 14.5109 12.4 14.0555 11.9445C13.6 11.4891 13.4143 10.9223 13.3299 10.2945C13.2499 9.6997 13.25 8.95049 13.25 8.05202V7.948C13.25 7.04953 13.2499 6.30029 13.3299 5.70552C13.4143 5.07772 13.6 4.51092 14.0555 4.05545C14.5109 3.59998 15.0777 3.41431 15.7055 3.32991C16.3003 3.24994 17.0495 3.24997 17.948 3.25H18.052C18.9505 3.24997 19.6997 3.24994 20.2945 3.32991C20.9223 3.41431 21.4891 3.59998 21.9445 4.05545C22.4 4.51092 22.5857 5.07772 22.6701 5.70552C22.7501 6.30029 22.75 7.0495 22.75 7.94797V8.052C22.75 8.95046 22.7501 9.6997 22.6701 10.2945C22.5857 10.9223 22.4 11.4891 21.9445 11.9445C21.4891 12.4 20.9223 12.5857 20.2945 12.6701C19.6997 12.7501 18.9505 12.75 18.052 12.75H17.948Z" fill="#02015A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7953 20.0475C14.631 19.5202 14.9252 18.9596 15.4525 18.7953C18.5601 17.8268 20.75 15.0749 20.75 11.8873V7.75C20.75 7.19771 21.1977 6.75 21.75 6.75C22.3023 6.75 22.75 7.19771 22.75 7.75V11.8873C22.75 16.0337 19.9084 19.5015 16.0475 20.7047C15.5203 20.869 14.9596 20.5748 14.7953 20.0475Z" fill="#02015A"/>
+              </svg>
+            </div>
+            <div class="space16"></div>
+            <p>My grand father was admitted under Dr.praveen reddy sir for Knee replacement we had very good experience, Dr.praveen reddy sir was very gentle with the patient, Explained very well regarding the procedure.. Am thankfull for Dr.praveen sir🙂🙂</p>
+            <div class="space24"></div>
+            <div class="text-area">
+              <a href="#">Kythapur Shanthipriya</a>
+              <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777e">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777f">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777g">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777f">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+                <li>(5.0)</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="testimonial4-boxarea">
+            <div class="icons">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M5.94797 12.75C5.0495 12.75 4.30029 12.7501 3.70552 12.6701C3.07772 12.5857 2.51092 12.4 2.05545 11.9445C1.59998 11.4891 1.41431 10.9223 1.32991 10.2945C1.24994 9.6997 1.24997 8.95049 1.25 8.05202V7.948C1.24997 7.04953 1.24994 6.30029 1.32991 5.70552C1.41431 5.07772 1.59998 4.51092 2.05546 4.05545C2.51093 3.59998 3.07772 3.41431 3.70552 3.32991C4.30029 3.24994 5.04951 3.24997 5.94797 3.25H6.05199C6.95046 3.24997 7.6997 3.24994 8.29448 3.32991C8.92227 3.41431 9.48907 3.59998 9.94454 4.05545C10.4 4.51092 10.5857 5.07772 10.6701 5.70552C10.7501 6.30029 10.75 7.0495 10.75 7.94797V8.052C10.75 8.95046 10.7501 9.6997 10.6701 10.2945C10.5857 10.9223 10.4 11.4891 9.94454 11.9445C9.48907 12.4 8.92227 12.5857 8.29448 12.6701C7.6997 12.7501 6.95049 12.75 6.05203 12.75H5.94797Z" fill="#02015A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.79531 20.0475C2.63099 19.5202 2.92522 18.9596 3.45249 18.7953C6.56016 17.8268 8.75002 15.0749 8.75002 11.8873V7.75C8.75002 7.19771 9.19774 6.75 9.75002 6.75C10.3023 6.75 10.75 7.19771 10.75 7.75V11.8873C10.75 16.0337 7.90846 19.5015 4.04755 20.7047C3.52027 20.869 2.95963 20.5748 2.79531 20.0475Z" fill="#02015A"/>
+                <path d="M17.948 12.75C17.0495 12.75 16.3003 12.7501 15.7055 12.6701C15.0777 12.5857 14.5109 12.4 14.0555 11.9445C13.6 11.4891 13.4143 10.9223 13.3299 10.2945C13.2499 9.6997 13.25 8.95049 13.25 8.05202V7.948C13.25 7.04953 13.2499 6.30029 13.3299 5.70552C13.4143 5.07772 13.6 4.51092 14.0555 4.05545C14.5109 3.59998 15.0777 3.41431 15.7055 3.32991C16.3003 3.24994 17.0495 3.24997 17.948 3.25H18.052C18.9505 3.24997 19.6997 3.24994 20.2945 3.32991C20.9223 3.41431 21.4891 3.59998 21.9445 4.05545C22.4 4.51092 22.5857 5.07772 22.6701 5.70552C22.7501 6.30029 22.75 7.0495 22.75 7.94797V8.052C22.75 8.95046 22.7501 9.6997 22.6701 10.2945C22.5857 10.9223 22.4 11.4891 21.9445 11.9445C21.4891 12.4 20.9223 12.5857 20.2945 12.6701C19.6997 12.7501 18.9505 12.75 18.052 12.75H17.948Z" fill="#02015A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7953 20.0475C14.631 19.5202 14.9252 18.9596 15.4525 18.7953C18.5601 17.8268 20.75 15.0749 20.75 11.8873V7.75C20.75 7.19771 21.1977 6.75 21.75 6.75C22.3023 6.75 22.75 7.19771 22.75 7.75V11.8873C22.75 16.0337 19.9084 19.5015 16.0475 20.7047C15.5203 20.869 14.9596 20.5748 14.7953 20.0475Z" fill="#02015A"/>
+              </svg>
+            </div>
+            <div class="space16"></div>
+            <p>It's good very well doctor is good my mother recovered and walked in 2 days excellent hospital they have given good service..Praveen doctor is very pleasant personality and done knee replacement to my mother...</p>
+            <div class="space24"></div>
+            <div class="text-area">
+              <a href="#">Shashi Reddy</a>
+              <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777e">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777f">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777g">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777f">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg></li>
+                <li>(5.0)</li>
               </ul>
             </div>
           </div>
@@ -1474,17 +1630,17 @@ curl_close($ch);
               </svg>
             </div>
             <div class="space16"></div>
-            <p>"I've been a patient at Clinic Medical Clinic for years, and I couldn't be happier with the level of care I receive. The staff is friendly, knowledgeable, and always goes above and beyond to ensure my needs are met. I highly recommend PrimeCare to anyone looking for a reliable medical clinic." </p>
+            <p>Praveen Reddy sir was very pleasent and cool doctor. Operated my wife for her left leg ligament repair we are very happy the way doctor took care of my wife.Thanking to total hospital staff , maintenance was very clean,and staff also very responsible, responding quickly, physio staff also very good very helpful.. totally happy with the service...</p>
             <div class="space24"></div>
             <div class="text-area">
-              <a href="#">Eleanor Pena</a>
+              <a href="#">Santhosh Kumar</a>
               <ul>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
                   <g clip-path="url(#clip0_5927_9777)">
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777A">
+                    <clipPath id="clip0_5927_9777">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1495,7 +1651,7 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777B">
+                    <clipPath id="clip0_5927_9777e">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1506,7 +1662,7 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777C">
+                    <clipPath id="clip0_5927_9777f">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
@@ -1517,153 +1673,31 @@ curl_close($ch);
                     <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_5927_9777D">
+                    <clipPath id="clip0_5927_9777g">
                       <rect width="18" height="16" fill="white"/>
                     </clipPath>
                   </defs>
                 </svg></li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <path d="M9.00002 0C8.64377 0 8.28751 0.184375 8.10314 0.55625L6.06251 4.69375L1.49689 5.35625C0.67814 5.475 0.350015 6.48437 0.943765 7.0625L4.24689 10.2812L3.46564 14.8281C3.32501 15.6437 4.18439 16.2656 4.91564 15.8812L9.00002 13.7375V0Z" fill="#F2C94C"/>
+                 <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                  <g clip-path="url(#clip0_5927_9777)">
+                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5927_9777f">
+                      <rect width="18" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
                 </svg></li>
-                <li>(4.5)</li>
+                <li>(5.0)</li>
               </ul>
             </div>
-          </div>
+          </div>       
+         
 
-          <div class="testimonial4-boxarea">
-            <div class="icons">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M5.94797 12.75C5.0495 12.75 4.30029 12.7501 3.70552 12.6701C3.07772 12.5857 2.51092 12.4 2.05545 11.9445C1.59998 11.4891 1.41431 10.9223 1.32991 10.2945C1.24994 9.6997 1.24997 8.95049 1.25 8.05202V7.948C1.24997 7.04953 1.24994 6.30029 1.32991 5.70552C1.41431 5.07772 1.59998 4.51092 2.05546 4.05545C2.51093 3.59998 3.07772 3.41431 3.70552 3.32991C4.30029 3.24994 5.04951 3.24997 5.94797 3.25H6.05199C6.95046 3.24997 7.6997 3.24994 8.29448 3.32991C8.92227 3.41431 9.48907 3.59998 9.94454 4.05545C10.4 4.51092 10.5857 5.07772 10.6701 5.70552C10.7501 6.30029 10.75 7.0495 10.75 7.94797V8.052C10.75 8.95046 10.7501 9.6997 10.6701 10.2945C10.5857 10.9223 10.4 11.4891 9.94454 11.9445C9.48907 12.4 8.92227 12.5857 8.29448 12.6701C7.6997 12.7501 6.95049 12.75 6.05203 12.75H5.94797Z" fill="#02015A"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.79531 20.0475C2.63099 19.5202 2.92522 18.9596 3.45249 18.7953C6.56016 17.8268 8.75002 15.0749 8.75002 11.8873V7.75C8.75002 7.19771 9.19774 6.75 9.75002 6.75C10.3023 6.75 10.75 7.19771 10.75 7.75V11.8873C10.75 16.0337 7.90846 19.5015 4.04755 20.7047C3.52027 20.869 2.95963 20.5748 2.79531 20.0475Z" fill="#02015A"/>
-                <path d="M17.948 12.75C17.0495 12.75 16.3003 12.7501 15.7055 12.6701C15.0777 12.5857 14.5109 12.4 14.0555 11.9445C13.6 11.4891 13.4143 10.9223 13.3299 10.2945C13.2499 9.6997 13.25 8.95049 13.25 8.05202V7.948C13.25 7.04953 13.2499 6.30029 13.3299 5.70552C13.4143 5.07772 13.6 4.51092 14.0555 4.05545C14.5109 3.59998 15.0777 3.41431 15.7055 3.32991C16.3003 3.24994 17.0495 3.24997 17.948 3.25H18.052C18.9505 3.24997 19.6997 3.24994 20.2945 3.32991C20.9223 3.41431 21.4891 3.59998 21.9445 4.05545C22.4 4.51092 22.5857 5.07772 22.6701 5.70552C22.7501 6.30029 22.75 7.0495 22.75 7.94797V8.052C22.75 8.95046 22.7501 9.6997 22.6701 10.2945C22.5857 10.9223 22.4 11.4891 21.9445 11.9445C21.4891 12.4 20.9223 12.5857 20.2945 12.6701C19.6997 12.7501 18.9505 12.75 18.052 12.75H17.948Z" fill="#02015A"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7953 20.0475C14.631 19.5202 14.9252 18.9596 15.4525 18.7953C18.5601 17.8268 20.75 15.0749 20.75 11.8873V7.75C20.75 7.19771 21.1977 6.75 21.75 6.75C22.3023 6.75 22.75 7.19771 22.75 7.75V11.8873C22.75 16.0337 19.9084 19.5015 16.0475 20.7047C15.5203 20.869 14.9596 20.5748 14.7953 20.0475Z" fill="#02015A"/>
-              </svg>
-            </div>
-            <div class="space16"></div>
-            <p>I recently visited clinic for a minor injury, and I was impressed by the efficiency and professionalism of the staff. From check-in to discharge, everything went smoothly, and I felt well taken care of throughout the entire process. I highly recommend PrimeCare to quality medical care.</p>
-            <div class="space24"></div>
-            <div class="text-area">
-              <a href="#">Devon Lane</a>
-              <ul>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <g clip-path="url(#clip0_5927_9777)">
-                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_5927_9777E">
-                      <rect width="18" height="16" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg></li>
-
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <g clip-path="url(#clip0_5927_9777)">
-                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_5927_9777F">
-                      <rect width="18" height="16" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg></li>
-
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <g clip-path="url(#clip0_5927_9777)">
-                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_5927_9777G">
-                      <rect width="18" height="16" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg></li>
-
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <g clip-path="url(#clip0_5927_9777)">
-                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_5927_9777H">
-                      <rect width="18" height="16" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg></li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <path d="M9.00002 0C8.64377 0 8.28751 0.184375 8.10314 0.55625L6.06251 4.69375L1.49689 5.35625C0.67814 5.475 0.350015 6.48437 0.943765 7.0625L4.24689 10.2812L3.46564 14.8281C3.32501 15.6437 4.18439 16.2656 4.91564 15.8812L9.00002 13.7375V0Z" fill="#F2C94C"/>
-                </svg></li>
-                <li>(4.5)</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="testimonial4-boxarea">
-            <div class="icons">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M5.94797 12.75C5.0495 12.75 4.30029 12.7501 3.70552 12.6701C3.07772 12.5857 2.51092 12.4 2.05545 11.9445C1.59998 11.4891 1.41431 10.9223 1.32991 10.2945C1.24994 9.6997 1.24997 8.95049 1.25 8.05202V7.948C1.24997 7.04953 1.24994 6.30029 1.32991 5.70552C1.41431 5.07772 1.59998 4.51092 2.05546 4.05545C2.51093 3.59998 3.07772 3.41431 3.70552 3.32991C4.30029 3.24994 5.04951 3.24997 5.94797 3.25H6.05199C6.95046 3.24997 7.6997 3.24994 8.29448 3.32991C8.92227 3.41431 9.48907 3.59998 9.94454 4.05545C10.4 4.51092 10.5857 5.07772 10.6701 5.70552C10.7501 6.30029 10.75 7.0495 10.75 7.94797V8.052C10.75 8.95046 10.7501 9.6997 10.6701 10.2945C10.5857 10.9223 10.4 11.4891 9.94454 11.9445C9.48907 12.4 8.92227 12.5857 8.29448 12.6701C7.6997 12.7501 6.95049 12.75 6.05203 12.75H5.94797Z" fill="#02015A"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.79531 20.0475C2.63099 19.5202 2.92522 18.9596 3.45249 18.7953C6.56016 17.8268 8.75002 15.0749 8.75002 11.8873V7.75C8.75002 7.19771 9.19774 6.75 9.75002 6.75C10.3023 6.75 10.75 7.19771 10.75 7.75V11.8873C10.75 16.0337 7.90846 19.5015 4.04755 20.7047C3.52027 20.869 2.95963 20.5748 2.79531 20.0475Z" fill="#02015A"/>
-                <path d="M17.948 12.75C17.0495 12.75 16.3003 12.7501 15.7055 12.6701C15.0777 12.5857 14.5109 12.4 14.0555 11.9445C13.6 11.4891 13.4143 10.9223 13.3299 10.2945C13.2499 9.6997 13.25 8.95049 13.25 8.05202V7.948C13.25 7.04953 13.2499 6.30029 13.3299 5.70552C13.4143 5.07772 13.6 4.51092 14.0555 4.05545C14.5109 3.59998 15.0777 3.41431 15.7055 3.32991C16.3003 3.24994 17.0495 3.24997 17.948 3.25H18.052C18.9505 3.24997 19.6997 3.24994 20.2945 3.32991C20.9223 3.41431 21.4891 3.59998 21.9445 4.05545C22.4 4.51092 22.5857 5.07772 22.6701 5.70552C22.7501 6.30029 22.75 7.0495 22.75 7.94797V8.052C22.75 8.95046 22.7501 9.6997 22.6701 10.2945C22.5857 10.9223 22.4 11.4891 21.9445 11.9445C21.4891 12.4 20.9223 12.5857 20.2945 12.6701C19.6997 12.7501 18.9505 12.75 18.052 12.75H17.948Z" fill="#02015A"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7953 20.0475C14.631 19.5202 14.9252 18.9596 15.4525 18.7953C18.5601 17.8268 20.75 15.0749 20.75 11.8873V7.75C20.75 7.19771 21.1977 6.75 21.75 6.75C22.3023 6.75 22.75 7.19771 22.75 7.75V11.8873C22.75 16.0337 19.9084 19.5015 16.0475 20.7047C15.5203 20.869 14.9596 20.5748 14.7953 20.0475Z" fill="#02015A"/>
-              </svg>
-            </div>
-            <div class="space16"></div>
-            <p>"I've had the pleasure of being a patient at clinic for several years now, and I couldn't be happier with the level of care I've received. The doctors and staff are always friendly and attentive, and I appreciate the personalized approach to my healthcare.</p>
-            <div class="space24"></div>
-            <div class="text-area">
-              <a href="#">Courtney Henry</a>
-              <ul>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <g clip-path="url(#clip0_5927_9777)">
-                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_5927_9777I">
-                      <rect width="18" height="16" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg></li>
-
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <g clip-path="url(#clip0_5927_9777)">
-                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_5927_9777J">
-                      <rect width="18" height="16" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg></li>
-
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <g clip-path="url(#clip0_5927_9777)">
-                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_5927_9777K">
-                      <rect width="18" height="16" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg></li>
-
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <g clip-path="url(#clip0_5927_9777)">
-                    <path d="M8.10314 0.556646L6.06251 4.69415L1.49689 5.35977C0.67814 5.47852 0.350015 6.4879 0.943765 7.06602L4.24689 10.2848L3.46564 14.8316C3.32501 15.6535 4.19064 16.2691 4.91564 15.8848L9.00001 13.7379L13.0844 15.8848C13.8094 16.266 14.675 15.6535 14.5344 14.8316L13.7531 10.2848L17.0563 7.06602C17.65 6.4879 17.3219 5.47852 16.5031 5.35977L11.9375 4.69415L9.89689 0.556646C9.53126 -0.180854 8.47189 -0.190229 8.10314 0.556646Z" fill="#F2C94C"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_5927_9777L">
-                      <rect width="18" height="16" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg></li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                  <path d="M9.00002 0C8.64377 0 8.28751 0.184375 8.10314 0.55625L6.06251 4.69375L1.49689 5.35625C0.67814 5.475 0.350015 6.48437 0.943765 7.0625L4.24689 10.2812L3.46564 14.8281C3.32501 15.6437 4.18439 16.2656 4.91564 15.8812L9.00002 13.7375V0Z" fill="#F2C94C"/>
-                </svg></li>
-                <li>(4.5)</li>
-              </ul>
-            </div>
-          </div>
+          
         </div>
       </div>
-      <div class="col-lg-12">
+     <!-- <div class="col-lg-12">
         <div class="space40"></div>
         <div class="btn-area1 text-center">
           <a href="contact.html" class="vl-btn4">Schedule an Appointment <span><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -1671,7 +1705,7 @@ curl_close($ch);
             </svg></span>
           </a>
        </div>
-      </div>
+      </div>-->
     </div>
   </div>
 </div>

@@ -1,0 +1,10 @@
+RewriteEngine On
+# Serve existing files and directories as-is
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Route /blog/slug to blog-single.php?url=/blog/slug
+RewriteRule ^blog/([a-zA-Z0-9-]+)$ blog-single.php?url=/blog/$1 [L,QSA]
+
+
+RewriteCond %{HTTP_HOST} ^www\.drpraveenreddyortho\.com [NC]
+RewriteRule ^(.*)$ https://drpraveenreddyortho.com/$1 [L,R=301]

@@ -14,7 +14,7 @@
             </svg></div>
            <div>
              <label class="label">Call Us</label>
-            <p>+91-123456789</p>
+            <p>+91-9459108108</p>
            </div>
         </div>
       </div>
@@ -26,7 +26,7 @@
             </svg></div>
            <div>
              <label class="label">Send Us Email</label>
-            <p>email@domain.com</p>
+            <p>info@drpraveenreddyortho.com</p>
            </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
 
 </div>
            <div>
-             <label class="label">Opening Time (Mon - Sat)</label>
+             <label class="label">Opening Time (Sun - Sat)</label>
             <p>10am - 2pm &nbsp;&&nbsp; 6pm - 9pm</p>
            </div>
         </div>

@@ -26,6 +26,7 @@
 
     <!--=====  JS SCRIPT LINK =======-->
     <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </head>
 <body class="homepage1-body">
  
@@ -41,7 +42,7 @@
         <div class="hero-header">
           <h1 class="text-anime-style-1">Contact Us</h1>
           <div class="space28"></div>
-          <a href="index.html" class="bradecrumb">Home <i class="fa-solid fa-angle-right"></i> Contact Us</a>
+          <a href="index.php" class="bradecrumb">Home <i class="fa-solid fa-angle-right"></i> Contact Us</a>
         </div>
       </div>
     </div>
@@ -88,7 +89,10 @@
                           </svg>
                     </div>
                     <div class="text">
-                        <a >Plot No. 50, Nagarjuna Sagar Ring Rd, opp. The New Green Bawarchi, Sri Durga Enclave, SBH Colony, L. B. Nagar, Hyderabad, Telangana 500074</a>
+                        <a >#102, 103, Omkar Nagar,
+Nagarjuna Sagar Road, LB Nagar,
+Hyderabad, Telangana - 500079,
+India.</a>
                     </div>
                 </div>
 
@@ -99,7 +103,7 @@
                           </svg>
                     </div>
                     <div class="text">
-                        <a href="mailto:info@praveenreddy.com">info@praveenreddy.com</a>
+                        <a href="mailto: info@drpraveenreddyortho.com"> info@drpraveenreddyortho.com</a>
                     </div>
                 </div> -->
             </div>
@@ -196,7 +200,8 @@
                     <div class="text">
                       <h4>Timings</h4>
                       <div class="space14"></div>
-                      <a href="#">Sun-Fri: 9 AM – 6 PM</a>
+                      <a href="#">Sun-Sat<br>
+                      10am - 2pm  &  6pm - 9pm</a>
                     </div>
                   </div>
                 </div>
@@ -227,7 +232,7 @@
                     <div class="text">
                       <h4>Our Email</h4>
                       <div class="space14"></div>
-                      <a href="mailto:info@praveenreddy.com">info@praveenreddy.com</a>
+                      <a href="mailto: info@drpraveenreddyortho.com"> info@drpraveenreddyortho.com</a>
                     </div>
                   </div>
                 </div>

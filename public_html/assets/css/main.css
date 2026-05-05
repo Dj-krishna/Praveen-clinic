@@ -2982,7 +2982,7 @@ body {
 .service4-section-area .service4-slider-area .service4-boxarea .content-area .title {
   color: var(--ztc-text-text-11);
   font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s24);
+  font-size: var(--ztc-font-size-font-s22);
   font-style: normal;
   font-weight: var(--ztc-weight-semibold);
   line-height: 24px;
@@ -3740,11 +3740,15 @@ body {
   margin-bottom: 15px !important;
   font-size: 18px !important;
   }
-
+.service-all-details-area .service-main-content-details h1{
+  margin-bottom: 10px !important;
+  font-size: 2.4rem !important;
+  font-weight: bold;
+  }
 .service-all-details-area .service-main-content-details h2{
   margin-bottom: 10px !important;
-  font-size: 2.8rem !important;
-  font-weight: bold;
+  font-size: 2.1rem !important;
+  font-weight: 600;
   }
 .service-all-details-area .service-main-content-details.padding-left {
   padding: 0 0 0 50px;
@@ -5949,7 +5953,7 @@ body {
 }
 .homepage4-body .vl-offcanvas {
   position: fixed;
-  background: var(--ztc-bg-bg-10);
+  background:#333;
   width: 450px;
   z-index: 99;
   right: 0;

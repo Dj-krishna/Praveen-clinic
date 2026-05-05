@@ -26,6 +26,7 @@
 
     <!--=====  JS SCRIPT LINK =======-->
     <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </head>
 <body class="homepage1-body">
  
@@ -83,7 +84,7 @@
         <div class="hero-header">
           <h1 class="text-anime-style-1">About Dr Praveen Reddy P</h1>
           <div class="space28"></div>
-          <a href="index.html" class="bradecrumb">Home <i class="fa-solid fa-angle-right"></i> About Doctor</a>
+          <a href="index.php" class="bradecrumb">Home <i class="fa-solid fa-angle-right"></i> About Doctor</a>
         </div>
       </div>
     </div>
@@ -129,12 +130,12 @@
 <p>With extensive experience in orthopedic surgery, Dr Praveen Reddy P specializes in diagnosing and treating a wide range of joint disorders, sports injuries, trauma conditions, and arthritis-related problems. His patient-focused approach combines evidence-based orthopedic practices, advanced surgical techniques, and personalized rehabilitation plans to help patients regain mobility, reduce pain, and improve their quality of life.</p>
 <p>Dr Praveen Reddy P is particularly known for his expertise in robotic joint replacement surgery, arthroscopic sports injury treatment, trauma surgery, and comprehensive orthopedic care. By integrating modern orthopedic technology and minimally invasive surgical methods, he ensures precise treatment outcomes and faster recovery for patients.</p>
 
-              <div class="badge-box">
+             <!-- <div class="badge-box">
 
 <img src="https://cdn-icons-png.flaticon.com/512/2910/2910768.png">
 <img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png">
 
-</div>
+</div>-->
 
               </div>
             </div>
@@ -292,122 +293,28 @@
 </div>
 <!--===== ABOUT AREA ENDS =======-->
 
- 
-        <!--===== BLOG AREA STARTS =======-->
-<div class="vl-blog-4-area sp2">
-    <div class="container">
-       <div class="row">
-          <div class="col-lg-12 m-auto">
-             <div class="vl-blog-1-section-box heading4 text-center space-margin60">
-                <h5 class="vl-section-subtitle">From the Blog <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
-                    <path d="M0.667969 4.00033H11.049M8.00137 7.33366L11.3346 4.00033L8.0013 0.666992" stroke="#02015A" stroke-width="1.5"/>
-                  </svg>
-                </h5>
-                <div class="space24"></div>
-                <h2 class="vl-section-title text-anime-style-3">Our Latest Health News</h2>
-             </div>
-          </div>
-       </div>
-       <div class="row">
-        <div class="col-lg-4  col-md-6" data-aos="fade-left" data-aos-duration="900">
-          <div class="vl-blog-1-item">
-             <div class="vl-blog-1-thumb image-anime">
-                <img src="assets/img/all-images/blog/blog-img4.png" alt="">
-             </div>
-             <div class="vl-blog-1-content">
-              <div class="vl-blog-meta">
-                 <ul>
-                  <li>
-                    <a href="#">24 Jan 2025</a>
-                </li>
-                 </ul>
-              </div>
-              <div class="space16"></div>
-              <h4 class="vl-blog-1-title"><a href="blog-single.html">Personal Branding For Consultants: Be Authentic To Get More Clients.</a></h4>
-              <div class="space28"></div>
-              <div class="vl-blog-1-icon">
-                <a href="blog-single.html" class="learnmore">Read Article<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833496C4.04188 0.833496 0.833252 4.04212 0.833252 8.00016C0.833252 11.9582 4.04188 15.1668 7.99992 15.1668C11.958 15.1668 15.1666 11.9582 15.1666 8.00016C15.1666 4.04212 11.958 0.833496 7.99992 0.833496ZM7.33325 5.3335C7.06359 5.3335 6.82052 5.49592 6.71732 5.74504C6.61415 5.99416 6.67119 6.2809 6.86185 6.47157L7.72379 7.3335L5.52851 9.52876C5.26817 9.7891 5.26817 10.2112 5.52851 10.4716C5.78887 10.7319 6.21097 10.7319 6.47133 10.4716L8.66659 8.2763L9.52852 9.13823C9.71919 9.3289 10.0059 9.38596 10.2551 9.28276C10.5042 9.17956 10.6666 8.9365 10.6666 8.66683V6.00016C10.6666 5.63198 10.3681 5.3335 9.99992 5.3335H7.33325Z" fill="#666"/>
-                  </svg></a>
-             </div>
-           </div>
-          </div>
-       </div>
-  
-       <div class="col-lg-4  col-md-6" data-aos="fade-left" data-aos-duration="900">
-        <div class="vl-blog-1-item">
-           <div class="vl-blog-1-thumb image-anime">
-              <img src="assets/img/all-images/blog/blog-img5.png" alt="">
-           </div>
-           <div class="vl-blog-1-content">
-            <div class="vl-blog-meta">
-               <ul>
-                <li>
-                  <a href="#">24 Jan 2025</a>
-              </li>
-               </ul>
-            </div>
-            <div class="space16"></div>
-            <h4 class="vl-blog-1-title"><a href="blog-single.html">What Is An Entrepreneurial Consultant? (Examples & Stories).</a></h4>
-            <div class="space28"></div>
-            <div class="vl-blog-1-icon">
-              <a href="blog-single.html" class="learnmore">Read Article<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833496C4.04188 0.833496 0.833252 4.04212 0.833252 8.00016C0.833252 11.9582 4.04188 15.1668 7.99992 15.1668C11.958 15.1668 15.1666 11.9582 15.1666 8.00016C15.1666 4.04212 11.958 0.833496 7.99992 0.833496ZM7.33325 5.3335C7.06359 5.3335 6.82052 5.49592 6.71732 5.74504C6.61415 5.99416 6.67119 6.2809 6.86185 6.47157L7.72379 7.3335L5.52851 9.52876C5.26817 9.7891 5.26817 10.2112 5.52851 10.4716C5.78887 10.7319 6.21097 10.7319 6.47133 10.4716L8.66659 8.2763L9.52852 9.13823C9.71919 9.3289 10.0059 9.38596 10.2551 9.28276C10.5042 9.17956 10.6666 8.9365 10.6666 8.66683V6.00016C10.6666 5.63198 10.3681 5.3335 9.99992 5.3335H7.33325Z" fill="#666"/>
-                </svg></a>
-           </div>
-         </div>
-        </div>
-     </div>
-     <div class="col-lg-4  col-md-6" data-aos="fade-left" data-aos-duration="900">
-        <div class="vl-blog-1-item">
-           <div class="vl-blog-1-thumb image-anime">
-              <img src="assets/img/all-images/blog/blog-img6.png" alt="">
-           </div>
-           <div class="vl-blog-1-content">
-            <div class="vl-blog-meta">
-               <ul>
-                <li>
-                  <a href="#">24 Jan 2025</a>
-              </li>
-               </ul>
-            </div>
-            <div class="space16"></div>
-            <h4 class="vl-blog-1-title"><a href="blog-single.html">What Is An Entrepreneurial Consultant? (Examples & Stories).</a></h4>
-            <div class="space28"></div>
-            <div class="vl-blog-1-icon">
-              <a href="blog-single.html" class="learnmore">Read Article<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833496C4.04188 0.833496 0.833252 4.04212 0.833252 8.00016C0.833252 11.9582 4.04188 15.1668 7.99992 15.1668C11.958 15.1668 15.1666 11.9582 15.1666 8.00016C15.1666 4.04212 11.958 0.833496 7.99992 0.833496ZM7.33325 5.3335C7.06359 5.3335 6.82052 5.49592 6.71732 5.74504C6.61415 5.99416 6.67119 6.2809 6.86185 6.47157L7.72379 7.3335L5.52851 9.52876C5.26817 9.7891 5.26817 10.2112 5.52851 10.4716C5.78887 10.7319 6.21097 10.7319 6.47133 10.4716L8.66659 8.2763L9.52852 9.13823C9.71919 9.3289 10.0059 9.38596 10.2551 9.28276C10.5042 9.17956 10.6666 8.9365 10.6666 8.66683V6.00016C10.6666 5.63198 10.3681 5.3335 9.99992 5.3335H7.33325Z" fill="#666"/>
-                </svg></a>
-           </div>
-         </div>
-        </div>
-     </div>
-       </div>
-    </div>
-  </div>
-  <!--===== BLOG AREA ENDS =======-->
- 
-  
-<!--===== CONTACT AREA STARTS =======-->
+
+
+<!--===== APPOINTMENT STARTS =======-->
+
 <div class="contact-heading">
-  <div class="space100 d-lg-block d-none"></div>
   <div class="space50 d-lg-none d-block"></div>
   <div class="container">
     <div class="row">
       <div class="col-lg-8 m-auto">
         <div class="heading4 text-center space-margin60">
-          <h5 class="vl-section-subtitle">Hospital <span> | </span>Ready to Take the First Step? <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+          <h5 class="vl-section-subtitle">Ready to Take the First Step? <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
             <path d="M0.667969 4.00033H11.049M8.00137 7.33366L11.3346 4.00033L8.0013 0.666992" stroke="#02015A" stroke-width="1.5"/>
           </svg>
         </h5>
         <div class="space24"></div>
-        <h2 class="vl-section-title text-anime-style-3">Book Consultation Hospital  Clinic</h2>
+        <h2 class="vl-section-title text-anime-style-3">Book Consultation</h2>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="contact1-section-area4" style="background-image: url(assets/img/all-images/contact/contact-img1.html); background-position: center top; background-repeat: no-repeat; background-size: cover;">
+<div class="contact1-section-area4 mb-5" style="background-image: url(assets/img/all-images/contact/contact-img1.png); background-position: center top; background-repeat: no-repeat; background-size: cover;">
   <img src="assets/img/all-images/bg/contact-bg.png" alt="" class="contact-bg">
   <div class="container">
     <div class="row">
@@ -425,7 +332,7 @@
                 <div class="text">
                   <h4>Schedule</h4>
                   <div class="space14"></div>
-                  <a href="#">Sun-Fri: 9 AM – 6 PM</a>
+                  <a href="#">Sun-Sat: 10 AM – 2 PM <br> 6 PM - 9 PM</a>
                 </div>
               </div>
             </div>
@@ -441,12 +348,12 @@
                 <div class="text">
                   <h4>locations</h4>
                   <div class="space14"></div>
-                  <a href="#">421 Allen, Mexico 4233</a>
+                  <a href="#">Omkar Nagar, Nagarjuna Sagar Road, LB Nagar, Hyd</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-6" data-aos="zoom-in-up" data-aos-duration="1000">
+           <!--  <div class="col-lg-6 col-md-6" data-aos="zoom-in-up" data-aos-duration="1000">
               <div class="single-box">
                 <div class="icons">
                   <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
@@ -456,7 +363,7 @@
                 <div class="text">
                   <h4>Our Email</h4>
                   <div class="space14"></div>
-                  <a href="mailto:Hospital @gmail.com">Hospital @gmail.com</a>
+                  
                 </div>
               </div>
             </div>
@@ -474,7 +381,7 @@
                   <a href="tel:+11234567890">+1 123 456 7890</a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -484,78 +391,201 @@
           <div class="space20"></div>
           <p>Scheduling consultation is first step toward achieving <br class="d-lg-block d-none"> your health and wellness goals with the best support </p>
           <div class="space6"></div>
+
+          <!-- Toast Notification -->
+          <div id="appointment-toast" style="display:none; position:fixed; top:30px; right:30px; z-index:99999; min-width:320px; padding:18px 28px; border-radius:12px; color:#fff; font-size:15px; font-weight:500; box-shadow:0 8px 32px rgba(0,0,0,0.18); transition:all 0.4s ease; animation: slideInRight 0.4s ease;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span id="toast-icon" style="font-size:22px;"></span>
+              <span id="toast-message"></span>
+            </div>
+          </div>
+
+          <form id="appointmentForm" novalidate>
           <div class="row">
             <div class="col-lg-6">
               <div class="input-area">
-                <input type="text" placeholder="Full Name*">
+                <input type="text" id="apt-fullname" name="fullName" placeholder="Full Name*" autocomplete="name">
+                <div class="field-error" id="err-fullname" style="color:#e74c3c; font-size:12px; margin-top:4px; display:none;"></div>
               </div>
             </div>
 
             <div class="col-lg-6">
               <div class="input-area">
-                <input type="number" placeholder="Phone Number*">
+                <input type="tel" id="apt-mobile" name="mobile" placeholder="Phone Number*" maxlength="10" autocomplete="tel">
+                <div class="field-error" id="err-mobile" style="color:#e74c3c; font-size:12px; margin-top:4px; display:none;"></div>
               </div>
             </div>
 
-            <div class="col-lg-6">
+             <div class="col-lg-6">
               <div class="input-area">
-                <input type="email" placeholder="Email Address*">
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="input-area">
-                <select name="country" id="country" class="country-area nice-select">
-                  <option value="1" data-display="Service Type">Service Type</option>
-                  <option value=""> General Medical Services</option>
-                  <option value=""> Specialist Services</option>
-                  <option value=""> Women’s Health Services</option>
-                  <option value=""> Mental Health and Wellness</option>
-                  <option value=""> Diagnostic and Laboratory Services</option>
+                <select name="gender" id="apt-gender" class="country-area" style="width:100%; height:55px; border:1px solid #e0e0e0; border-radius:5px; padding:0 15px; font-size:14px; color:#666; background:#fff; outline:none; cursor:pointer; appearance:auto;">
+                  <option value="" selected disabled>Select Gender*</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Others">Others</option>
                 </select>
+                <div class="field-error" id="err-gender" style="color:#e74c3c; font-size:12px; margin-top:4px; display:none;"></div>
+              </div>
+            </div>
+
+             <div class="col-lg-6">
+              <div class="input-area">
+                <input type="number" id="apt-age" name="age" placeholder="Age*" min="1" max="120">
+                <div class="field-error" id="err-age" style="color:#e74c3c; font-size:12px; margin-top:4px; display:none;"></div>
+              </div>
+            </div>
+
+             <div class="col-lg-6">
+              <div class="input-area">
+                <input type="date" id="apt-date" name="appointmentDate" placeholder="Appointment Date*">
+                <div class="field-error" id="err-date" style="color:#e74c3c; font-size:12px; margin-top:4px; display:none;"></div>
               </div>
             </div>
 
             <div class="col-lg-6">
               <div class="input-area">
-                <select name="country" id="country1" class="country-area nice-select">
-                  <option value="1" data-display="Select Doctor*">Select Doctor*</option>
-                  <option value=""> Dr. Emily Carter - Cardiologist</option>
-                  <option value=""> Dr. Michael - Orthopedic Surgeon</option>
-                  <option value=""> Dr. Olivia - Dermatologist</option>
-                  <option value=""> Dr. Ethan Brown - Pediatrician</option>
-                  <option value=""> Dr. Ava Davis - Neurologist</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="input-area">
-                <input type="date">
-              </div>
-            </div>
-
-            <div class="col-lg-12">
-              <div class="input-area">
-                <textarea placeholder="Your Message"></textarea>
+                <input type="email" id="apt-email" name="email" placeholder="Email Address (Optional)" autocomplete="email">
+                <div class="field-error" id="err-email" style="color:#e74c3c; font-size:12px; margin-top:4px; display:none;"></div>
               </div>
             </div>
 
             <div class="col-lg-12">
               <div class="space10"></div>
               <div class="input-area">
-                <button type="submit" class="vl-btn4">Complete Your Appointment Now <span><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <button type="submit" id="apt-submit-btn" class="vl-btn4">
+                  <span id="apt-btn-text">Complete Your Appointment Now</span>
+                  <span id="apt-btn-spinner" style="display:none;">
+                    <svg width="22" height="22" viewBox="0 0 22 22" style="animation: spin 1s linear infinite;">
+                      <circle cx="11" cy="11" r="9" stroke="white" stroke-width="2.5" fill="none" stroke-dasharray="40 20" stroke-linecap="round"/>
+                    </svg>
+                    Booking...
+                  </span>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0.25C5.06294 0.25 0.25 5.06294 0.25 11C0.25 16.9371 5.06294 21.75 11 21.75C16.9371 21.75 21.75 16.9371 21.75 11C21.75 5.06294 16.9371 0.25 11 0.25ZM10 7C9.5955 7 9.2309 7.24364 9.0761 7.61732C8.92134 7.99099 9.0069 8.42111 9.2929 8.70711L10.5858 10L7.29289 13.2929C6.90237 13.6834 6.90237 14.3166 7.29289 14.7071C7.68342 15.0976 8.31658 15.0976 8.70711 14.7071L12 11.4142L13.2929 12.7071C13.5789 12.9931 14.009 13.0787 14.3827 12.9239C14.7564 12.7691 15 12.4045 15 12V8C15 7.44772 14.5523 7 14 7H10Z" fill="white"/>
-                </svg></span></button>
+                </svg></span>
+                </button>
               </div>
             </div>
           </div>
+          </form>
         </div>
       </div>
     </div>
-  </div>
+  </div> 
 </div>
-<div class="space100 d-lg-block d-none"></div>
+ <div class="space50 d-inline-block w-100"></div>
+<!--===== APPOINTMENT ENDS =======-->
+
+
+ 
+          <!--===== BLOG AREA STARTS =======-->
+<?php
+// Fetch Blogs from API
+$blogs = [];
+$api_url = 'https://drpraveenreddyortho.com/api/blogs';
+$ch = curl_init($api_url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$response = curl_exec($ch);
+if($response !== false) {
+    $data = json_decode($response, true);
+    if(isset($data['success']) && $data['success'] && isset($data['data'])) {
+        $blogs = $data['data'];
+        $blogs = array_slice($blogs, 0, 3); // Display only top 3 on home page
+    }
+}
+curl_close($ch);
+?>
+<div class="vl-blog-4-area sp1">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-12 m-auto">
+             <div class="vl-blog-1-section-box heading4 text-center space-margin60">
+                <h5 class="vl-section-subtitle">From the Blog <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                    <path d="M0.667969 4.00033H11.049M8.00137 7.33366L11.3346 4.00033L8.0013 0.666992" stroke="#02015A" stroke-width="1.5"/>
+                  </svg>
+                </h5>
+                <div class="space24"></div>
+                <h2 class="vl-section-title text-anime-style-3">Our Latest Health News</h2>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+
+        <?php if(!empty($blogs)): ?>
+           <?php foreach($blogs as $blog): ?>
+           <?php 
+             $dateStr = '';
+             if (!empty($blog['dateOfPost'])) {
+                 try {
+                     $dateObj = new DateTime($blog['dateOfPost']);
+                     $dateStr = $dateObj->format('d M Y');
+                 } catch (Exception $e) {}
+             }
+             
+             // Determine image
+             $defaultImage = 'assets/img/all-images/blog/blog-img4.png';
+             $image = $defaultImage;
+             $baseUrl = 'https://drpraveenreddyortho.com/api/';
+             
+             if (!empty($blog['postBanner'])) {
+                 $image = strpos($blog['postBanner'], 'http') === 0 ? $blog['postBanner'] : $baseUrl . ltrim($blog['postBanner'], '/');
+             }
+             if (!empty($blog['postThumbnail'])) {
+                 $image = strpos($blog['postThumbnail'], 'http') === 0 ? $blog['postThumbnail'] : $baseUrl . ltrim($blog['postThumbnail'], '/');
+             }
+             
+             // Generate clean URL for blog post
+             $slug = ltrim($blog['url'] ?? '', '/');
+             $blogUrl = '/' . $slug;
+           ?>
+
+           <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-duration="900">
+             <div class="vl-blog-1-item" style="height: 100%; display: flex; flex-direction: column;">
+                <div class="vl-blog-1-thumb image-anime">
+                   <a href="<?php echo htmlspecialchars($blogUrl); ?>">
+                      <img src="<?php echo htmlspecialchars($image); ?>" 
+                           alt="<?php echo htmlspecialchars($blog['title'] ?? ''); ?>" 
+                           style="width: 100%; height: 250px; object-fit: cover;"
+                           onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%25\' height=\'100%25\' viewBox=\'0 0 400 250\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23f5f0eb\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-family=\'sans-serif\' font-size=\'16\' font-weight=\'500\' fill=\'%23b8a99a\' dominant-baseline=\'middle\' text-anchor=\'middle\'%3ENo Image Available%3C/text%3E%3C/svg%3E'">
+                   </a>
+                </div>
+                <div class="vl-blog-1-content" style="flex: 1; display: flex; flex-direction: column;">
+                 <div class="vl-blog-meta">
+                    <ul>
+                     <li>
+                       <a href="#"><?php echo htmlspecialchars($dateStr); ?></a>
+                   </li>
+                    </ul>
+                 </div>
+                 <div class="space16"></div>
+                 <h4 class="vl-blog-1-title"><a href="<?php echo htmlspecialchars($blogUrl); ?>"><?php echo htmlspecialchars($blog['title'] ?? ''); ?></a></h4>
+                 <div class="space28" style="flex: 1;"></div>
+                 <div class="vl-blog-1-icon">
+                   <a href="<?php echo htmlspecialchars($blogUrl); ?>" class="learnmore">Read Article<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                       <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 0.833496C4.04188 0.833496 0.833252 4.04212 0.833252 8.00016C0.833252 11.9582 4.04188 15.1668 7.99992 15.1668C11.958 15.1668 15.1666 11.9582 15.1666 8.00016C15.1666 4.04212 11.958 0.833496 7.99992 0.833496ZM7.33325 5.3335C7.06359 5.3335 6.82052 5.49592 6.71732 5.74504C6.61415 5.99416 6.67119 6.2809 6.86185 6.47157L7.72379 7.3335L5.52851 9.52876C5.26817 9.7891 5.26817 10.2112 5.52851 10.4716C5.78887 10.7319 6.21097 10.7319 6.47133 10.4716L8.66659 8.2763L9.52852 9.13823C9.71919 9.3289 10.0059 9.38596 10.2551 9.28276C10.5042 9.17956 10.6666 8.9365 10.6666 8.66683V6.00016C10.6666 5.63198 10.3681 5.3335 9.99992 5.3335H7.33325Z" fill="#666"/>
+                     </svg></a>
+                 </div>
+               </div>
+             </div>
+           </div>
+           
+           <?php endforeach; ?>
+        <?php else: ?>
+            <div class="col-12 text-center">
+                <p>No recent news available.</p>
+            </div>
+        <?php endif; ?>
+
+       </div>
+    </div>
+  </div>
+  <!--===== BLOG AREA ENDS =======-->
+ 
+  
+ 
+
+ 
 <div class="faq-inner-section-area sp1">
     <div class="container">
       <div class="row">
@@ -741,6 +771,267 @@
 <script src="assets/js/plugins/circle-progress.js"></script>
 <script src="assets/js/plugins/swiper.js"></script>
 <script src="assets/js/main.js"></script>
+
+<script>
+(function () {
+  const API_BASE = "https://drpraveenreddyortho.com";//"https://drpraveenreddyortho.com";
+  const CREATE_APPOINTMENT_URL = API_BASE + "/api/appointments";
+
+  const form = document.getElementById('appointmentForm');
+  if (!form) return;
+
+  const fields = {
+    fullName: document.getElementById('apt-fullname'),
+    mobile: document.getElementById('apt-mobile'),
+    gender: document.getElementById('apt-gender'),
+    age: document.getElementById('apt-age'),
+    date: document.getElementById('apt-date'),
+    email: document.getElementById('apt-email')
+  };
+
+  const errors = {
+    fullName: document.getElementById('err-fullname'),
+    mobile: document.getElementById('err-mobile'),
+    gender: document.getElementById('err-gender'),
+    age: document.getElementById('err-age'),
+    date: document.getElementById('err-date'),
+    email: document.getElementById('err-email')
+  };
+
+  const btnText = document.getElementById('apt-btn-text');
+  const btnSpinner = document.getElementById('apt-btn-spinner');
+  const submitBtn = document.getElementById('apt-submit-btn');
+
+  // Set minimum date to today
+  const today = new Date().toISOString().split('T')[0];
+  fields.date.setAttribute('min', today);
+
+  // Show field error
+  function showError(field, errorEl, message) {
+    errorEl.textContent = message;
+    errorEl.style.display = 'block';
+    field.classList.add('input-error');
+  }
+
+  // Clear field error
+  function clearError(field, errorEl) {
+    errorEl.textContent = '';
+    errorEl.style.display = 'none';
+    field.classList.remove('input-error');
+  }
+
+  // Clear all errors
+  function clearAllErrors() {
+    Object.keys(fields).forEach(function (key) {
+      clearError(fields[key], errors[key]);
+    });
+  }
+
+  // Real-time validation clear on input
+  fields.fullName.addEventListener('input', function () { clearError(fields.fullName, errors.fullName); });
+  fields.mobile.addEventListener('input', function () {
+    // Only allow digits
+    this.value = this.value.replace(/[^0-9]/g, '');
+    clearError(fields.mobile, errors.mobile);
+  });
+  fields.gender.addEventListener('change', function () { clearError(fields.gender, errors.gender); });
+  fields.age.addEventListener('input', function () { clearError(fields.age, errors.age); });
+  fields.date.addEventListener('change', function () { clearError(fields.date, errors.date); });
+  fields.email.addEventListener('input', function () { clearError(fields.email, errors.email); });
+
+  // Validate all fields
+  function validateForm() {
+    var isValid = true;
+    clearAllErrors();
+
+    // Full Name - required, min 2 chars, only letters and spaces
+    var name = fields.fullName.value.trim();
+    if (!name) {
+      showError(fields.fullName, errors.fullName, 'Full name is required');
+      isValid = false;
+    } else if (name.length < 2) {
+      showError(fields.fullName, errors.fullName, 'Name must be at least 2 characters');
+      isValid = false;
+    } else if (!/^[a-zA-Z\s'.]+$/.test(name)) {
+      showError(fields.fullName, errors.fullName, 'Name can only contain letters, spaces, apostrophes, and dots');
+      isValid = false;
+    }
+
+    // Mobile - required, 10 digits
+    var mobile = fields.mobile.value.trim();
+    if (!mobile) {
+      showError(fields.mobile, errors.mobile, 'Phone number is required');
+      isValid = false;
+    } else if (!/^[6-9][0-9]{9}$/.test(mobile)) {
+      showError(fields.mobile, errors.mobile, 'Enter a valid 10-digit Indian mobile number');
+      isValid = false;
+    }
+
+    // Gender - required
+    if (!fields.gender.value) {
+      showError(fields.gender, errors.gender, 'Please select your gender');
+      isValid = false;
+    }
+
+    // Age - required, 1-120
+    var age = fields.age.value.trim();
+    if (!age) {
+      showError(fields.age, errors.age, 'Age is required');
+      isValid = false;
+    } else if (isNaN(age) || parseInt(age) < 1 || parseInt(age) > 120) {
+      showError(fields.age, errors.age, 'Please enter a valid age (1-120)');
+      isValid = false;
+    }
+
+    // Date - required, must be today or future
+    var dateVal = fields.date.value;
+    if (!dateVal) {
+      showError(fields.date, errors.date, 'Appointment date is required');
+      isValid = false;
+    } else {
+      var selectedDate = new Date(dateVal);
+      var todayDate = new Date();
+      todayDate.setHours(0, 0, 0, 0);
+      if (selectedDate < todayDate) {
+        showError(fields.date, errors.date, 'Appointment date cannot be in the past');
+        isValid = false;
+      }
+    }
+
+    // Email - optional, but validate format if provided
+    var email = fields.email.value.trim();
+    if (email && !/^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/.test(email)) {
+      showError(fields.email, errors.email, 'Please enter a valid email address');
+      isValid = false;
+    }
+
+    return isValid;
+  }
+
+  // Toast notification
+  function showToast(type, message) {
+    var toast = document.getElementById('appointment-toast');
+    var toastIcon = document.getElementById('toast-icon');
+    var toastMsg = document.getElementById('toast-message');
+
+    if (type === 'success') {
+      toast.style.background = 'linear-gradient(135deg, #00b894, #00cec9)';
+      toastIcon.textContent = '✓';
+    } else {
+      toast.style.background = 'linear-gradient(135deg, #e74c3c, #e55039)';
+      toastIcon.textContent = '✕';
+    }
+    toastMsg.textContent = message;
+    toast.style.display = 'block';
+    toast.style.animation = 'slideInRight 0.4s ease';
+
+    setTimeout(function () {
+      toast.style.animation = 'slideOutRight 0.4s ease';
+      setTimeout(function () {
+        toast.style.display = 'none';
+      }, 400);
+    }, 4000);
+  }
+
+  // Toggle loading state
+  function setLoading(loading) {
+    if (loading) {
+      btnText.style.display = 'none';
+      btnSpinner.style.display = 'inline-flex';
+      submitBtn.disabled = true;
+    } else {
+      btnText.style.display = 'inline';
+      btnSpinner.style.display = 'none';
+      submitBtn.disabled = false;
+    }
+  }
+
+  // Form submit handler
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    if (!validateForm()) {
+      // Scroll to first error
+      var firstError = form.querySelector('.input-error');
+      if (firstError) {
+        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        firstError.focus();
+      }
+      return;
+    }
+
+    setLoading(true);
+
+    var payload = {
+      fullName: fields.fullName.value.trim(),
+      mobile: fields.mobile.value.trim(),
+      countryCode: '+91',
+      gender: fields.gender.value,
+      age: parseInt(fields.age.value),
+      dateOfBirth: '0000-00-00',
+      email: fields.email.value.trim() || '',
+      doctorID: 1,
+      appointmentDate: fields.date.value + ' 10:30:00'
+    };
+
+    fetch(CREATE_APPOINTMENT_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    })
+    .then(function (response) {
+      return response.json().then(function (data) {
+        return { status: response.status, data: data };
+      });
+    })
+    .then(function (result) {
+      setLoading(false);
+      if (result.status >= 200 && result.status < 300) {
+        showToast('success', 'Appointment booked successfully! We will contact you shortly.');
+
+        // Send confirmation email if patient provided email address
+        var patientEmail = fields.email.value.trim();
+        if (patientEmail) {
+          fetch('send-appointment-email.php', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify(payload)
+          })
+          .then(function (emailResponse) {
+            return emailResponse.json();
+          })
+          .then(function (emailResult) {
+            if (emailResult.success) {
+              console.log('Confirmation email sent to ' + patientEmail);
+            } else {
+              console.warn('Email sending failed:', emailResult.message);
+            }
+          })
+          .catch(function (emailError) {
+            console.warn('Could not send confirmation email:', emailError);
+          });
+        }
+
+        form.reset();
+      } else {
+        var errorMsg = (result.data && result.data.message) ? result.data.message : 'Failed to book appointment. Please try again.';
+        showToast('error', errorMsg);
+      }
+    })
+    .catch(function (error) {
+      setLoading(false);
+      showToast('error', 'Network error. Please check your connection and try again.');
+      console.error('Appointment booking error:', error);
+    });
+  });
+})();
+</script>
 
 </body>
  
