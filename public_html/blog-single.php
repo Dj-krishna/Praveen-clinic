@@ -1,25 +1,52 @@
 <?php
 $blogUrlParam = $_GET['url'] ?? '';
 $blog = null;
+$allBlogs = [];
 $error = false;
 
 if (!empty($blogUrlParam)) {
-    $apiUrl = 'https://drpraveenreddyortho.com/api/blogs?url=' . urlencode($blogUrlParam);
-    $ch = curl_init($apiUrl);
+    // Fetch all blogs (needed for "Read More" section and to find blogID)
+    $ch = curl_init('https://drpraveenreddyortho.com/api/blogs');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     $response = curl_exec($ch);
+    curl_close($ch);
+
     if ($response !== false) {
         $data = json_decode($response, true);
         if (isset($data['success']) && $data['success'] && !empty($data['data'])) {
-            $blog = $data['data'][0];
+            $allBlogs = $data['data'];
+
+            // Find matching blog by URL slug
+            foreach ($allBlogs as $b) {
+                $blogUrl = ltrim($b['url'] ?? '', '/');
+                if ($blogUrl === 'blog/' . $blogUrlParam || $blogUrl === $blogUrlParam) {
+                    // Fetch specific blog using blogID
+                    $ch2 = curl_init('https://drpraveenreddyortho.com/api/blogs?blogID=' . intval($b['blogID']));
+                    curl_setopt($ch2, CURLOPT_RETURNTRANSFER, true);
+                    curl_setopt($ch2, CURLOPT_SSL_VERIFYPEER, false);
+                    $resp2 = curl_exec($ch2);
+                    curl_close($ch2);
+
+                    if ($resp2 !== false) {
+                        $data2 = json_decode($resp2, true);
+                        if (isset($data2['success']) && $data2['success'] && !empty($data2['data'])) {
+                            $blog = is_array($data2['data']) && isset($data2['data'][0]) ? $data2['data'][0] : $data2['data'];
+                        }
+                    }
+                    break;
+                }
+            }
+
+            if ($blog === null) {
+                $error = true;
+            }
         } else {
             $error = true;
         }
     } else {
         $error = true;
     }
-    curl_close($ch);
 } else {
     $error = true;
 }
@@ -48,7 +75,7 @@ if (!empty($blogUrlParam)) {
     <meta name="author" content="<?php echo htmlspecialchars($blog['authorName'] ?? 'Dr Praveen Reddy P'); ?>" />
 
      <!--=====FAB ICON=======-->
-    <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/logo/fav-logo1.png" type="image/x-icon">
 
     <!--===== CSS LINK =======-->
     <link rel="stylesheet" href="/assets/css/plugins/bootstrap.min.css">
@@ -71,13 +98,16 @@ if (!empty($blogUrlParam)) {
 <?php include('header.php'); ?> 
 <!--===== MOBILE HEADER STARTS =======-->
 <!--===== HERO AREA STARTS =======-->
-<div class="inner-header-section-area" style="background-image: url(assets/img/all-images/bg/innerpage-banner.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
-  <img src="assets/img/elements/logoicon.png" alt="" class="elements28">
+<div class="inner-header-section-area" style="background-image: url(/assets/img/all-images/bg/innerpage-banner.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+  <img src="/assets/img/elements/logoicon.png" alt="" class="elements28">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-12">
         <div class="hero-header">
           <h1 class="text-anime-style-1"><?php echo !empty($blog['title']) ? htmlspecialchars($blog['title']) : 'Blog'; ?></h1>
+          <div class="space28"></div>
+          <a href="index.html" class="bradecrumb">Home <i class="fa-solid fa-angle-right"></i>Blog</a>
+
         </div>
       </div>
     </div>
@@ -100,7 +130,7 @@ if (!empty($blogUrlParam)) {
                     <?php else: ?>
                         <?php 
                           $baseUrl = 'https://drpraveenreddyortho.com/api/';
-                          $image = 'assets/img/all-images/blog/blog-img4.png';
+                          $image = '/assets/img/all-images/blog/blog-img4.png';
                           
                           if (!empty($blog['postBanner'])) {
                               $image = strpos($blog['postBanner'], 'http') === 0 ? $blog['postBanner'] : $baseUrl . $blog['postBanner'];
@@ -225,7 +255,7 @@ if (!empty($blogUrlParam)) {
                  } catch (Exception $e) {}
              }
              
-             $defaultImage = 'assets/img/all-images/blog/blog-img4.png';
+             $defaultImage = '/assets/img/all-images/blog/blog-img4.png';
              $image = $defaultImage;
              $baseUrl = 'https://drpraveenreddyortho.com/api/';
              

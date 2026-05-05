@@ -1,3 +1,11 @@
+<?php
+$requestPath = strtok($_SERVER['REQUEST_URI'] ?? '', '?');
+if (preg_match('#^/blog/(.+)$#', $requestPath, $matches)) {
+    $_GET['url'] = $matches[1];
+    include __DIR__ . '/blog-single.php';
+    exit;
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
