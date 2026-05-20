@@ -58,9 +58,9 @@ if (preg_match('#^/blog/(.+)$#', $requestPath, $matches)) {
                 <div class="hero-header">
                   
                   <div class="space18"></div>
-                  <h1>Best Orthopedic Surgeon in LB Nagar – Dr Praveen Reddy P</h1>
+                  <h1>Say Goodbye to Joint Discomfort  <br> Start Your Journey to Recovery Today!</h1>
                   <div class="space20"></div>
-                  <h5>Advanced Robotic Joint Replacement | Sports Injury Specialist | Trauma Care</h5>
+                  <h5>EXPERT JOINT REPLACEMENT &  ARTHROSCOPIC SURGERY WITH</h5>
                   <!-- <p>At Dr. Praveen Reddy Orthopedic Clinic, we provide advanced orthopedic care focused on relieving pain, restoring mobility, and helping patients recover faster for healthier, active lives.</p> -->
                   <div class="space28"></div>
                   <div class="btn-area1">
@@ -83,14 +83,14 @@ if (preg_match('#^/blog/(.+)$#', $requestPath, $matches)) {
             <div class="row align-items-center">
               <div class="col-lg-8">
                 <div class="hero-header">
-                  <h5><img src="assets/img/icons/sub-logo1.svg" alt=""> Gentle Care for Pain-Free Movement</h5>
+                  <!-- <h5><img src="assets/img/icons/sub-logo1.svg" alt=""> Gentle Care for Pain-Free Movement</h5> -->
                   <div class="space18"></div>
-                  <h1>Redefining Orthodontic Care With a Personal Touch</h1>
+                  <h1>Get back on your feet with our Advanced arthroscopic knee surgery and comprehensive joint care services</h1>
                   <div class="space20"></div>
-                  <p>At Dr. Praveen Reddy Orthopedic Clinic, we provide advanced orthopedic care focused on relieving pain, restoring mobility, and helping patients recover faster for healthier, active lives.</p>
+                  <p>TRUST OUR EXPERTS TO KEEP YOUR KNEES HEALTHY AND PAIN-FREE.</p>
                   <div class="space28"></div>
                   <div class="btn-area1">
-                    <a href="about-praveen-reddy.php" class="vl-btn3"><span class="text">Schedule Your Visit Now <i class="fa-solid fa-arrow-right"></i></span></a>
+                    <a href="about-praveen-reddy.php" class="vl-btn3"><span class="text">Book Your Appointment<i class="fa-solid fa-arrow-right"></i></span></a>
                     <!--<a href="https://www.youtube.com/watch?v=Y8XpQpW5OVY" class="play-btn popup-youtube"> <span class="video"><i class="fa-solid fa-play"></i></span> Play Video</a>-->
                 </div>
                 </div>
