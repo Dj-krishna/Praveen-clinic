@@ -226,11 +226,12 @@
 
 <ul>
 
-<li>Robotic Knee and Hip Surgery</li>
-<li>Joint Replacement Surgery</li>
-<li>Trauma & Fracture Surgery</li>
-<li>Sports Injury Treatment</li>
-<li>General Orthopaedic Care</li>
+<li> <p>Robotic Knee Replacement</p> </li>
+                                <li> <p>Robotic Joint Replacement</p> </li>
+                                <li> <p>Total Knee Replacement</p> </li>
+                                <li> <p>Total Hip Replacement</p> </li>
+                                <li> <p>Joint Replacement</p> </li>
+                                <li> <p>ACL Reconstruction</p> </li>    
 
 </ul>
 
@@ -244,22 +245,22 @@
 <div class="row">
 
 <div class="col-6 stat">
-<h3>30K+</h3>
+<h3>50K+</h3>
 <p>Happy Patients</p>
 </div>
 
 <div class="col-6 stat">
-<h3>100+</h3>
+<h3>15K+</h3>
 <p>Successful Surgeries</p>
 </div>
 
 <div class="col-6 stat mt-4">
-<h3>25+</h3>
+<h3>5+</h3>
 <p>Global Awards</p>
 </div>
 
 <div class="col-6 stat mt-4">
-<h3>15+</h3>
+<h3>10+</h3>
 <p>Specialty Services</p>
 </div>
 
@@ -348,7 +349,10 @@
                 <div class="text">
                   <h4>locations</h4>
                   <div class="space14"></div>
-                  <a href="#">Omkar Nagar, Nagarjuna Sagar Road, LB Nagar, Hyd</a>
+                  <a href="#">#102, 103, Omkar Nagar,
+Nagarjuna Sagar Road, LB Nagar,
+Hyderabad, Telangana - 500079,
+India.</a>
                 </div>
               </div>
             </div>

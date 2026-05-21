@@ -87,8 +87,8 @@ India.</p>
       <div class="copyright-area">
         <a href="#">© Copyright 2025. All Right Reserved</a>
         <ul>
-          <li><a href="#">Privacy Policy</a><span> | </span></li>
-          <li><a href="#">Terms Of Condition</a></li>
+          <li><a href="privacy-policy.php">Privacy Policy</a><span> | </span></li>
+          <li><a href="terms-conditions.php">Terms Of Condition</a></li>
         </ul>
       </div>
     </div>

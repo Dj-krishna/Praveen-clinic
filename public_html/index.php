@@ -61,7 +61,7 @@ if (preg_match('#^/blog/(.+)$#', $requestPath, $matches)) {
                   <h1>Say Goodbye to Joint Discomfort  <br> Start Your Journey to Recovery Today!</h1>
                   <div class="space20"></div>
                   <h5>EXPERT JOINT REPLACEMENT &  ARTHROSCOPIC SURGERY WITH</h5>
-                  <!-- <p>At Dr. Praveen Reddy Orthopedic Clinic, we provide advanced orthopedic care focused on relieving pain, restoring mobility, and helping patients recover faster for healthier, active lives.</p> -->
+                  <!-- <p>At Dr Praveen Reddy Orthopedic Clinic, we provide advanced orthopedic care focused on relieving pain, restoring mobility, and helping patients recover faster for healthier, active lives.</p> -->
                   <div class="space28"></div>
                   <div class="btn-area1">
                     <a href="about-praveen-reddy.php" class="vl-btn3"><span class="text">Schedule Your Visit Now <i class="fa-solid fa-arrow-right"></i></span></a>
@@ -229,38 +229,38 @@ if (preg_match('#^/blog/(.+)$#', $requestPath, $matches)) {
         <div class="space24"></div>
         <h2 class="vl-section-title text-anime-style-3">Your health and happiness are our top priorities. </h2>
         <div class="space24"></div>
-        <p data-aos="fade-left" data-aos-duration="900">Best Orthopedic Doctor in Hyderabad - Dr. Praveen Reddy P has 22 years of experience as an Orthopedic doctor in Hyderabad. He is the best knee replacement surgeon in Hyderabad. He is a renowned revision knee and hip and trauma surgeon. He has hands-on experience and expertise in the diagnosis, treatment, and management of common and complex Orthopedic conditions.</p>
-         <!-- Being the top orthopedic doctor in Hyderabad and with expertise in knee replacement and reconstructive surgery, he regularly deals with complex joint replacement. Dr. Vasudeva is a Consultant Orthopedic and Joint Replacement Surgeon at CITIZENS HOSPITAL Nallagandla, Hyderabad. He holds a fellowship in joint replacement. He worked at best orthopedic hospital in Gachibowli. -->
+        <p data-aos="fade-left" data-aos-duration="900">Best Orthopedic Doctor in Hyderabad - Dr Praveen Reddy P has 22 years of experience as an Orthopedic doctor in Hyderabad. He is the best knee replacement surgeon in Hyderabad. He is a renowned revision knee and hip and trauma surgeon. He has hands-on experience and expertise in the diagnosis, treatment, and management of common and complex Orthopedic conditions.</p>
+         <!-- Being the top orthopedic doctor in Hyderabad and with expertise in knee replacement and reconstructive surgery, he regularly deals with complex joint replacement. Dr Vasudeva is a Consultant Orthopedic and Joint Replacement Surgeon at CITIZENS HOSPITAL Nallagandla, Hyderabad. He holds a fellowship in joint replacement. He worked at best orthopedic hospital in Gachibowli. -->
           <div class="row">
             <div class="col-lg-6">
               <div class="counter-boxarea" data-aos="fade-left" data-aos-duration="1000">
-                <h2><span class="counter">500</span>+</h2>
+                <h2><span class="counter">50</span>K+</h2>
                 <div class="space16"></div>
-                <p>Serving patients weekly</p>
+                <p>Happy Patients</p>
               </div>
             </div>
 
             <div class="col-lg-6">
               <div class="counter-boxarea" data-aos="fade-left" data-aos-duration="1100">
-                <h2><span class="counter">95</span>%</h2>
+                <h2><span class="counter">15</span>K</h2>
                 <div class="space16"></div>
-                <p>Patient satisfaction rate</p>
+                <p>Successful Surgeries</p>
               </div>
             </div>
 
             <div class="col-lg-6">
               <div class="counter-boxarea" data-aos="fade-left" data-aos-duration="1200">
-                <h2><span class="counter">10</span>+</h2>
+                <h2><span class="counter">5</span>+</h2>
                 <div class="space16"></div>
-                <p>Years serving the community</p>
+                <p>Global Awards</p>
               </div>
             </div>
 
             <div class="col-lg-6">
               <div class="counter-boxarea" data-aos="fade-left" data-aos-duration="1000">
-                <h2><span class="counter">24</span>/7</h2>
+                <h2><span class="counter">10</span>+</h2>
                 <div class="space16"></div>
-                <p>Urgent care available</p>
+                <p>Specialty Services</p>
               </div>
             </div>
           </div>
@@ -273,7 +273,7 @@ if (preg_match('#^/blog/(.+)$#', $requestPath, $matches)) {
 
 <div class="container">
   <div class="row">
-    <h3 class="gradient-text" data-aos="fade-up" data-aos-duration="1200">22 Years of Excellence in Orthopaedics</h3>
+    <h3 class="gradient-text" data-aos="fade-up" data-aos-duration="1200">18+ Years of Excellence in Orthopaedics</h3>
   </div>
 </div>
 <div class="slider4-section-area">
@@ -577,11 +577,11 @@ if (preg_match('#^/blog/(.+)$#', $requestPath, $matches)) {
                             <div class="section-title text-left sec-title-animation animation-style2">
                                 <h6 class="section-title__tagline"><span class="icon-broken-bone"></span>Know About Your Doctor
                                 </h6>
-                                <h3 class="about-dr-title title-animation">Dr. Praveen Reddy P
+                                <h3 class="about-dr-title title-animation">Dr Praveen Reddy P
                                 </h3>
                                 <p>MS in Orthopaedics</p>
                             </div>
-                            <p class="about-one__text">Dr. Praveen Reddy P is a Best orthopaedic doctor practising at Citizens Hospital. He has a remarkable 22 years of experience in this field of orthopaedics. He completed MBBS from the prestigious Dr. NTR University of Health Sciences Andhra Pradesh and MS in Orthopaedics from JJMMC Davangere RGUHS Bangalore.</p>
+                            <p class="about-one__text">Dr Praveen Reddy P is a Best orthopaedic doctor practising at Agastya Hospital. He has a remarkable 18+ years of experience in this field of orthopaedics. He completed MBBS from the prestigious Dr. NTR University of Health Sciences Andhra Pradesh and MS in Orthopaedics from JJMMC Davangere RGUHS Bangalore.</p>
                             <!-- <ul class="about-one__points-box list-unstyled">
                                 <li>
                                     <div class="icon">
@@ -611,12 +611,13 @@ if (preg_match('#^/blog/(.+)$#', $requestPath, $matches)) {
                             <div class="about-one__working-hour wow slideInRight" data-wow-delay="100ms"
                             data-wow-duration="2500ms">
                             <h3 class="about-one__working-hour-title">Expertise Services</h3>
-                            <ul class="about-one__working-hour-list list-unstyled">
-                                <li> <p>Robotic Knee and Hip Surgeon</p> </li>
-                                <li> <p>Trauma and Complex Fracture Fixation</p> </li>
-                                <li> <p>Total Knee and Hip Replacement</p> </li>
-                                <li> <p>Reconstructive Surgery</p> </li>
-                                <li> <p>Failed Trauma Cases</p> </li>
+                            <ul class="about-one__working-hour-list list-unstyled">                                
+                                <li> <p>Robotic Knee Replacement</p> </li>
+                                <li> <p>Robotic Joint Replacement</p> </li>
+                                <li> <p>Total Knee Replacement</p> </li>
+                                <li> <p>Total Hip Replacement</p> </li>
+                                <li> <p>Joint Replacement</p> </li>
+                                <li> <p>ACL Reconstruction</p> </li>                                
                             </ul>
                         </div>
                 </div>
@@ -1051,7 +1052,7 @@ curl_close($ch);
               </svg>
             </div>
             <div class="space16"></div>
-            <p>I was involved in a traumatic accident four years ago, resulting in fractures to my right femur and clavicle. I was treated by Dr. Praveen Reddy sir and was truly fortunate to be under his care. Recently, the implant was removed, which had become complicated for the removing. I am very happy that the surgery went successfully. I also deeply appreciate the great response, support, and empathy shown by Swapna ma’am, the personal assistant. </p>
+            <p>I was involved in a traumatic accident four years ago, resulting in fractures to my right femur and clavicle. I was treated by Dr Praveen Reddy sir and was truly fortunate to be under his care. Recently, the implant was removed, which had become complicated for the removing. I am very happy that the surgery went successfully. I also deeply appreciate the great response, support, and empathy shown by Swapna ma’am, the personal assistant. </p>
             <div class="space24"></div>
             <div class="text-area">
               <a href="#">Gommani Srinivas</a>
@@ -1197,7 +1198,7 @@ curl_close($ch);
               </svg>
             </div>
             <div class="space16"></div>
-            <p>Dr. Praveen Reddy sir is a best orthopedic surgeon.. the doctor who is not only best in his treatment but also in his behaviour that how he treats his patients with a humble and well mannered person I could ever experienced before.. thank you so much sir for u and ur team. </p>
+            <p>Dr Praveen Reddy sir is a best orthopedic surgeon.. the doctor who is not only best in his treatment but also in his behaviour that how he treats his patients with a humble and well mannered person I could ever experienced before.. thank you so much sir for u and ur team. </p>
             <div class="space24"></div>
             <div class="text-area">
               <a href="#">Chandrakala Chepuri</a>
@@ -1270,7 +1271,7 @@ curl_close($ch);
               </svg>
             </div>
             <div class="space16"></div>
-            <p>Greatful for excellent surgeon and care Dr.Praveen Reddy sir is one of the best orthopedic surgeon who listens to the patient issue and receive us like a family member and gives the best treatment ..we thankful for u and your team sir</p>
+            <p>Greatful for excellent surgeon and care Dr Praveen Reddy sir is one of the best orthopedic surgeon who listens to the patient issue and receive us like a family member and gives the best treatment ..we thankful for u and your team sir</p>
             <div class="space24"></div>
             <div class="text-area">
               <a href="#">Shirisha</a>
@@ -1343,7 +1344,7 @@ curl_close($ch);
               </svg>
             </div>
             <div class="space16"></div>
-            <p>Before 2 years my hand was fracture Dr.praveen Reddy sir is do my operation rod and implant after on 26 January 2024 the sir do my surgery and remove implant and rod it was totally good iam feel better and allhamduillah iam lifting heavy weights in gym good Dr. In my life who cares me and do my surgery TQ Dr.praveen Reddy sir</p>
+            <p>Before 2 years my hand was fracture Dr Praveen Reddy sir is do my operation rod and implant after on 26 January 2024 the sir do my surgery and remove implant and rod it was totally good iam feel better and allhamduillah iam lifting heavy weights in gym good Dr. In my life who cares me and do my surgery TQ Dr Praveen Reddy sir</p>
             <div class="space24"></div>
             <div class="text-area">
               <a href="#">Shaikh Abdul Sameer</a>
@@ -1417,7 +1418,7 @@ curl_close($ch);
               </svg>
             </div>
             <div class="space16"></div>
-            <p>Dr. Praveen reddy sir is truly a remarkable doctor and professional that we respect and trust. He is one of the best orthopedist in Hyderabad.</p>
+            <p>Dr Praveen reddy sir is truly a remarkable doctor and professional that we respect and trust. He is one of the best orthopedist in Hyderabad.</p>
             <div class="space24"></div>
             <div class="text-area">
               <a href="#">Soniya Babychan</a>
@@ -1491,7 +1492,7 @@ curl_close($ch);
               </svg>
             </div>
             <div class="space16"></div>
-            <p>My grand father was admitted under Dr.praveen reddy sir for Knee replacement we had very good experience, Dr.praveen reddy sir was very gentle with the patient, Explained very well regarding the procedure.. Am thankfull for Dr.praveen sir🙂🙂</p>
+            <p>My grand father was admitted under Dr Praveen reddy sir for Knee replacement we had very good experience, Dr Praveen reddy sir was very gentle with the patient, Explained very well regarding the procedure.. Am thankfull for Dr Praveen sir🙂🙂</p>
             <div class="space24"></div>
             <div class="text-area">
               <a href="#">Kythapur Shanthipriya</a>

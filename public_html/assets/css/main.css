@@ -19492,8 +19492,8 @@ margin-left: 20px;
   transition: all 0.4s;
 }
 .contact1-section-area4 .contact-single-boxarea .single-box .icons {
-  height: 60px;
-  width: 60px;
+  min-height: 60px;
+  min-width: 60px;
   text-align: center;
   line-height: 60px;
   display: inline-block;
@@ -22728,3 +22728,16 @@ display: flex; /* using CSS flexbox to display each card at the centre */
     flex-direction: column;
 }
 
+.policy-block {
+  padding-bottom:30px;
+}
+
+.service-main-content-details .policy-block h2 {
+  font-size:1.4rem !important;
+}
+.service-main-content-details .policy-block ul {
+  padding-left:30px;
+}
+.service-main-content-details .policy-block li {
+  list-style:disc !important;
+}
