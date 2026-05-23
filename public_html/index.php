@@ -60,11 +60,11 @@ if (preg_match('#^/blog/(.+)$#', $requestPath, $matches)) {
                   <div class="space18"></div>
                   <h1>Say Goodbye to Joint Discomfort  <br> Start Your Journey to Recovery Today!</h1>
                   <div class="space20"></div>
-                  <h5>EXPERT JOINT REPLACEMENT &  ARTHROSCOPIC SURGERY WITH</h5>
+                  <p>EXPERT JOINT REPLACEMENT &  ARTHROSCOPIC SURGERY WITH</p>
                   <!-- <p>At Dr Praveen Reddy Orthopedic Clinic, we provide advanced orthopedic care focused on relieving pain, restoring mobility, and helping patients recover faster for healthier, active lives.</p> -->
                   <div class="space28"></div>
                   <div class="btn-area1">
-                    <a href="about-praveen-reddy.php" class="vl-btn3"><span class="text">Schedule Your Visit Now <i class="fa-solid fa-arrow-right"></i></span></a>
+                    <a href="book-appointment.php" class="vl-btn3"><span class="text">Schedule Your Visit Now <i class="fa-solid fa-arrow-right"></i></span></a>
                     <!--<a href="https://www.youtube.com/watch?v=Y8XpQpW5OVY" class="play-btn popup-youtube"> <span class="video"><i class="fa-solid fa-play"></i></span> Play Video</a>-->
                 </div>
                 </div>
@@ -85,12 +85,65 @@ if (preg_match('#^/blog/(.+)$#', $requestPath, $matches)) {
                 <div class="hero-header">
                   <!-- <h5><img src="assets/img/icons/sub-logo1.svg" alt=""> Gentle Care for Pain-Free Movement</h5> -->
                   <div class="space18"></div>
-                  <h1>Get back on your feet with our Advanced arthroscopic knee surgery and comprehensive joint care services</h1>
+                  <h1>Get back on your feet with </h1>
                   <div class="space20"></div>
-                  <p>TRUST OUR EXPERTS TO KEEP YOUR KNEES HEALTHY AND PAIN-FREE.</p>
+                  <p>OUR ADVANCED ARTHROSCOPIC KNEE SURGERY AND COMPREHENSIVE JOINT CARE SERVICES</p><br><br><br>
                   <div class="space28"></div>
                   <div class="btn-area1">
-                    <a href="about-praveen-reddy.php" class="vl-btn3"><span class="text">Book Your Appointment<i class="fa-solid fa-arrow-right"></i></span></a>
+                    <a href="book-appointment.php" class="vl-btn3"><span class="text">Book Your Appointment<i class="fa-solid fa-arrow-right"></i></span></a>
+                    <!--<a href="https://www.youtube.com/watch?v=Y8XpQpW5OVY" class="play-btn popup-youtube"> <span class="video"><i class="fa-solid fa-play"></i></span> Play Video</a>-->
+                </div>
+                </div>
+              </div>
+              <div class="col-lg-6" data-aos="zoom-in-up" data-aos-duration="1000">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero3-section-area sp1">
+            <div class="bg-img">
+                <img src="assets/img/all-images/home/slide-3.jpg" alt="">
+            </div>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <div class="hero-header">
+                  <!-- <h5><img src="assets/img/icons/sub-logo1.svg" alt=""> Gentle Care for Pain-Free Movement</h5> -->
+                  <div class="space18"></div>
+                  <h1>Say goodbye to hip pain</h1>
+                  <div class="space20"></div>
+                  <p>TO A HEALTHIER YOU WITH OUR SPECIALIZED ARTHROSCOPIC SURGERY AND JOINT CARE TREATMENTS.</p><br><br><br>
+                  <div class="space28"></div>
+                  <div class="btn-area1">
+                    <a href="book-appointment.php" class="vl-btn3"><span class="text">Book Your Appointment<i class="fa-solid fa-arrow-right"></i></span></a>
+                    <!--<a href="https://www.youtube.com/watch?v=Y8XpQpW5OVY" class="play-btn popup-youtube"> <span class="video"><i class="fa-solid fa-play"></i></span> Play Video</a>-->
+                </div>
+                </div>
+              </div>
+              <div class="col-lg-6" data-aos="zoom-in-up" data-aos-duration="1000">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="hero3-section-area sp1">
+            <div class="bg-img">
+                <img src="assets/img/all-images/home/slide-4.jpg" alt="">
+            </div>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <div class="hero-header">
+                  <!-- <h5><img src="assets/img/icons/sub-logo1.svg" alt=""> Gentle Care for Pain-Free Movement</h5> -->
+                  <div class="space18"></div>
+                  <h1>Shoulder pain holding you back?</h1>
+                  <div class="space20"></div>
+                  <p>GET BACK TO LIVING YOUR BEST LIFE WITH OUR EXPERT ARTHROSCOPIC SURGERY AND JOINT CARE SERVICES</p><br><br><br>
+                  <div class="space28"></div>
+                  <div class="btn-area1">
+                    <a href="book-appointment.php" class="vl-btn3"><span class="text">Book Your Appointment<i class="fa-solid fa-arrow-right"></i></span></a>
                     <!--<a href="https://www.youtube.com/watch?v=Y8XpQpW5OVY" class="play-btn popup-youtube"> <span class="video"><i class="fa-solid fa-play"></i></span> Play Video</a>-->
                 </div>
                 </div>
@@ -229,7 +282,7 @@ if (preg_match('#^/blog/(.+)$#', $requestPath, $matches)) {
         <div class="space24"></div>
         <h2 class="vl-section-title text-anime-style-3">Your health and happiness are our top priorities. </h2>
         <div class="space24"></div>
-        <p data-aos="fade-left" data-aos-duration="900">Best Orthopedic Doctor in Hyderabad - Dr Praveen Reddy P has 22 years of experience as an Orthopedic doctor in Hyderabad. He is the best knee replacement surgeon in Hyderabad. He is a renowned revision knee and hip and trauma surgeon. He has hands-on experience and expertise in the diagnosis, treatment, and management of common and complex Orthopedic conditions.</p>
+        <p data-aos="fade-left" data-aos-duration="900">Dr Praveen Reddy P is recognized as one of the best orthopedic doctors in LB Nagar, Hyderabad, with over 18+ years of expertise in advanced orthopedic care, robotic knee replacement surgery, hip replacement, and trauma management. He is widely known as a leading robotic knee replacement surgeon in LB Nagar, Hyderabad, specializing in precision-driven orthopedic procedures for faster recovery and improved mobility.</p>
          <!-- Being the top orthopedic doctor in Hyderabad and with expertise in knee replacement and reconstructive surgery, he regularly deals with complex joint replacement. Dr Vasudeva is a Consultant Orthopedic and Joint Replacement Surgeon at CITIZENS HOSPITAL Nallagandla, Hyderabad. He holds a fellowship in joint replacement. He worked at best orthopedic hospital in Gachibowli. -->
           <div class="row">
             <div class="col-lg-6">
@@ -812,7 +865,10 @@ curl_close($ch);
                 <div class="text">
                   <h4>locations</h4>
                   <div class="space14"></div>
-                  <a href="#">Omkar Nagar, Nagarjuna Sagar Road, LB Nagar, Hyd</a>
+                  <a href="#">#102, 103, Omkar Nagar,<br>
+Nagarjuna Sagar Road, LB Nagar,<br>
+Hyderabad, Telangana - 500079,<br>
+India.</a>
                 </div>
               </div>
             </div>

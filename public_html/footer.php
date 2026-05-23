@@ -30,14 +30,14 @@
         <div class="footer-widget-area foot-padding2">
           <h3>Popular Treatments</h3>
           <ul>
-            <li><a href="#">Robotic Knee Replacement</a></li>
-            <li><a href="#">Joint Replacement</a></li>
-            <li><a href="#">Trauma Surgeries</a></li>
-            <li><a href="#">Sports Medicine</a></li>
-            <li><a href="#">General Orthopaedics</a></li>
-            <li><a href="#">Osteoporosis</a></li>
-            <li><a href="#">Rheumatoid Arthritis</a></li>
-            <li><a href="#">Physiotherapy & Rehab</a></li>
+            <li><a href="robotic-knee-replacement.php">Robotic Knee Replacement</a></li>
+            <li><a href="joint-replacement.php">Joint Replacement</a></li>
+            <li><a href="trauma-surgeries.php">Trauma Surgeries</a></li>
+            <li><a href="sports-medicine.php">Sports Medicine</a></li>
+            <li><a href="general-orthopaedics.php">General Orthopaedics</a></li>
+            <li><a href="osteoporosis.php">Osteoporosis</a></li>
+            <li><a href="rheumatoid-arthritis.php">Rheumatoid Arthritis</a></li>
+            <li><a href="physiotherapy-rehabilitation.php">Physiotherapy & Rehab</a></li>
           </ul>
         </div>
       </div>
@@ -85,7 +85,7 @@ India.</p>
     <div class="space50"></div>
     <div class="col-lg-12">
       <div class="copyright-area">
-        <a href="#">© Copyright 2025. All Right Reserved</a>
+        <a href="#">© Copyright 2026. All Right Reserved</a>
         <ul>
           <li><a href="privacy-policy.php">Privacy Policy</a><span> | </span></li>
           <li><a href="terms-conditions.php">Terms Of Condition</a></li>

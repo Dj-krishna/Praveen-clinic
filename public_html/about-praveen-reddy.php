@@ -108,7 +108,7 @@
                               </div>
                               <div class="space24"></div>
                               <div class="experiance-box">
-                                  <h3><span class="counter">25</span>+</h3>
+                                  <h3><span class="counter">18</span>+</h3>
                                   <p>Years Of Experience</p>
                               </div>
                           </div>
