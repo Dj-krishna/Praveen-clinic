@@ -33,39 +33,43 @@
 <!--=====HEADER START=======-->
 <?php include('header.php'); ?>
 <!--=====HEADER END =======-->
+
 <!--===== MOBILE HEADER STARTS =======-->
 <div class="homepage4-body">
   <div class="vl-offcanvas">
     <div class="vl-offcanvas-wrapper">
-      <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
-        <div class="vl-offcanvas-logo">
-          <a href="index.html"><img src="assets/img/logo/dr-praveen-reddy-logo.png" alt=""></a>
+        <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
+            <div class="vl-offcanvas-logo">
+                <a href="index.html"><img src="assets/img/logo/dr-praveen-reddy-logo.png" alt=""></a>
+            </div>
+            <div class="vl-offcanvas-close">
+               <button class="vl-offcanvas-close-toggle"><i class="fa-solid fa-xmark"></i></button>
+            </div>
         </div>
-        <div class="vl-offcanvas-close">
-          <button class="vl-offcanvas-close-toggle"><i class="fa-solid fa-xmark"></i></button>
+
+        <div class="vl-offcanvas-menu d-lg-none mb-40">
+            <nav></nav>
         </div>
-      </div>
-      <div class="vl-offcanvas-menu d-lg-none mb-40">
-      <nav></nav>
+
+        <div class="space20"></div>
+        <div class="vl-offcanvas-info">
+            <h3 class="vl-offcanvas-sm-title">Contact Us</h3>
+            <div class="space20"></div>
+            <span><a href="#"> <i class="fa-regular fa-envelope"></i> +91-9459234999</a></span>
+            <span><a href="#"><i class="fa-solid fa-phone"></i>  info@drpraveenreddyp.com</a></span>
+            <!--<span><a href="#"><i class="fa-solid fa-location-dot"></i> Bhemeara,Kushtia</a></span>-->
+        </div>
+        <div class="space20"></div>
+        <div class="vl-offcanvas-social">
+            <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
+            <div class="space20"></div>
+            <a href="https://www.facebook.com/drpraveenreddyortho/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/praveen_ortho" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/dr-praveen-reddy-p/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/drpraveenreddyortho/" target="_blank"><i class="fab fa-instagram"></i></a>
+         </div>
+
     </div>
-    <div class="space20"></div>
-    <div class="vl-offcanvas-info">
-      <h3 class="vl-offcanvas-sm-title">Contact Us</h3>
-      <div class="space20"></div>
-      <span><a href="#"> <i class="fa-regular fa-envelope"></i> +57 9954 6476</a></span>
-      <span><a href="#"><i class="fa-solid fa-phone"></i> hello@exdos.com</a></span>
-      <span><a href="#"><i class="fa-solid fa-location-dot"></i> Bhemeara,Kushtia</a></span>
-    </div>
-    <div class="space20"></div>
-    <div class="vl-offcanvas-social">
-      <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
-      <div class="space20"></div>
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
-  </div>
 </div>
 <div class="vl-offcanvas-overlay"></div>
 </div>
@@ -79,7 +83,7 @@
       <div class="hero-header">
         <h1 class="text-anime-style-1">Book Appointment</h1>
         <div class="space28"></div>
-        <a href="index.php" class="bradecrumb">Home <i class="fa-solid fa-angle-right"></i> Book Appointment</a>
+        <a href="index.php" class="bradecrumb">Home <i class="fa-solid fa-angle-right"></i> </a><a class="bradecrumb"> Book Appointment</a>
       </div>
     </div>
   </div>
@@ -262,7 +266,7 @@
 <?php
 // Fetch Blogs from API
 $blogs = [];
-$api_url = 'https://drpraveenreddyortho.com/api/blogs';
+$api_url = 'https://drpraveenreddyp.com/api/blogs';
 $ch = curl_init($api_url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -305,7 +309,7 @@ curl_close($ch);
     // Determine image
     $defaultImage = 'assets/img/all-images/blog/blog-img4.png';
     $image = $defaultImage;
-    $baseUrl = 'https://drpraveenreddyortho.com/api/';
+    $baseUrl = 'https://drpraveenreddyp.com/api/';
     
     if (!empty($blog['postBanner'])) {
     $image = strpos($blog['postBanner'], 'http') === 0 ? $blog['postBanner'] : $baseUrl . ltrim($blog['postBanner'], '/');
@@ -392,7 +396,7 @@ curl_close($ch);
 
 <script>
 (function () {
-  const API_BASE = "https://drpraveenreddyortho.com";//"https://drpraveenreddyortho.com";
+  const API_BASE = "https://drpraveenreddyp.com";//"https://drpraveenreddyp.com";
   const CREATE_APPOINTMENT_URL = API_BASE + "/api/appointments";
 
   const form = document.getElementById('appointmentForm');

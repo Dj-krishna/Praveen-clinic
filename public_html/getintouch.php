@@ -14,7 +14,7 @@
             </svg></div>
            <div>
              <label class="label">Call Us</label>
-            <p>+91-9459108108</p>
+            <p>+91-9459234999</p>
            </div>
         </div>
       </div>
@@ -26,7 +26,7 @@
             </svg></div>
            <div>
              <label class="label">Send Us Email</label>
-            <p>info@drpraveenreddyortho.com</p>
+            <p>info@drpraveenreddyp.com</p>
            </div>
         </div>
       </div>

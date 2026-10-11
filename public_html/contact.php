@@ -4,10 +4,10 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr Prveeen Reddy - Bone & Joint Surgeon </title>
+    <title>Contact orthopedic doctor in LB Nagar: Dr Praveen Reddy P</title>
 
      <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="description" content="Struggling with All orthopedic problems Consult Dr Praveen Reddy P, is a best orthopedic doctor in LB Nagar, Hyderabad and get proper treatment Contact him today" />
 
      <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
@@ -42,7 +42,7 @@
         <div class="hero-header">
           <h1 class="text-anime-style-1">Contact Us</h1>
           <div class="space28"></div>
-          <a href="index.php" class="bradecrumb">Home <i class="fa-solid fa-angle-right"></i> Contact Us</a>
+          <a href="index.php" class="bradecrumb">Home <i class="fa-solid fa-angle-right"></i> </a><a class="bradecrumb"> Contact Us</a>
         </div>
       </div>
     </div>
@@ -77,7 +77,7 @@
                           </svg>
                     </div>
                     <div class="text">
-                        <a href="tel:+91-9459108108">+91-9459108108</a>
+                        <a href="tel:+91-9459234999">+91-9459234999</a>
                     </div>
                 </div>
 
@@ -103,7 +103,7 @@ India.</a>
                           </svg>
                     </div>
                     <div class="text">
-                        <a href="mailto: info@drpraveenreddyortho.com"> info@drpraveenreddyortho.com</a>
+                        <a href="mailto: info@drpraveenreddyp.com"> info@drpraveenreddyp.com</a>
                     </div>
                 </div> -->
             </div>
@@ -217,7 +217,7 @@ India.</a>
                     <div class="text">
                       <h4>Contact</h4>
                       <div class="space14"></div>
-                      <a href="tel:+91-9459108108">+91-9459108108</a>
+                      <a href="tel:+91-9459234999">+91-9459234999</a>
                     </div>
                   </div>
                 </div>
@@ -232,7 +232,7 @@ India.</a>
                     <div class="text">
                       <h4>Our Email</h4>
                       <div class="space14"></div>
-                      <a href="mailto: info@drpraveenreddyortho.com"> info@drpraveenreddyortho.com</a>
+                      <a href="mailto: info@drpraveenreddyp.com"> info@drpraveenreddyp.com</a>
                     </div>
                   </div>
                 </div>
