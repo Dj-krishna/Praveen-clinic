@@ -1,0 +1,14 @@
+# Robots.txt for https://drpraveenreddyp.com/
+
+User-agent: *
+Allow: /
+
+# Block administrative areas from search crawler access
+Disallow: /admin/
+Disallow: /admin/login/
+Disallow: /admin/dashboard/
+Disallow: /admin/blogs/
+Disallow: /admin/profile/
+
+# XML sitemap
+Sitemap: https://drpraveenreddyp.com/sitemap_index.xml
