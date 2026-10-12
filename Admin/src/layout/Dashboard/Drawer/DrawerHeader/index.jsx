@@ -21,20 +21,15 @@ export default function DrawerHeader({ open }) {
       }}
     >
       {open ? (
-        <Typography 
-          variant="h3" 
-          sx={{ 
-            fontWeight: 'bold',
-            background: 'linear-gradient(135deg, #1e88e5 0%, #1565c0 100%)',
-            color: 'white',
-            px: 2,
-            py: 0.75,
-            borderRadius: 2,
-            display: 'inline-block'
+        <img
+          src="https://drpraveenreddyp.com/assets/img/logo/dr-praveen-reddy-logo.png"
+          alt="Praveen's Clinic"
+          style={{
+            height: '60px',
+            width: 'auto',
+            objectFit: 'contain'
           }}
-        >
-          Praveen's Clinic
-        </Typography>
+        />
       ) : (
         <Box
           sx={{
