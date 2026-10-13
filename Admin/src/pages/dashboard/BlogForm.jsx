@@ -307,7 +307,7 @@ export default function BlogFormPage() {
     });
 
     // Set existing image URLs for preview
-    const baseUrl = 'https://drpraveenreddyortho.com';
+    const baseUrl = 'https://drpraveenreddyp.com';
     if (editData.postThumbnail) {
       const thumbUrl = editData.postThumbnail.startsWith('http') ? editData.postThumbnail : `${baseUrl}/api/${editData.postThumbnail}`;
       setExistingThumbnail(thumbUrl);

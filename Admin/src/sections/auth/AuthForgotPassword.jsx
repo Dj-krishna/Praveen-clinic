@@ -39,7 +39,7 @@ export default function AuthForgotPassword() {
   const handleResetPassword = async (values, { setErrors, setStatus, setSubmitting }) => {
     try {
       const response = await axios.post(
-        'https://drpraveenreddyortho.com/api/users/reset-password',
+        'https://drpraveenreddyp.com/api/users/reset-password',
         {
           email: values.email,
           newPassword: values.password
